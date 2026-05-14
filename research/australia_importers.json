@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "name": "Harvey Norman",
+    "website": "https://www.harveynorman.com.au",
+    "category": "Major Furniture Retailer",
+    "business_profile": "One of Australia's largest retailers of furniture, bedding, and home products. Operates through a franchise model.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Katie Page",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/katie-page-ceo-harvey-norman",
+        "email": "katie.page@harveynorman.com.au",
+        "phone": "+61 2 9201 6111"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Fantastic Furniture",
+    "website": "https://www.fantasticfurniture.com.au",
+    "category": "Furniture Retailer / Sofa Specialist",
+    "business_profile": "Australia's best value furniture and bedding retailer, specializing in sofas, dining, and bedroom furniture.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Kieron Ritchard",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/kieronritchard",
+        "email": "kieron.ritchard@fantasticfurniture.com.au",
+        "phone": "+61 2 8717 2600"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Koala",
+    "website": "https://www.koala.com",
+    "category": "Direct-to-Consumer Furniture / Sofa",
+    "business_profile": "Innovative furniture brand known for its mattress-in-a-box and modular sofa systems.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Dany Milham",
+        "title": "Co-founder & CEO",
+        "linkedin": "https://www.linkedin.com/in/danymilham",
+        "email": "dany@koala.com",
+        "phone": "+61 2 8294 6500"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Lululemon AU",
+    "website": "https://www.lululemon.com.au",
+    "category": "Sports/Yoga Brand",
+    "business_profile": "Global athletic apparel retailer with a strong presence in Australia, specializing in yoga gear and mats.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Trevor Holland",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/trevor-holland-ba516851",
+        "email": "tholland@lululemon.com",
+        "phone": "+61 3 9421 2100"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Rebel Sport",
+    "website": "https://www.rebelsport.com.au",
+    "category": "Sports Retailer",
+    "business_profile": "Australia's leading sports retailer, part of the Super Retail Group, stocking a wide range of yoga and fitness mats.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Gary Williams",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/gary-williams-b189b535",
+        "email": "gary.williams@superretailgroup.com.au",
+        "phone": "+61 7 3482 7900"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Nick Scali Furniture",
+    "website": "https://www.nickscali.com.au",
+    "category": "Furniture Retailer / Sofa Specialist",
+    "business_profile": "A premier furniture retailer in Australia, specializing in leather and fabric sofas and lounges.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Anthony Scali",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/anthony-scali-512a9716",
+        "email": "anthony.scali@nickscali.com.au",
+        "phone": "+61 2 9748 4000"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "King Living",
+    "website": "https://www.kingliving.com.au",
+    "category": "Furniture Retailer / Manufacturer",
+    "business_profile": "Award-winning Australian furniture brand known for its modular sofas and steel frames.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "David Woollcott",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/david-woollcott-77423368",
+        "email": "david.woollcott@kingliving.com.au",
+        "phone": "+61 2 9332 2000"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "Amart Furniture",
+    "website": "https://www.amartfurniture.com.au",
+    "category": "Major Furniture Retailer",
+    "business_profile": "Leading furniture retailer offering a wide range of sofas, indoor, and outdoor furniture at competitive prices.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Lee Chadwick",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/leechadwick",
+        "email": "lee.chadwick@amartfurniture.com.au",
+        "phone": "+61 7 3208 6988"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "Temple & Webster",
+    "website": "https://www.templeandwebster.com.au",
+    "category": "Online Furniture Retailer",
+    "business_profile": "Australia's largest online-only furniture and homewares retailer.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Mark Coulter",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/markacoulter",
+        "email": "mark.coulter@templeandwebster.com.au",
+        "phone": "+61 1300 900 675"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Adairs",
+    "website": "https://www.adairs.com.au",
+    "category": "Homewares & Soft Seating",
+    "business_profile": "Specialist retailer of homewares, bedding, and soft furnishings including bean bags and loungers.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Elle Roseby",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/elle-roseby",
+        "email": "elle.roseby@adairs.com.au",
+        "phone": "+61 3 8888 4500"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "Freedom Furniture",
+    "website": "https://www.freedom.com.au",
+    "category": "Major Furniture Retailer",
+    "business_profile": "Iconic Australian furniture and homewares brand with a wide range of sofas and soft seating.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Blaine Callard",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/blainecallard",
+        "email": "blaine.callard@freedom.com.au",
+        "phone": "+61 2 9844 8200"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "IKEA Australia",
+    "website": "https://www.ikea.com/au",
+    "category": "Global Furniture Retailer",
+    "business_profile": "Multinational conglomerate that designs and sells ready-to-assemble furniture, including compressed foam sofas and yoga mats.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Mirja Viinanen",
+        "title": "CEO & Chief Sustainability Officer",
+        "linkedin": "https://www.linkedin.com/in/mirja-viinanen-062bb281",
+        "email": "mirja.viinanen@ikea.com",
+        "phone": "+61 2 8020 6600"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "Target Australia",
+    "website": "https://www.target.com.au",
+    "category": "General Merchandise Retailer",
+    "business_profile": "Department store chain offering fitness equipment, yoga mats, and home furnishings.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Carrie Kirkman",
+        "title": "Head of Merchandise",
+        "linkedin": "https://www.linkedin.com/in/carriekirkman",
+        "email": "carrie.kirkman@target.com.au",
+        "phone": "+61 3 5246 2000"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "Kmart Australia",
+    "website": "https://www.kmart.com.au",
+    "category": "General Merchandise Retailer",
+    "business_profile": "Leading discount retailer with a massive range of fitness gear, yoga mats, and affordable soft seating.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Bernard Wilson",
+        "title": "CEO/Managing Director",
+        "linkedin": "https://www.linkedin.com/in/bernard-wilson-3ba8745b",
+        "email": "bernard.wilson@kmart.com.au",
+        "phone": "+61 3 9902 3350"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "Lorna Jane",
+    "website": "https://www.lornajane.com.au",
+    "category": "Yoga/Activewear Brand",
+    "business_profile": "Australian women's activewear brand specializing in yoga mats and fitness accessories.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Lorna Jane Clarkson",
+        "title": "Founder & Chief Creative Officer",
+        "linkedin": "https://www.linkedin.com/in/lorna-jane-clarkson-22094346",
+        "email": "lornajane@lornajane.com.au",
+        "phone": "+61 7 3252 5552"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "Decathlon Australia",
+    "website": "https://www.decathlon.com.au",
+    "category": "Sports Retailer",
+    "business_profile": "Global sports retailer providing a vast range of yoga mats and fitness equipment.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Martina Palma",
+        "title": "CEO",
+        "linkedin": "https://www.facebook.com/ibckh/posts/1182016447452216",
+        "email": "martina.palma@decathlon.com",
+        "phone": "+61 2 9199 2630"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "Direct Group (Gaiam Australia)",
+    "website": "https://www.directgroup.com.au",
+    "category": "Wholesale Distributor",
+    "business_profile": "Major direct marketing and wholesale group distributing Gaiam yoga products in Australia.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Chris Eade",
+        "title": "CEO",
+        "linkedin": "https://www.linkedin.com/in/chris-eade-a61a281",
+        "email": "chris.eade@directgroup.com.au",
+        "phone": "+61 2 9452 7000"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "BeanBags.com.au (Home Ambience)",
+    "website": "https://www.beanbags.com.au",
+    "category": "Bean Bag Specialist",
+    "business_profile": "Leading online specialist for high-quality bean bags and soft seating in Australia.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Director",
+        "title": "Managing Director",
+        "linkedin": "N/A",
+        "email": "info@beanbags.com.au",
+        "phone": "1300 707 121"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "KloudSac",
+    "website": "https://kloudsac.com.au",
+    "category": "Bean Bag Specialist",
+    "business_profile": "Australian brand specializing in foam-filled bean bags and therapeutic soft seating.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Kyle Gascoigne",
+        "title": "Director",
+        "linkedin": "https://www.linkedin.com/in/kyle-gascoigne-82554770",
+        "email": "kyle@kloudsac.com.au",
+        "phone": "1300 143 501"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Bliss Bean Bags",
+    "website": "https://www.blissbeanbags.com.au",
+    "category": "Bean Bag Specialist",
+    "business_profile": "Manufacturer and importer of premium bean bags for residential and commercial use.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Managing Director",
+        "title": "Owner",
+        "linkedin": "N/A",
+        "email": "info@blissbeanbags.com.au",
+        "phone": "1300 858 119"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "Fitness Systems United (PTP/BAHE)",
+    "website": "https://ptpfit.com",
+    "category": "Sports/Yoga Importer",
+    "business_profile": "Owns and imports fitness brands PTP and BAHE, specializing in yoga mats and accessories.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Matt Dixon",
+        "title": "Director / Co-founder",
+        "linkedin": "https://www.linkedin.com/in/mattdixonptp",
+        "email": "matt.dixon@ptpfit.com",
+        "phone": "+61 2 9037 3591"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "Aussie Active Goods",
+    "website": "https://www.fdmyoga.com",
+    "category": "Yoga Mat Importer",
+    "business_profile": "Specialist importer and supplier of eco-friendly TPE yoga mats and fitness products.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "General Manager",
+        "title": "Owner",
+        "linkedin": "N/A",
+        "email": "sales@aussieactivegoods.com.au",
+        "phone": "N/A"
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "Rogue Fitness Australia",
+    "website": "https://www.rogueaustralia.com.au",
+    "category": "Fitness Equipment Importer",
+    "business_profile": "Australian arm of the global strength and conditioning equipment giant, importing mats and gym gear.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Country Manager",
+        "title": "Director",
+        "linkedin": "N/A",
+        "email": "team@rogueaustralia.com.au",
+        "phone": "+61 2 4627 4005"
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "Life Fitness Australia",
+    "website": "https://www.lifefitness.com.au",
+    "category": "Fitness Equipment Importer",
+    "business_profile": "Major distributor of commercial and home fitness equipment, including high-quality floor mats.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Paul McClure",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/paul-mcclure-aa20067a",
+        "email": "paul.mcclure@lifefitness.com.au",
+        "phone": "+61 1800 689 622"
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "Technogym Australia",
+    "website": "https://www.technogym.com/au",
+    "category": "Fitness Equipment Importer",
+    "business_profile": "Italian fitness equipment manufacturer's Australian subsidiary, importing premium wellness products.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Nicholas Lee",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/nicholas-lee-ab38b7",
+        "email": "n.lee@technogym.com",
+        "phone": "+61 2 8881 0777"
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": "Vivin Imports",
+    "website": "https://www.vivinimports.com.au",
+    "category": "Wholesale Furniture Importer",
+    "business_profile": "One of Australia's largest furniture wholesalers and importers, supplying major retailers.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Ritesh Bhatia",
+        "title": "Director",
+        "linkedin": "https://www.linkedin.com/in/ritesh-bhatia-62b49336",
+        "email": "ritesh@vivinimports.com.au",
+        "phone": "+61 2 9011 8080"
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": "Calibre Furniture",
+    "website": "https://www.calibrefurniture.com.au",
+    "category": "Wholesale Furniture Importer",
+    "business_profile": "Modern furniture wholesaler and importer based in Melbourne, catering to retail and trade.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Michael Miller",
+        "title": "General Manager",
+        "linkedin": "https://www.linkedin.com/in/michael-miller-93148678",
+        "email": "michael.miller@calibrefurniture.com.au",
+        "phone": "+61 3 8375 1708"
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": "Berton Furniture",
+    "website": "https://www.bertonfurniture.com.au",
+    "category": "Wholesale Furniture Importer",
+    "business_profile": "Leading wholesale supplier of furniture to retailers across Australia.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Phillip Clayton",
+        "title": "Director",
+        "linkedin": "https://www.linkedin.com/in/phillip-clayton-51329213",
+        "email": "phillip.clayton@bertonfurniture.com.au",
+        "phone": "+61 2 4732 2155"
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": "Stylecraft",
+    "website": "https://www.stylecraft.com.au",
+    "category": "Contract Furniture Importer",
+    "business_profile": "Distributor of high-end Australian and international furniture brands for commercial spaces.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "Anthony Collins",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/anthonycollinsstylecraft",
+        "email": "anthony.collins@stylecraft.com.au",
+        "phone": "+61 2 9355 0000"
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": "GlobeWest",
+    "website": "https://www.globewest.com.au",
+    "category": "Wholesale Furniture Importer",
+    "business_profile": "Australian owned company specializing in designer furniture and homewares for the design community.",
+    "deep_dive": {
+      "decision_maker": {
+        "name": "William Micati",
+        "title": "Managing Director",
+        "linkedin": "https://www.linkedin.com/in/william-micati-9a99772a",
+        "email": "william.micati@globewest.com.au",
+        "phone": "+61 3 9518 1660"
+      }
+    }
+  },
+  { "id": 31, "name": "Domayne", "website": "https://www.domayne.com.au", "category": "Major Furniture Retailer", "business_profile": "Part of Harvey Norman group, focuses on contemporary design and furniture." },
+  { "id": 32, "name": "Sheridan", "website": "https://www.sheridan.com.au", "category": "Homewares Retailer", "business_profile": "Luxury bedding and homewares, often stocks soft seating products." },
+  { "id": 33, "name": "Spotlight", "website": "https://www.spotlightstores.com", "category": "General Merchandise Retailer", "business_profile": "Large retailer for fabrics, craft, and homewares including bean bag covers." },
+  { "id": 34, "name": "Harris Scarfe", "website": "https://www.harrisscarfe.com.au", "category": "General Merchandise Retailer", "business_profile": "Department store specializing in homewares and apparel." },
+  { "id": 35, "name": "Big W", "website": "https://www.bigw.com.au", "category": "General Merchandise Retailer", "business_profile": "Discount department store with extensive fitness and home categories." },
+  { "id": 36, "name": "Catch.com.au", "website": "https://www.catch.com.au", "category": "Online Marketplace / Retailer", "business_profile": "Australia's largest online marketplace, stocking yoga mats and soft seating." },
+  { "id": 37, "name": "Kogan", "website": "https://www.kogan.com/au", "category": "Online Retailer", "business_profile": "Diverse online retailer with its own range of furniture and fitness gear." },
+  { "id": 38, "name": "Mocka", "website": "https://www.mocka.com.au", "category": "Online Furniture Retailer", "business_profile": "Modern furniture brand focusing on affordable and stylish designs." },
+  { "id": 39, "name": "Brosa", "website": "https://www.brosa.com.au", "category": "Online Furniture Retailer", "business_profile": "Designer furniture brand, now part of the Kogan group." },
+  { "id": 40, "name": "Castlery Australia", "website": "https://www.castlery.com/au", "category": "Online Furniture Retailer", "business_profile": "Global furniture brand focusing on modern and mid-century designs." },
+  { "id": 41, "name": "Eva", "website": "https://eva.com.au", "category": "Direct-to-Consumer Furniture", "business_profile": "Specializes in mattresses and modular timber bed frames and sofas." },
+  { "id": 42, "name": "Ecosa", "website": "https://www.ecosa.com.au", "category": "Direct-to-Consumer Furniture", "business_profile": "Wellness-focused furniture brand specializing in sleep and seating." },
+  { "id": 43, "name": "Sleeping Duck", "website": "https://www.sleepingduck.com/au", "category": "Direct-to-Consumer Furniture", "business_profile": "Premium mattress and bedding brand." },
+  { "id": 44, "name": "Lounge Lovers", "website": "https://www.loungelovers.com.au", "category": "Sofa Specialist Retailer", "business_profile": "Designer sofas and lounges at factory-direct prices." },
+  { "id": 45, "name": "Zanui", "website": "https://www.zanui.com.au", "category": "Online Furniture Retailer", "business_profile": "Online destination for furniture and homewares." },
+  { "id": 46, "name": "Interior Secrets", "website": "https://www.interiorsecrets.com.au", "category": "Furniture Retailer", "business_profile": "Provides designer furniture at competitive prices." },
+  { "id": 47, "name": "Matt Blatt", "website": "https://www.mattblatt.com.au", "category": "Furniture Retailer", "business_profile": "Known for replica and eclectic furniture designs, now online-focused." },
+  { "id": 48, "name": "Satara", "website": "https://www.satara.com.au", "category": "Wholesale Furniture Importer", "business_profile": "Supplies luxury indoor and outdoor furniture to trade and retail." },
+  { "id": 49, "name": "Trit House", "website": "https://www.trithouse.com.au", "category": "Furniture Retailer", "business_profile": "Curation of global furniture and lifestyle brands." },
+  { "id": 50, "name": "Arthur G", "website": "https://www.arthurg.com.au", "category": "Furniture Manufacturer / Importer", "business_profile": "Specializes in handcrafted Australian sofas with some imported components." },
+  { "id": 51, "name": "Coco Republic", "website": "https://www.cocorepublic.com.au", "category": "High-end Furniture Retailer", "business_profile": "Premium furniture and design brand." },
+  { "id": 52, "name": "Space Furniture", "website": "https://www.spacefurniture.com.au", "category": "High-end Furniture Retailer", "business_profile": "Leading distributor of international designer furniture." },
+  { "id": 53, "name": "Living Edge", "website": "https://livingedge.com.au", "category": "High-end Furniture Retailer", "business_profile": "Curated collection of world-leading furniture brands." },
+  { "id": 54, "name": "Cult Design", "website": "https://cultdesign.com.au", "category": "High-end Furniture Retailer", "business_profile": "Promoter of international and Australian design." },
+  { "id": 55, "name": "West Elm Australia", "website": "https://www.westelm.com.au", "category": "Global Furniture Retailer", "business_profile": "Global brand known for modern furniture and decor." },
+  { "id": 56, "name": "Pottery Barn Australia", "website": "https://www.potterybarn.com.au", "category": "Global Furniture Retailer", "business_profile": "Global brand specializing in home furnishings." },
+  { "id": 57, "name": "BoConcept Australia", "website": "https://www.boconcept.com/en-au", "category": "Global Furniture Retailer", "business_profile": "Danish furniture brand known for urban design." },
+  { "id": 58, "name": "Sportsmans Warehouse", "website": "https://sportsmans.com.au", "category": "Sports Retailer", "business_profile": "Retailer of sports and fitness equipment." },
+  { "id": 59, "name": "HART Sport", "website": "https://www.hartsport.com.au", "category": "Sports Equipment Importer", "business_profile": "Supplies sports equipment and mats to schools and clubs." },
+  { "id": 60, "name": "McSport", "website": "https://www.mcsport.com.au", "category": "Sports Equipment Retailer", "business_profile": "Retailer of fitness gear and accessories." },
+  { "id": 61, "name": "Little Earth", "website": "https://littleearth.com.au", "category": "Yoga Specialist", "business_profile": "Eco-friendly yoga mats and accessories." },
+  { "id": 62, "name": "Yoga Design Lab", "website": "https://www.yogadesignlab.com.au", "category": "Yoga Specialist", "business_profile": "Global brand known for artistic and functional yoga mats." },
+  { "id": 63, "name": "Second Earth", "website": "https://secondearth.com.au", "category": "Yoga Specialist", "business_profile": "Australian eco-friendly yoga mat brand." },
+  { "id": 64, "name": "Mukti Mats", "website": "https://muktimats.com.au", "category": "Yoga Specialist", "business_profile": "Eco-conscious yoga mats made from natural materials." },
+  { "id": 65, "name": "Eco Yoga Store", "website": "https://ecoyogastore.com.au", "category": "Yoga Specialist Retailer", "business_profile": "Curated retailer of eco-friendly yoga products." },
+  { "id": 66, "name": "Plush - Think Sofas", "website": "https://www.plush.com.au", "category": "Sofa Specialist Retailer", "business_profile": "Leading sofa retailer in Australia, part of Nick Scali group." },
+  { "id": 67, "name": "Sofas Direct", "website": "https://www.sofasdirect.com.au", "category": "Sofa Specialist Retailer", "business_profile": "Specializes in factory-direct sofas and lounges." },
+  { "id": 68, "name": "Sofa Club", "website": "https://www.sofaclub.com.au", "category": "Sofa Specialist Retailer", "business_profile": "Contemporary sofa designs and lounges." },
+  { "id": 69, "name": "Maker & Son Australia", "website": "https://makerandson.com.au", "category": "High-end Sofa Specialist", "business_profile": "Luxury handmade sofas and soft furnishings." },
+  { "id": 70, "name": "Focus on Furniture", "website": "https://www.focusonfurniture.com.au", "category": "Furniture Retailer", "business_profile": "Specializes in quality furniture at affordable prices." },
+  { "id": 71, "name": "Berkowitz Furniture", "website": "https://www.berkowitz.com.au", "category": "Furniture Retailer", "business_profile": "Family-owned furniture retailer with a focus on quality." },
+  { "id": 72, "name": "Gainsville", "website": "https://www.gainsville.com.au", "category": "High-end Furniture Retailer", "business_profile": "Modern designer furniture and lounges." },
+  { "id": 73, "name": "Oz Design Furniture", "website": "https://ozdesignfurniture.com.au", "category": "Furniture Retailer", "business_profile": "Specializes in stylish and affordable home furniture." },
+  { "id": 74, "name": "Provincial Home Living", "website": "https://www.provincialhomeliving.com.au", "category": "Furniture Retailer", "business_profile": "French provincial and timeless furniture designs." },
+  { "id": 75, "name": "Early Settler", "website": "https://www.earlysettler.com.au", "category": "Furniture Retailer", "business_profile": "Specializes in colonial, rustic, and modern furniture." },
+  { "id": 76, "name": "James Lane", "website": "https://www.jameslane.com.au", "category": "Furniture Retailer", "business_profile": "Contemporary furniture and designer lounges." },
+  { "id": 77, "name": "Bed Bath N' Table", "website": "https://www.bedbathntable.com.au", "category": "Homewares Retailer", "business_profile": "Major retailer of home textiles and decor including soft seating." },
+  { "id": 78, "name": "Pillow Talk", "website": "https://www.pillowtalk.com.au", "category": "Homewares Retailer", "business_profile": "Specialist in bedding and homewares including bean bags." },
+  { "id": 79, "name": "Myer", "website": "https://www.myer.com.au", "category": "Major Department Store", "business_profile": "Leading department store with home and fitness categories." },
+  { "id": 80, "name": "David Jones", "website": "https://www.davidjones.com", "category": "Major Department Store", "business_profile": "Premium department store stocking high-end home and fitness brands." },
+  { "id": 81, "name": "Amazon Australia", "website": "https://www.amazon.com.au", "category": "Online Marketplace", "business_profile": "Global e-commerce giant with a vast range of yoga mats and sofas." },
+  { "id": 82, "name": "Elite Fitness Equipment", "website": "https://www.elitefitness.com.au", "category": "Fitness Equipment Importer", "business_profile": "Specializes in home and commercial gym equipment." },
+  { "id": 83, "name": "Gym Direct", "website": "https://gymdirect.com.au", "category": "Fitness Equipment Importer", "business_profile": "Wholesale supplier of gym gear and floor mats." },
+  { "id": 84, "name": "Southside Fitness", "website": "https://www.southsidefitness.com.au", "category": "Fitness Equipment Importer", "business_profile": "Supplier of gym and fitness equipment across Australia." },
+  { "id": 85, "name": "Fitonline", "website": "https://www.fitonline.com.au", "category": "Fitness Equipment Retailer", "business_profile": "Online retailer of home gym and fitness equipment." },
+  { "id": 86, "name": "Cyberfit", "website": "https://www.cyberfit.com.au", "category": "Fitness Equipment Importer", "business_profile": "Wholesale supplier of strength and conditioning equipment." },
+  { "id": 87, "name": "Iron Edge", "website": "https://www.ironedge.com.au", "category": "Fitness Equipment Importer", "business_profile": "Specializes in high-performance training equipment." },
+  { "id": 88, "name": "Australian Fitness Supplies", "website": "https://australianfitnesssupplies.com.au", "category": "Fitness Equipment Importer", "business_profile": "Wholesale and retail supplier of fitness gear." },
+  { "id": 89, "name": "Little Bloke Fitness", "website": "https://www.littleblokefitness.com.au", "category": "Fitness Equipment Importer", "business_profile": "Supplies home and commercial gym equipment." },
+  { "id": 90, "name": "Orbit Fitness", "website": "https://www.orbitfitness.com.au", "category": "Fitness Equipment Importer", "business_profile": "Largest fitness equipment retailer in Western Australia." },
+  { "id": 91, "name": "Workout World", "website": "https://www.workoutworld.com.au", "category": "Fitness Equipment Retailer", "business_profile": "Retailer of fitness equipment and accessories." },
+  { "id": 92, "name": "Fitness Warehouse", "website": "https://www.fitnesswarehouse.com.au", "category": "Fitness Equipment Importer", "business_profile": "Supplies fitness equipment for home and commercial use." },
+  { "id": 93, "name": "Gym and Fitness", "website": "https://www.gymandfitness.com.au", "category": "Fitness Equipment Importer", "business_profile": "Online retailer specializing in strength and cardio equipment." },
+  { "id": 94, "name": "Soul Sanctuary", "website": "https://www.soulsanctuary.com.au", "category": "Yoga Specialist", "business_profile": "Boutique yoga and lifestyle product importer." },
+  { "id": 95, "name": "Move Active", "website": "https://www.moveactive.com.au", "category": "Yoga/Pilates Specialist", "business_profile": "Specializes in pilates and yoga accessories." },
+  { "id": 96, "name": "Yoga King", "website": "https://www.yogaking.com.au", "category": "Yoga Specialist Importer", "business_profile": "Supplies yoga props and mats across Australia." },
+  { "id": 97, "name": "Yoga Shop", "website": "https://www.yogashop.com.au", "category": "Yoga Specialist Retailer", "business_profile": "Retailer of yoga gear and accessories." },
+  { "id": 98, "name": "Stretch Now", "website": "https://www.stretchnow.com.au", "category": "Yoga Specialist Importer", "business_profile": "Eco-friendly yoga and meditation products." },
+  { "id": 99, "name": "I Love Yoga", "website": "https://iloveyoga.com.au", "category": "Yoga Specialist Retailer", "business_profile": "Online destination for yoga enthusiasts." },
+  { "id": 100, "name": "Yoga Outlet AU", "website": "https://yogaoutlet.com.au", "category": "Yoga Specialist Retailer", "business_profile": "Discounted yoga gear and accessories." }
+]

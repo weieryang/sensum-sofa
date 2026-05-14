@@ -1,0 +1,956 @@
+[
+  {
+    "name": "Aluminium Company of Malaysia Berhad (ALCOM)",
+    "website": "https://alcom.com.my",
+    "category": "Aluminum Manufacturer & Importer",
+    "business_profile": "ALCOM is a pioneer in the aluminum industry in Malaysia, producing high-quality aluminum products including foil, sheets, and coils for various industries.",
+    "decision_makers": [
+      {
+        "name": "Heon Chee Shyong",
+        "title": "President & CEO",
+        "linkedin_url": "https://my.linkedin.com/in/heon-chee-shyong-a0264813",
+        "professional_email": "info@alcom.com.my",
+        "professional_phone": "+60 3-3346 6262"
+      },
+      {
+        "name": "Bernard Gomez",
+        "title": "Sales/Operations Manager",
+        "linkedin_url": "N/A",
+        "professional_email": "bernard.gomez@alcom.com.my",
+        "professional_phone": "+60 3-3346 6262"
+      }
+    ]
+  },
+  {
+    "name": "Press Metal Aluminium Holdings Berhad",
+    "website": "https://www.pressmetal.com",
+    "category": "Integrated Aluminum Producer",
+    "business_profile": "Press Metal is the largest integrated aluminum producer in Southeast Asia, with significant operations in smelting and extrusion.",
+    "decision_makers": [
+      {
+        "name": "Tony Toh",
+        "title": "General Manager",
+        "linkedin_url": "N/A",
+        "professional_email": "sales@pressmetal.com.my",
+        "professional_phone": "+60 7-238 1888"
+      },
+      {
+        "name": "Hon Boon Hui",
+        "title": "Investor Relations Manager",
+        "linkedin_url": "N/A",
+        "professional_email": "enquiry@pressmetal.com",
+        "professional_phone": "+60 3-7890 4800"
+      }
+    ]
+  },
+  {
+    "name": "LB Aluminium Berhad",
+    "website": "https://www.lbalum.com",
+    "category": "Aluminum Extrusion Manufacturer",
+    "business_profile": "LB Aluminium is one of the largest aluminum extrusion manufacturers in the region, specializing in products for construction and industrial applications.",
+    "decision_makers": [
+      {
+        "name": "Mark Low Chin Meng",
+        "title": "Executive Chairman & Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "enquiry@lbalum.com.my",
+        "professional_phone": "+60 3-8725 8833"
+      }
+    ]
+  },
+  {
+    "name": "UACJ Foil Malaysia Sdn. Bhd.",
+    "website": "https://ufo.uacj-group.com",
+    "category": "Aluminum Foil Manufacturer",
+    "business_profile": "Part of the UACJ Group, this company specializes in the manufacturing of aluminum foil for packaging and industrial use in Malaysia.",
+    "decision_makers": [
+      {
+        "name": "Osamu Mizutani",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "marketing@ufom.uacj-group.com",
+        "professional_phone": "+60 7-254 1903"
+      }
+    ]
+  },
+  {
+    "name": "Scientex Berhad",
+    "website": "https://www.scientex.com.my",
+    "category": "Packaging & Industrial Products",
+    "business_profile": "Scientex is a global leader in flexible plastic packaging and a major player in industrial packaging solutions.",
+    "decision_makers": [
+      {
+        "name": "Lim Peng Jin",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "info@scientex.com.my",
+        "professional_phone": "+60 3-5524 8888"
+      }
+    ]
+  },
+  {
+    "name": "Can-One Berhad",
+    "website": "https://canone.com.my",
+    "category": "Packaging Manufacturer",
+    "business_profile": "Can-One is a major packaging manufacturer in Malaysia, specializing in metal cans, plastic containers, and flexible packaging.",
+    "decision_makers": [
+      {
+        "name": "Yeoh Jin Hoe",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "enquiry@canone.com.my",
+        "professional_phone": "+60 3-5510 6888"
+      }
+    ]
+  },
+  {
+    "name": "Thong Guan Industries Berhad",
+    "website": "https://www.thongguan.com",
+    "category": "Flexible Packaging",
+    "business_profile": "Thong Guan is one of Asia's largest plastic packaging manufacturers, with a significant division for aluminum foil and paper products.",
+    "decision_makers": [
+      {
+        "name": "Goey Cm",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://my.linkedin.com/in/goey-cm-26287b131",
+        "professional_email": "info@thongguan.com",
+        "professional_phone": "+60 4-441 7888"
+      }
+    ]
+  },
+  {
+    "name": "AMS Light Metal Sdn Bhd",
+    "website": "https://www.ams-metals.com",
+    "category": "Aluminum Distributor & Importer",
+    "business_profile": "AMS Light Metal specializes in the distribution and supply of aluminum sheets, coils, and foils for various industrial sectors.",
+    "decision_makers": [
+      {
+        "name": "Hanzy Chia",
+        "title": "Director",
+        "linkedin_url": "https://my.linkedin.com/in/hanzy-chia-62733212",
+        "professional_email": "hanzy.chia@amsmetal.com.sg",
+        "professional_phone": "+60 7-590 8333"
+      }
+    ]
+  },
+  {
+    "name": "Toyoma Aluminium Foil Packaging Sdn Bhd",
+    "website": "https://www.toyoma.com.my",
+    "category": "Aluminum Foil Packaging",
+    "business_profile": "Toyoma is a leading manufacturer of aluminum foil packaging products, including containers and rolls for the food industry.",
+    "decision_makers": [
+      {
+        "name": "Christopher Low",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "info@toyoma.com.my",
+        "professional_phone": "+60 3-7804 8888"
+      }
+    ]
+  },
+  {
+    "name": "K Foil Insulation (Malaysia) Sdn Bhd",
+    "website": "https://www.kfoil.com.my",
+    "category": "Reflective Insulation & Foil",
+    "business_profile": "K Foil is a specialist in reflective aluminum foil insulation materials for building and industrial energy saving.",
+    "decision_makers": [
+      {
+        "name": "Eng Hong Ooi",
+        "title": "General Manager",
+        "linkedin_url": "https://my.linkedin.com/in/eng-hong-ooi-65820938",
+        "professional_email": "sales@kfoil.com.my",
+        "professional_phone": "+60 4-508 8122"
+      }
+    ]
+  },
+  {
+    "name": "Foil Laminate Industries Sdn Bhd",
+    "website": "https://foil-laminate.com",
+    "category": "Foil Lamination & Conversion",
+    "business_profile": "Foil Laminate Industries is a manufacturer of quality foil lamination and conversion products for heat insulation and moisture protection.",
+    "decision_makers": [
+      {
+        "name": "Soon Lay Ean",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "info@foil-laminate.com",
+        "professional_phone": "+60 4-390 1222"
+      }
+    ]
+  },
+  {
+    "name": "Polyon Food Packaging Sdn. Bhd.",
+    "website": "https://www.polyon.com.my",
+    "category": "Food Packaging & Foil",
+    "business_profile": "Polyon specializes in high-quality food packaging solutions, particularly aluminum foil containers and trays for the catering industry.",
+    "decision_makers": [
+      {
+        "name": "Mr Lee",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "sales@polyon.com.my",
+        "professional_phone": "+60 3-8060 1188"
+      }
+    ]
+  },
+  {
+    "name": "OB Tech Corporation (M) Sdn Bhd",
+    "website": "http://www.obtech.com.my",
+    "category": "Household Foil & Packaging",
+    "business_profile": "OB Tech is the manufacturer of Hagen's brand aluminum foil and other household packaging products in Malaysia.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Management",
+        "linkedin_url": "N/A",
+        "professional_email": "info@obtech.com.my",
+        "professional_phone": "+60 3-8961 8888"
+      }
+    ]
+  },
+  {
+    "name": "Tetra Pak (Malaysia) Sdn Bhd",
+    "website": "https://www.tetrapak.com/en-my",
+    "category": "Liquid Packaging Systems",
+    "business_profile": "Tetra Pak is a global leader in food processing and packaging solutions, utilizing significant amounts of aluminum foil in its aseptic packaging.",
+    "decision_makers": [
+      {
+        "name": "Marcelo Perazzo",
+        "title": "Managing Director",
+        "linkedin_url": "https://id.linkedin.com/in/marcelo-perazzo-",
+        "professional_email": "info.malaysia@tetrapak.com",
+        "professional_phone": "+60 3-7724 7000"
+      }
+    ]
+  },
+  {
+    "name": "Bright Packaging Industry Berhad",
+    "website": "http://www.brightpack.com.my",
+    "category": "Foil Laminated Paper",
+    "business_profile": "Bright Packaging specializes in the production of aluminum foil laminated paper and board for the tobacco and liquor industries.",
+    "decision_makers": [
+      {
+        "name": "Nik Mustapha bin Muhamad",
+        "title": "Chairman",
+        "linkedin_url": "N/A",
+        "professional_email": "info@brightpack.com.my",
+        "professional_phone": "+60 3-3342 5555"
+      }
+    ]
+  },
+  {
+    "name": "Advanced Packaging Technology (M) Bhd",
+    "website": "https://www.advancedpack.com.my",
+    "category": "Flexible Packaging",
+    "business_profile": "Advanced Packaging Technology produces various flexible packaging materials, including foil laminates for food and industrial use.",
+    "decision_makers": [
+      {
+        "name": "Yip Zhi Hoe",
+        "title": "CFO / Director",
+        "linkedin_url": "https://my.linkedin.com/in/zhi-hoe-yip-a6980469",
+        "professional_email": "info@advancedpack.com.my",
+        "professional_phone": "+60 3-8925 7101"
+      }
+    ]
+  },
+  {
+    "name": "Lynox Industries Sdn Bhd",
+    "website": "https://www.lynox.my",
+    "category": "Precision Metal & Foil",
+    "business_profile": "Lynox provides precision metal services and distributes various aluminum products, including specialized foils.",
+    "decision_makers": [
+      {
+        "name": "Nor Farahin",
+        "title": "Management Staff",
+        "linkedin_url": "https://my.linkedin.com/in/nor-farahin-4101992aa",
+        "professional_email": "info@lynox.my",
+        "professional_phone": "+60 6-263 2222"
+      }
+    ]
+  },
+  {
+    "name": "Superb Aluminium Industries Sdn Bhd",
+    "website": "http://www.superbalum.com.my",
+    "category": "Aluminum Extrusions & Foil",
+    "business_profile": "Superb Aluminium is a manufacturer of aluminum extrusions and related products, serving the construction and engineering sectors.",
+    "decision_makers": [
+      {
+        "name": "Bryan Tan Soon Wah",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "hr@superbalum.com.my",
+        "professional_phone": "+60 3-8723 8888"
+      }
+    ]
+  },
+  {
+    "name": "Pintas Trading Sdn Bhd",
+    "website": "https://www.pintastrading.com",
+    "category": "Hardware & Packaging Distributor",
+    "business_profile": "Pintas Trading is a major distributor of hardware and packaging materials, including aluminum foil containers and trays.",
+    "decision_makers": [
+      {
+        "name": "Tan Chang Joo",
+        "title": "Director",
+        "linkedin_url": "N/A",
+        "professional_email": "info@pintastrading.com",
+        "professional_phone": "+60 4-501 2222"
+      }
+    ]
+  },
+  {
+    "name": "Lodec Asia",
+    "website": "https://lodec.asia",
+    "category": "Aluminum Supply Chain",
+    "business_profile": "Lodec Asia provides supply chain solutions for the aluminum industry, importing and distributing a wide range of aluminum semi-finished products.",
+    "decision_makers": [
+      {
+        "name": "Volker Sch\u00fctte",
+        "title": "Managing Director",
+        "linkedin_url": "N/A",
+        "professional_email": "marketing@lodec.asia",
+        "professional_phone": "+60 3-5636 1111"
+      }
+    ]
+  },
+  {
+    "name": "2S Packaging Sdn Bhd",
+    "website": "https://2spackaging.com",
+    "category": "Packaging Materials Distributor",
+    "business_profile": "2S Packaging is a one-stop supplier for packaging materials, including aluminum foil rolls and disposable containers.",
+    "decision_makers": [
+      {
+        "name": "Steve Chang",
+        "title": "Managing Director",
+        "linkedin_url": "https://my.linkedin.com/in/steve-chang-2b1b1b1b",
+        "professional_email": "sales@2spackaging.com",
+        "professional_phone": "+60 3-8941 2222"
+      }
+    ]
+  },
+  {
+    "name": "Combi Pack Sdn Bhd",
+    "website": "https://www.combi-pack.com.my",
+    "category": "Disposable Food Packaging",
+    "business_profile": "Combi Pack specializes in disposable food packaging, importing and distributing aluminum foil trays and containers.",
+    "decision_makers": [
+      {
+        "name": "Anil Kumar Kohli",
+        "title": "Director",
+        "linkedin_url": "N/A",
+        "professional_email": "info@combi-pack.com.my",
+        "professional_phone": "+60 3-8724 2222"
+      }
+    ]
+  },
+  {
+    "name": "PCA Group Sdn Bhd",
+    "website": "https://www.pcagroup.com",
+    "category": "Retail Solutions & Packaging",
+    "business_profile": "PCA Group provides retail branding and packaging solutions, utilizing various metal and plastic materials in its products.",
+    "decision_makers": [
+      {
+        "name": "Noraini Hussein",
+        "title": "Procurement Executive",
+        "linkedin_url": "https://my.linkedin.com/in/norainihussein",
+        "professional_email": "info@pcagroup.com",
+        "professional_phone": "+60 3-8925 2222"
+      }
+    ]
+  },
+  {
+    "name": "Berjayapak Sdn Bhd (L&P Global)",
+    "website": "https://www.berjayapak.com",
+    "category": "Industrial Packaging",
+    "business_profile": "Berjayapak specializes in industrial packaging solutions, including wooden and plastic pallets and protective packaging materials.",
+    "decision_makers": [
+      {
+        "name": "Lay Pheng Ooi",
+        "title": "Group CEO",
+        "linkedin_url": "https://my.linkedin.com/in/lay-pheng-ooi-berjayapak-lpglobal",
+        "professional_email": "info@berjayapak.com",
+        "professional_phone": "+60 4-501 8888"
+      }
+    ]
+  },
+  {
+    "name": "Public Packages Holdings Berhad",
+    "website": "https://www.pph.com.my",
+    "category": "Integrated Packaging",
+    "business_profile": "Public Packages is an integrated packaging company producing corrugated cartons, gift boxes, and flexible packaging materials.",
+    "decision_makers": [
+      {
+        "name": "Ranjithaa Chanthru",
+        "title": "Purchasing Executive",
+        "linkedin_url": "https://rocketreach.co/ranjithaa-chanthru-email_300674980",
+        "professional_email": "enquiry@pph.com.my",
+        "professional_phone": "+60 4-330 1111"
+      }
+    ]
+  },
+  {
+    "name": "Box-Pak (Malaysia) Berhad",
+    "website": "https://www.boxpak.com.my",
+    "category": "Corrugated Packaging",
+    "business_profile": "Box-Pak is a major manufacturer of corrugated cartons and related packaging products in Malaysia and Vietnam.",
+    "decision_makers": [
+      {
+        "name": "Asharavindran S.",
+        "title": "Purchasing Assistant",
+        "linkedin_url": "N/A",
+        "professional_email": "enquiry@boxpak.com.my",
+        "professional_phone": "+60 3-5510 2222"
+      }
+    ]
+  },
+  {
+    "name": "Daibochi Berhad",
+    "website": "https://www.daibochi.com.my",
+    "category": "Flexible Packaging",
+    "business_profile": "Daibochi, a subsidiary of Scientex, is a leading flexible packaging manufacturer serving the food and beverage industry.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Management",
+        "linkedin_url": "N/A",
+        "professional_email": "info@daibochi.com.my",
+        "professional_phone": "+60 6-231 2222"
+      }
+    ]
+  },
+  {
+    "name": "Tomypak Holdings Berhad",
+    "website": "https://tomypak.com.my",
+    "category": "Flexible Packaging",
+    "business_profile": "Tomypak is a major flexible packaging manufacturer in Malaysia, specializing in multi-layer laminates for food products.",
+    "decision_makers": [
+      {
+        "name": "Board of Directors",
+        "title": "Management",
+        "linkedin_url": "N/A",
+        "professional_email": "enquiry@tomypak.com.my",
+        "professional_phone": "+60 7-598 2222"
+      }
+    ]
+  },
+  {
+    "name": "Taisei Lamick Malaysia Sdn. Bhd.",
+    "website": "https://www.taiseilamick.com.my",
+    "category": "Flexible Packaging",
+    "business_profile": "Taisei Lamick specializes in flexible packaging solutions for liquids and powders, utilizing advanced lamination technologies.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Management",
+        "linkedin_url": "N/A",
+        "professional_email": "info@taiseilamick.com.my",
+        "professional_phone": "+60 3-5512 2222"
+      }
+    ]
+  },
+  {
+    "name": "Amcor Flexibles Malaysia",
+    "website": "https://www.amcor.com",
+    "category": "Global Packaging Leader",
+    "business_profile": "Amcor is a global leader in developing and producing responsible packaging for food, beverage, pharmaceutical, medical, and other industries.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Management",
+        "linkedin_url": "N/A",
+        "professional_email": "info.malaysia@amcor.com",
+        "professional_phone": "+60 3-3341 2222"
+      }
+    ]
+  },
+  {
+    "name": "Confoil (Malaysia) Sdn Bhd",
+    "website": "http://confoilmalaysia.com",
+    "category": "Foil Containers & Trays",
+    "business_profile": "Specialist in aluminum foil containers and trays for the food industry.",
+    "decision_makers": []
+  },
+  {
+    "name": "Eco Plus Packaging Sdn Bhd",
+    "website": "https://www.ecopluspackaging.com.my",
+    "category": "General Packaging Supplier",
+    "business_profile": "Supplier of a wide range of disposable packaging including foil and plastic containers.",
+    "decision_makers": []
+  },
+  {
+    "name": "Status Marketing Sdn Bhd",
+    "website": "http://www.status.com.my",
+    "category": "Paper & Foil Packaging",
+    "business_profile": "Distributor of food packaging materials in the Klang Valley.",
+    "decision_makers": []
+  },
+  {
+    "name": "AYL Industries Sdn Bhd",
+    "website": "https://www.aylplastic.com.my",
+    "category": "Plastic & Foil Packaging",
+    "business_profile": "Manufacturer and trader of plastic and aluminum packaging products.",
+    "decision_makers": []
+  },
+  {
+    "name": "Chu Brothers Sdn. Bhd.",
+    "website": "https://www.plasticshop.com.my",
+    "category": "Food Packaging Supplier",
+    "business_profile": "Leading food packaging supplier in Sabah, providing a variety of containers.",
+    "decision_makers": []
+  },
+  {
+    "name": "Syarikat Perniagaan Wakim Sdn Bhd",
+    "website": "https://www.plasticcontainer.com.my",
+    "category": "Disposable Packaging Wholesaler",
+    "business_profile": "One-stop supplier for affordable disposable food packaging in KL.",
+    "decision_makers": []
+  },
+  {
+    "name": "RS Peck Trading",
+    "website": "https://www.rspackaging.com.my",
+    "category": "Tissue & Packaging Supplier",
+    "business_profile": "Specializes in tissue products and food packaging solutions in KL.",
+    "decision_makers": []
+  },
+  {
+    "name": "JS Shoppu Sdn Bhd (Public Packaging)",
+    "website": "https://www.publicpackaging.com",
+    "category": "Online Packaging Shop",
+    "business_profile": "Online and offline distributor of various disposable food packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Wistron Technology Malaysia Sdn Bhd",
+    "website": "https://www.wistron.com",
+    "category": "Electronics Manufacturing",
+    "business_profile": "Major electronics manufacturer that utilizes aluminum foil in components.",
+    "decision_makers": []
+  },
+  {
+    "name": "Low's Cap Seal Sdn Bhd",
+    "website": "http://www.lowscapseal.com",
+    "category": "Sealing Solutions",
+    "business_profile": "Specializes in cap seals and liners, including aluminum induction seals.",
+    "decision_makers": []
+  },
+  {
+    "name": "Alupanorama Metals Sdn Bhd",
+    "website": "N/A",
+    "category": "Metal Trading",
+    "business_profile": "Trader of aluminum products and materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "BKM Export (M) Sdn Bhd",
+    "website": "N/A",
+    "category": "Export/Import Trading",
+    "business_profile": "Trading company involved in the export and import of aluminum products.",
+    "decision_makers": []
+  },
+  {
+    "name": "AM Alloy Industries Sdn Bhd",
+    "website": "N/A",
+    "category": "Alloy Manufacturing",
+    "business_profile": "Manufacturer of aluminum alloys and related products.",
+    "decision_makers": []
+  },
+  {
+    "name": "MLM Vision Enterprise",
+    "website": "N/A",
+    "category": "General Trading",
+    "business_profile": "Trading house for various industrial materials including foil.",
+    "decision_makers": []
+  },
+  {
+    "name": "Smile Building Material Sdn Bhd",
+    "website": "N/A",
+    "category": "Building Materials",
+    "business_profile": "Supplier of construction materials including insulation foil.",
+    "decision_makers": []
+  },
+  {
+    "name": "Uji Armada Sdn Bhd",
+    "website": "N/A",
+    "category": "Logistics & Trading",
+    "business_profile": "Company involved in shipping and material trading.",
+    "decision_makers": []
+  },
+  {
+    "name": "My Building Material Sdn Bhd",
+    "website": "N/A",
+    "category": "Building Materials",
+    "business_profile": "Distributor of building and construction materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "TSH Manufacturing Solutions Sdn Bhd",
+    "website": "N/A",
+    "category": "Manufacturing Solutions",
+    "business_profile": "Provider of manufacturing services and materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "Eindec Technology (Malaysia) Sdn Bhd",
+    "website": "N/A",
+    "category": "Technology & Engineering",
+    "business_profile": "Engineering firm using specialized aluminum products.",
+    "decision_makers": []
+  },
+  {
+    "name": "Nolato EMC Production Center Sdn Bhd",
+    "website": "https://www.nolato.com",
+    "category": "Polymer & Electronics",
+    "business_profile": "Manufacturer of electronic components using shielding foils.",
+    "decision_makers": []
+  },
+  {
+    "name": "Kyowa Packaging (M) Sdn Bhd",
+    "website": "N/A",
+    "category": "Industrial Packaging",
+    "business_profile": "Japanese-linked packaging manufacturer in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Master-Pack Group Berhad",
+    "website": "https://www.master.com.my",
+    "category": "Corrugated Packaging",
+    "business_profile": "Producer of corrugated cartons and packaging solutions in Penang.",
+    "decision_makers": []
+  },
+  {
+    "name": "HPI Resources Berhad",
+    "website": "https://www.hpi.com.my",
+    "category": "Paper & Packaging",
+    "business_profile": "Integrated paper and packaging manufacturer, part of Oji Group.",
+    "decision_makers": []
+  },
+  {
+    "name": "Ajinomoto (Malaysia) Berhad",
+    "website": "https://www.ajinomoto.com.my",
+    "category": "Food & Beverage",
+    "business_profile": "Large food company that imports foil for sachet and container packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Nestl\u00e9 (Malaysia) Berhad",
+    "website": "https://www.nestle.com.my",
+    "category": "Food & Beverage",
+    "business_profile": "Global food giant with extensive packaging needs in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Etika Sdn Bhd",
+    "website": "https://www.etika.com.my",
+    "category": "Beverages",
+    "business_profile": "Manufacturer and distributor of beverages with foil-lined packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "F&N (Fraser & Neave Holdings Bhd)",
+    "website": "https://www.fn.com.my",
+    "category": "Food & Beverage",
+    "business_profile": "Major regional food and beverage group.",
+    "decision_makers": []
+  },
+  {
+    "name": "Coca-Cola Bottlers (Malaysia) Sdn Bhd",
+    "website": "https://www.coca-cola.com.my",
+    "category": "Beverages",
+    "business_profile": "Bottling partner for Coca-Cola products in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "BP Plastics Holding Bhd",
+    "website": "https://www.bpplastic.com.my",
+    "category": "Plastic Packaging",
+    "business_profile": "Manufacturer of stretch film and plastic packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "SLP Resources Berhad",
+    "website": "http://www.slp.com.my",
+    "category": "Plastic Packaging",
+    "business_profile": "Manufacturer of high-quality plastic packaging products.",
+    "decision_makers": []
+  },
+  {
+    "name": "Great Wall Plastic Industries Berhad",
+    "website": "https://www.gwpi.com.my",
+    "category": "Plastic Packaging",
+    "business_profile": "Large flexible packaging manufacturer, part of Scientex.",
+    "decision_makers": []
+  },
+  {
+    "name": "San Miguel Yamamura Woven Products Sdn Bhd",
+    "website": "https://www.smywp.com",
+    "category": "Woven Packaging",
+    "business_profile": "Manufacturer of woven bags and foil-laminated materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "Berry Global Malaysia",
+    "website": "https://www.berryglobal.com",
+    "category": "Global Packaging",
+    "business_profile": "Multinational packaging company with manufacturing in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Sonoco Products Malaysia",
+    "website": "https://www.sonoco.com",
+    "category": "Industrial Packaging",
+    "business_profile": "Manufacturer of tubes, cores, and flexible packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Mondi Malaysia",
+    "website": "https://www.mondigroup.com",
+    "category": "Paper & Packaging",
+    "business_profile": "Global paper and packaging group with operations in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Huhtamaki Malaysia",
+    "website": "https://www.huhtamaki.com",
+    "category": "Food Packaging",
+    "business_profile": "Specialist in sustainable food packaging solutions.",
+    "decision_makers": []
+  },
+  {
+    "name": "Constantia Flexibles Malaysia",
+    "website": "https://www.cflex.com",
+    "category": "Flexible Packaging",
+    "business_profile": "Producer of flexible packaging for food and pharma.",
+    "decision_makers": []
+  },
+  {
+    "name": "CGL Packaging Malaysia",
+    "website": "N/A",
+    "category": "Industrial Packaging",
+    "business_profile": "Provider of specialized packaging services.",
+    "decision_makers": []
+  },
+  {
+    "name": "Flexopack Malaysia",
+    "website": "https://www.flexopack.com",
+    "category": "Flexible Packaging",
+    "business_profile": "Manufacturer of barrier flexible packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Winpak Malaysia",
+    "website": "https://www.winpak.com",
+    "category": "Packaging Solutions",
+    "business_profile": "Global packaging manufacturer with local supply.",
+    "decision_makers": []
+  },
+  {
+    "name": "Uflex Malaysia",
+    "website": "https://www.uflexltd.com",
+    "category": "Flexible Packaging",
+    "business_profile": "Indian multinational with operations in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Essel Propack Malaysia (EPL)",
+    "website": "https://www.eplglobal.com",
+    "category": "Tube Packaging",
+    "business_profile": "World leader in laminated plastic tubes.",
+    "decision_makers": []
+  },
+  {
+    "name": "Polycab Malaysia",
+    "website": "https://www.polycab.com",
+    "category": "Wires & Cables",
+    "business_profile": "Cable manufacturer utilizing aluminum foil for shielding.",
+    "decision_makers": []
+  },
+  {
+    "name": "Leader Cable Industry Berhad",
+    "website": "https://www.leadercable.com.my",
+    "category": "Wires & Cables",
+    "business_profile": "Prominent cable manufacturer in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Olympic Cable Company Sdn Bhd",
+    "website": "https://www.olympic-cable.com.my",
+    "category": "Wires & Cables",
+    "business_profile": "Subsidiary of OSK Holdings, major cable producer.",
+    "decision_makers": []
+  },
+  {
+    "name": "Powerwell Holdings Berhad",
+    "website": "https://www.powerwell.com.my",
+    "category": "Electrical Switchgear",
+    "business_profile": "Engineering firm using aluminum in switchgears.",
+    "decision_makers": []
+  },
+  {
+    "name": "Southern Cable Group Berhad",
+    "website": "https://www.southerncable.com.my",
+    "category": "Wires & Cables",
+    "business_profile": "Specialized cable manufacturer for various utilities.",
+    "decision_makers": []
+  },
+  {
+    "name": "Tai Kwong-Yokohama Battery Industries Sdn Bhd",
+    "website": "https://www.yokohama.my",
+    "category": "Automotive Batteries",
+    "business_profile": "Battery manufacturer using aluminum components.",
+    "decision_makers": []
+  },
+  {
+    "name": "Cheng Huat Hardware",
+    "website": "https://www.chenghuathardware.com.my",
+    "category": "Hardware Distributor",
+    "business_profile": "Retailer and wholesaler of construction hardware.",
+    "decision_makers": []
+  },
+  {
+    "name": "Insulref Sdn Bhd",
+    "website": "https://www.insulref.com.my",
+    "category": "Insulation Specialist",
+    "business_profile": "Supplier of thermal insulation materials including foil.",
+    "decision_makers": []
+  },
+  {
+    "name": "Hardware Town Sdn Bhd",
+    "website": "https://www.hardwaretown.com.my",
+    "category": "Hardware Distributor",
+    "business_profile": "Major hardware chain in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "Gls Solution Ent",
+    "website": "N/A",
+    "category": "General Trading",
+    "business_profile": "Trader of packaging and metal products.",
+    "decision_makers": []
+  },
+  {
+    "name": "NMC Products (m) Sdn. Bhd.",
+    "website": "N/A",
+    "category": "Industrial Products",
+    "business_profile": "Supplier of industrial packaging materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "Nove Metal Recycle Sdn Bhd",
+    "website": "N/A",
+    "category": "Scrap Metal & Foil",
+    "business_profile": "Collector and trader of aluminum scrap and foil.",
+    "decision_makers": []
+  },
+  {
+    "name": "Hong Yap Trading Company",
+    "website": "https://www.hongyap.com",
+    "category": "Aluminum Trading",
+    "business_profile": "Distributor and trader of aluminum foil and sheets.",
+    "decision_makers": []
+  },
+  {
+    "name": "SCGM Bhd",
+    "website": "https://www.scgm.com.my",
+    "category": "Thermoformed Packaging",
+    "business_profile": "Leading thermoformed plastic packaging manufacturer.",
+    "decision_makers": []
+  },
+  {
+    "name": "HPP Holdings Berhad",
+    "website": "https://www.hpp.com.my",
+    "category": "Paper Packaging",
+    "business_profile": "Provider of offset-printed corrugated packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "L&P Global Berhad",
+    "website": "https://www.lpglobal.com",
+    "category": "Industrial Packaging",
+    "business_profile": "Integrated industrial packaging provider.",
+    "decision_makers": []
+  },
+  {
+    "name": "Zubir Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Local distributor of food containers.",
+    "decision_makers": []
+  },
+  {
+    "name": "Ideal Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Supplier of retail and food packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Supreme Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Distributor of various packaging materials.",
+    "decision_makers": []
+  },
+  {
+    "name": "Global Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "General supplier of packaging solutions.",
+    "decision_makers": []
+  },
+  {
+    "name": "Elite Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Wholesaler of food and industrial packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Asia Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Distributor of disposable containers and foil.",
+    "decision_makers": []
+  },
+  {
+    "name": "Pacific Packaging",
+    "website": "N/A",
+    "category": "Packaging Distributor",
+    "business_profile": "Supplier of a wide range of packaging products.",
+    "decision_makers": []
+  },
+  {
+    "name": "Mega Printing & Packaging Sdn Bhd",
+    "website": "https://www.megaprint.com.my",
+    "category": "Printing & Packaging",
+    "business_profile": "Provider of customized packaging and printing.",
+    "decision_makers": []
+  },
+  {
+    "name": "Tycorn Packaging Sdn Bhd",
+    "website": "N/A",
+    "category": "Packaging Manufacturer",
+    "business_profile": "Manufacturer of industrial and food packaging.",
+    "decision_makers": []
+  },
+  {
+    "name": "Yong Wen Food Industries",
+    "website": "https://www.yongwen.com.sg",
+    "category": "Food Distribution",
+    "business_profile": "Regional food distributor with operations in Malaysia.",
+    "decision_makers": []
+  },
+  {
+    "name": "KVC Industrial Supplies",
+    "website": "https://www.kvc.com.my",
+    "category": "Industrial Distributor",
+    "business_profile": "Major distributor of industrial and electrical supplies.",
+    "decision_makers": []
+  },
+  {
+    "name": "Malaysian Packaging Industry Berhad (Maypak)",
+    "website": "N/A",
+    "category": "Flexible Packaging",
+    "business_profile": "Established flexible packaging firm, now Taisei Lamick.",
+    "decision_makers": []
+  }
+]

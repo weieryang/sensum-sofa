@@ -1,0 +1,972 @@
+[
+  {
+    "id": 1,
+    "name": "Seow Khim Polythelene Co Pte Ltd (SKP)",
+    "website": "https://www.skp.com.sg/",
+    "category": "Food Packaging Supplier",
+    "business_profile": "Largest supplier of disposable food packaging, partyware, and kitchenware in Singapore. Importer of various aluminum products including foil and containers.",
+    "decision_makers": [
+      {
+        "name": "Thomas Lim",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/in/thomas-lim-51a444264",
+        "professional_email": "sales@skp.com.sg",
+        "professional_phone": "+65 6562 6562"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "AluCont Packaging Pte. Ltd.",
+    "website": "https://alucontsg.com/",
+    "category": "Metal Packaging Solutions",
+    "business_profile": "Premier one-stop metal packaging solutions service provider in Singapore, specialized in aluminum containers and trays.",
+    "decision_makers": [
+      {
+        "name": "Earvin Y S Lim",
+        "title": "Director / Key Executive",
+        "linkedin_url": "https://sg.linkedin.com/in/yslim013",
+        "professional_email": "sales@alucont-sg.com",
+        "professional_phone": "+65 8900 3124"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sia Huat Pte Ltd",
+    "website": "https://www.siahuat.com/",
+    "category": "Foodservice Products & Kitchenware",
+    "business_profile": "Southeast Asia's leading agent and direct distributor for an extensive range of foodservice products and kitchenware.",
+    "decision_makers": [
+      {
+        "name": "Melvin Tan",
+        "title": "Director / Business Development",
+        "linkedin_url": "https://sg.linkedin.com/in/melvintanxw",
+        "professional_email": "sales@siahuat.com.sg",
+        "professional_phone": "+65 6268 3922"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Amcor Flexibles Singapore Pte Ltd",
+    "website": "https://www.amcor.com/",
+    "category": "Packaging Solutions",
+    "business_profile": "Global leader in developing and producing responsible packaging for food, beverage, pharmaceutical, medical, and other products.",
+    "decision_makers": [
+      {
+        "name": "Audrey Lee",
+        "title": "Procurement Category Manager",
+        "linkedin_url": "https://www.linkedin.com/in/lee-audrey-m928",
+        "professional_email": "audrey.lee@amcor.com",
+        "professional_phone": "+65 6265 6122"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Lip Packaging Pte Ltd",
+    "website": "https://www.lippackaging.com.sg/",
+    "category": "Food Packaging Supplier",
+    "business_profile": "Wholesaler and supplier of aluminum foil, trays, and various food packaging materials in Singapore.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/lip-packaging-pte-ltd",
+        "professional_email": "sales@lippackaging.com.sg",
+        "professional_phone": "+65 6283 8495"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "LODEC Asia Pte Ltd",
+    "website": "https://lodec.asia/",
+    "category": "Aluminum & Non-ferrous Metals Supplier",
+    "business_profile": "Specialist in the worldwide industry of non-ferrous metals, focusing on aluminum foil and industrial products.",
+    "decision_makers": [
+      {
+        "name": "Sales Team",
+        "title": "Sales Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/lodec-asia-pte-ltd",
+        "professional_email": "marketing@lodec.asia",
+        "professional_phone": "+65 6562 8850"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "SL Metals Pte Ltd",
+    "website": "http://www.slmetalsgroup.com/",
+    "category": "Aluminum Material Stockist",
+    "business_profile": "Stockist and distributor of aluminum materials, catering to a wide array of industries in Singapore.",
+    "decision_makers": [
+      {
+        "name": "C-suite Executive",
+        "title": "General Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/sl-metals-pte-ltd",
+        "professional_email": "sales@slmetalsgroup.com",
+        "professional_phone": "+65 6261 8888"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Intelorg Pte Ltd",
+    "website": "https://www.intelorg.com.sg/",
+    "category": "Aluminum Foil Supplier",
+    "business_profile": "Supplying a wide range of aluminum foils from leading manufacturers globally.",
+    "decision_makers": [
+      {
+        "name": "Sales Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/intelorg-pte-ltd",
+        "professional_email": "sales@intelorg.com.sg",
+        "professional_phone": "+65 6743 1333"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Liang Teck Plastic Pte Ltd",
+    "website": "http://www.liangteck.com/",
+    "category": "Food Packaging Importer/Distributor",
+    "business_profile": "Importer and distributor of disposable products and food packaging in Singapore.",
+    "decision_makers": [
+      {
+        "name": "Sales Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/liang-teck-plastic-pte-ltd",
+        "professional_email": "sales@liangteck.com",
+        "professional_phone": "+65 6276 6026"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Crown Asia Pacific Holdings Pte Ltd",
+    "website": "https://www.crowncork.com/",
+    "category": "Metal Packaging",
+    "business_profile": "Leading supplier of rigid metal packaging for consumer products and industrial applications.",
+    "decision_makers": [
+      {
+        "name": "Procurement Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/crown-holdings-inc-",
+        "professional_email": "info@crowncork.com",
+        "professional_phone": "+65 6229 4888"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "MC Packaging (Pte) Ltd",
+    "website": "http://www.mcpackaging.com.sg/",
+    "category": "Metal Packaging",
+    "business_profile": "Manufacturer of metal containers and packaging solutions for various industries.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/mc-packaging-pte-ltd",
+        "professional_email": "sales@mcpackaging.com.sg",
+        "professional_phone": "+65 6265 1111"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Sunward Pharmaceutical Pte Ltd",
+    "website": "http://www.sunwardpharma.com.sg/",
+    "category": "Pharmaceutical & Aluminum Foil Importer",
+    "business_profile": "Importer of aluminum foil primarily for pharmaceutical and healthcare packaging.",
+    "decision_makers": [
+      {
+        "name": "Procurement Executive",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/sunward-pharmaceutical-pte-ltd",
+        "professional_email": "info@sunwardpharma.com.sg",
+        "professional_phone": "+65 6265 6022"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Jackway Convertor Industries Pte Ltd",
+    "website": "http://www.jackway.com.sg/",
+    "category": "Flexible Packaging Manufacturer",
+    "business_profile": "Specialist in high-quality flexible packaging materials including aluminum foil laminates.",
+    "decision_makers": [
+      {
+        "name": "Procurement Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/jackway-convertor-industries-pte-ltd",
+        "professional_email": "purchase@jackway.com.sg",
+        "professional_phone": "+65 6861 6533"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hypac Packaging Pte Ltd",
+    "website": "http://www.hypacpackaging.com/",
+    "category": "Food Packaging",
+    "business_profile": "Leading supplier of food packaging solutions, including aluminum foil products.",
+    "decision_makers": [
+      {
+        "name": "Sales Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/hypac-packaging-pte-ltd",
+        "professional_email": "sales@hypacpackaging.com",
+        "professional_phone": "+65 6257 0166"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sealed Air Singapore Pte Ltd",
+    "website": "https://www.sealedair.com/",
+    "category": "Packaging Solutions",
+    "business_profile": "Global protective packaging provider, focusing on food safety and product protection.",
+    "decision_makers": [
+      {
+        "name": "Procurement Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/sealed-air-corporation",
+        "professional_email": "sales.sin@sealedair.com",
+        "professional_phone": "+65 6861 1828"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "MS Venture Pte Ltd",
+    "website": "https://www.msventure.com.sg/",
+    "category": "Plastic & Aluminum Packaging",
+    "business_profile": "Manufacturer and distributor of a wide range of food packaging containers and aluminum items.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/ms-venture-pte-ltd",
+        "professional_email": "sales@msventure.com.sg",
+        "professional_phone": "+65 6250 8888"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Pacific Packaging Pte Ltd",
+    "website": "https://www.pacificenterprise.com.sg/",
+    "category": "Food Packaging Wholesaler",
+    "business_profile": "Wholesaler and supplier of food packaging materials, including aluminum containers.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/pacific-packaging-pte-ltd",
+        "professional_email": "sales@pacificenterprise.com.sg",
+        "professional_phone": "+65 6545 1595"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Landex (Singapore) Pte Ltd",
+    "website": "https://www.landex.com.sg/",
+    "category": "Tableware & Kitchenware",
+    "business_profile": "Importer of premium tableware and kitchen equipment, including metal kitchenware.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/landex-singapore-pte-ltd",
+        "professional_email": "sales@landex.com.sg",
+        "professional_phone": "+65 6288 7700"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Chip Aik Aluminium Pte Ltd",
+    "website": "https://www.chipaik.com.sg/",
+    "category": "Aluminium Supplier & Distributor",
+    "business_profile": "Major distributor of aluminum products for engineering and building sectors.",
+    "decision_makers": [
+      {
+        "name": "Sales Manager",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/chip-aik-aluminium-pte-ltd",
+        "professional_email": "sales@chipaik.com.sg",
+        "professional_phone": "+65 6261 8888"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Yan San Metals Pte Ltd",
+    "website": "http://www.yansanmetals.com/",
+    "category": "Aluminum & Metal Supplier",
+    "business_profile": "Distributor of non-ferrous metals, specialized in aluminum sheets and foils.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/yan-san-metals-pte-ltd",
+        "professional_email": "sales@yansanmetals.com",
+        "professional_phone": "+65 6261 6666"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Kim Thye Hong Metal Co Pte Ltd",
+    "website": "http://www.kthmetal.com.sg/",
+    "category": "Aluminum Material Stockist",
+    "business_profile": "Stockist of aluminum sheets, plates, and foils for various industrial applications.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/kim-thye-hong-metal-co-pte-ltd",
+        "professional_email": "sales@kthmetal.com.sg",
+        "professional_phone": "+65 6261 1111"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Metal Establishment Pte Ltd",
+    "website": "http://www.metalest.com.sg/",
+    "category": "Aluminum Stockist",
+    "business_profile": "Supplier of aluminum products for architecture and engineering.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/metal-establishment-pte-ltd",
+        "professional_email": "sales@metalest.com.sg",
+        "professional_phone": "+65 6261 8888"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Central Mercantile Corporation (S) Ltd",
+    "website": "http://www.cmcs.com.sg/",
+    "category": "Food Packaging & Industrial Supplies",
+    "business_profile": "Distributor of food packaging and household cleaning products.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/central-mercantile-corporation-s-ltd",
+        "professional_email": "sales@cmcs.com.sg",
+        "professional_phone": "+65 6459 5477"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "HL Yong (S) Pte Ltd",
+    "website": "https://www.hlyong.com/",
+    "category": "Foodservice Trading",
+    "business_profile": "Expert in food and beverage distribution, providing metal packaging solutions to the foodservice industry.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/hl-yong-s-pte-ltd",
+        "professional_email": "info@hlyong.com",
+        "professional_phone": "+65 6266 1111"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "RAALFO (Wrap & Pack)",
+    "website": "https://raalfo.com/",
+    "category": "Aluminium Container Manufacturer",
+    "business_profile": "Leading manufacturer of aluminum containers and foil rolls in Singapore under the Wrap & Pack brand.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/raalfo",
+        "professional_email": "info@raalfo.com",
+        "professional_phone": "+65 6562 8850"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Innoware Pte Ltd",
+    "website": "https://www.innoware.com.sg/",
+    "category": "Food Packaging Solutions",
+    "business_profile": "Focuses on providing innovative and sustainable food packaging solutions.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/innoware-pte-ltd",
+        "professional_email": "sales@innoware.com.sg",
+        "professional_phone": "+65 6542 3333"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Hesed & Emet Holdings Pte Ltd",
+    "website": "https://www.hesedemet.com/",
+    "category": "Food Service Disposable & Packaging",
+    "business_profile": "One-stop shop for food service disposables, catering to specialized industries like aviation and medical.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/hesed-emet-holdings-pte-ltd",
+        "professional_email": "enquiries@hesedemet.com",
+        "professional_phone": "+65 6363 8881"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Orient Packaging (Pte) Ltd",
+    "website": "http://www.orientpackaging.com.sg/",
+    "category": "Packaging Solutions",
+    "business_profile": "Distributor and wholesaler of aluminum foil and household wrapping materials.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/orient-packaging-pte-ltd",
+        "professional_email": "info@orientpackaging.com.sg",
+        "professional_phone": "+65 6266 4855"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Senior Technology Pte Ltd",
+    "website": "https://sg.kompass.com/c/senior-technology-pte-ltd/sg012345/",
+    "category": "Packaging Wholesaler",
+    "business_profile": "Distributor of various packaging materials, including aluminum foil and polyester film.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/senior-technology-pte-ltd",
+        "professional_email": "sales@seniortech.com.sg",
+        "professional_phone": "+65 6266 4855"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Alu-Metal Singapore Pte Ltd",
+    "website": "http://www.alumetal.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Supplier of aluminum extrusions, foils, and sheets in Singapore.",
+    "decision_makers": [
+      {
+        "name": "Management Team",
+        "title": "Purchasing Manager",
+        "linkedin_url": "https://sg.linkedin.com/company/alu-metal-singapore-pte-ltd",
+        "professional_email": "sales@alumetal.com.sg",
+        "professional_phone": "+65 6562 8850"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Del-Pak Industrial Trading",
+    "website": "http://www.delpak.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Supplier of industrial packaging materials."
+  },
+  {
+    "id": 32,
+    "name": "Ezpack Pte Ltd",
+    "website": "http://www.ezpack.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of food packaging and disposable products."
+  },
+  {
+    "id": 33,
+    "name": "Favor International Pte Ltd",
+    "website": "http://www.favorinternational.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Distributor of food grade packaging."
+  },
+  {
+    "id": 34,
+    "name": "Josin Pte Ltd",
+    "website": "http://www.josin.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials and services."
+  },
+  {
+    "id": 35,
+    "name": "Kendo Trading Pte Ltd",
+    "website": "http://www.kendo.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Food packaging and disposable products wholesaler."
+  },
+  {
+    "id": 36,
+    "name": "Minwa Agencies Pte Ltd",
+    "website": "http://www.minwa.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials distributor."
+  },
+  {
+    "id": 37,
+    "name": "Packadz Pte Ltd",
+    "website": "http://www.packadz.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Food packaging solutions."
+  },
+  {
+    "id": 38,
+    "name": "Packaging Hub Pte Ltd",
+    "website": "https://www.packaginghub.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of food packaging."
+  },
+  {
+    "id": 39,
+    "name": "Sensatec Pte Ltd",
+    "website": "http://www.sensatec.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials and equipment."
+  },
+  {
+    "id": 40,
+    "name": "Splendor Innovative Pte Ltd",
+    "website": "http://www.splendorinno.com/",
+    "category": "Packaging Supplier",
+    "business_profile": "Industrial and commercial packaging."
+  },
+  {
+    "id": 41,
+    "name": "Statclean Technology Pte Ltd",
+    "website": "http://www.statclean.com/",
+    "category": "Packaging Supplier",
+    "business_profile": "Cleanroom packaging and industrial supplies."
+  },
+  {
+    "id": 42,
+    "name": "WL Packaging Industries",
+    "website": "http://www.wlpackaging.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging manufacturer and distributor."
+  },
+  {
+    "id": 43,
+    "name": "Zinnia Marketing & Services",
+    "website": "http://www.zinnia.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Food packaging and household products."
+  },
+  {
+    "id": 44,
+    "name": "Steel Industries Pte Ltd",
+    "website": "http://www.steelindustries.com.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Importer of stainless steel and aluminum kitchenware."
+  },
+  {
+    "id": 45,
+    "name": "Royal Selangor (S) Pte Ltd",
+    "website": "https://www.royalselangor.com/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Premium kitchenware and tableware retailer and importer."
+  },
+  {
+    "id": 46,
+    "name": "Gemini Catering Equipment Pte Ltd",
+    "website": "http://www.geminicatering.com.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Supplier of commercial kitchen equipment and supplies."
+  },
+  {
+    "id": 47,
+    "name": "Universal Steel Industries Pte Ltd",
+    "website": "https://universalsteel.com.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Commercial kitchen equipment supplier."
+  },
+  {
+    "id": 48,
+    "name": "Somerville (Singapore) Pte Ltd",
+    "website": "https://somerville.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Supplier of high-end kitchen equipment."
+  },
+  {
+    "id": 49,
+    "name": "Ah Seng Stainless Steel Pte Ltd",
+    "website": "http://www.ahseng.com.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Stainless steel and aluminum kitchen products."
+  },
+  {
+    "id": 50,
+    "name": "DaNeng Commercial Kitchen Equipment Specialist",
+    "website": "http://www.daneng.com.sg/",
+    "category": "Kitchenware Importer",
+    "business_profile": "Energy-efficient kitchen equipment specialist."
+  },
+  {
+    "id": 51,
+    "name": "Sam Aluminium Engineering Pte Ltd",
+    "website": "http://www.samalum.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Engineering and architectural aluminum supplier."
+  },
+  {
+    "id": 52,
+    "name": "Cladtek",
+    "website": "https://cladtek.com/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Industrial piping and cladding solutions using aluminum."
+  },
+  {
+    "id": 53,
+    "name": "Eng Hup Aluminium Glass Trading",
+    "website": "http://www.enghup.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Supplier of aluminum and glass products."
+  },
+  {
+    "id": 54,
+    "name": "Lian Huat Aluminium & Hardware Pte Ltd",
+    "website": "http://www.lianhuat.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Aluminum extrusions and hardware supplier."
+  },
+  {
+    "id": 55,
+    "name": "Regency Steel Asia Pte Ltd",
+    "website": "http://www.regencysteelasia.com/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Regional steel and aluminum distributor."
+  },
+  {
+    "id": 56,
+    "name": "Alltrust Aluminium Pte Ltd",
+    "website": "http://www.alltrustalum.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Aluminum product distribution."
+  },
+  {
+    "id": 57,
+    "name": "Alpha Metals & Marketing Pte Ltd",
+    "website": "http://www.alphametals.com.sg/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Supplier of aluminum and metal materials."
+  },
+  {
+    "id": 58,
+    "name": "Perfexa Resources Pte Ltd",
+    "website": "http://www.perfexa.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Supply chain solutions for packaging."
+  },
+  {
+    "id": 59,
+    "name": "New Modern Metal & Plastics Pte Ltd",
+    "website": "http://www.newmodern.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Manufacturer and importer of metal and plastic containers."
+  },
+  {
+    "id": 60,
+    "name": "Alfa Packaging",
+    "website": "http://www.alfapacking.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials wholesaler."
+  },
+  {
+    "id": 61,
+    "name": "Essentials (SG) Pte Ltd",
+    "website": "https://www.essentials.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "One-stop supplies for food processing consumables."
+  },
+  {
+    "id": 62,
+    "name": "Cheng Moh Huat Trading Supplier Co",
+    "website": "http://www.chengmohhuat.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of food containers and disposable items."
+  },
+  {
+    "id": 63,
+    "name": "Chin Giap Soon Trading Pte Ltd",
+    "website": "http://www.chingiapsoon.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials and disposable goods wholesaler."
+  },
+  {
+    "id": 64,
+    "name": "Tastyfood Industries (S) Pte Ltd",
+    "website": "http://www.tastyfood.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Food manufacturer that imports significant packaging materials."
+  },
+  {
+    "id": 65,
+    "name": "Tai Sun (Limmer) Seeds & Nuts",
+    "website": "https://www.taisun.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Snack food manufacturer importing aluminum foil packaging."
+  },
+  {
+    "id": 66,
+    "name": "Laser Packaging Machine Manufacturing Pte Ltd",
+    "website": "http://www.laserpackaging.com.sg/",
+    "category": "Packaging Equipment Importer",
+    "business_profile": "Importer of packaging machinery and related materials."
+  },
+  {
+    "id": 67,
+    "name": "The Packaging People SG",
+    "website": "https://www.thepackagingpeople.com.sg/",
+    "category": "Packaging Solutions",
+    "business_profile": "Custom packaging solutions provider."
+  },
+  {
+    "id": 68,
+    "name": "Stream (Ensun)",
+    "website": "https://www.stream.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging and distribution services."
+  },
+  {
+    "id": 69,
+    "name": "ABS Impex Pte Ltd",
+    "website": "http://www.absimpex.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Importer of packaging and plastic products."
+  },
+  {
+    "id": 70,
+    "name": "Acepac International (S) Pte Ltd",
+    "website": "https://www.acepac.online/",
+    "category": "Packaging Supplier",
+    "business_profile": "Global industrial packaging supplier."
+  },
+  {
+    "id": 71,
+    "name": "Aeris Dynamics Pte Ltd",
+    "website": "https://www.aerisdynamics.com/",
+    "category": "Packaging Supplier",
+    "business_profile": "Cold chain packaging solutions provider."
+  },
+  {
+    "id": 72,
+    "name": "Seo Eng Joo Frozen Food Pte Ltd",
+    "website": "http://www.seoengjoo.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Frozen food distributor importing significant aluminum trays and foil."
+  },
+  {
+    "id": 73,
+    "name": "Aero Express Logistics Pte Ltd",
+    "website": "http://www.aeroexpress.com.sg/",
+    "category": "Logistics & Packaging",
+    "business_profile": "Logistics provider specialized in aerospace and industrial packaging."
+  },
+  {
+    "id": 74,
+    "name": "Bosch Packaging Technology (Singapore) Pte Ltd",
+    "website": "https://www.syntegon.com/",
+    "category": "Packaging Equipment Importer",
+    "business_profile": "Supplier of packaging machinery and materials (Syntegon)."
+  },
+  {
+    "id": 75,
+    "name": "Yoshi Trading Pte Ltd",
+    "website": "http://www.yoshi.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Food and packaging distribution."
+  },
+  {
+    "id": 76,
+    "name": "Gan Hup Lee (1999) Pte Ltd",
+    "website": "https://www.ghl.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Rice and grains distributor importing large quantities of packaging."
+  },
+  {
+    "id": 77,
+    "name": "GHL Foods Pte Ltd",
+    "website": "https://www.ghl.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Food trading and packaging importer."
+  },
+  {
+    "id": 78,
+    "name": "Golden Bridge Foods Manufacturing Pte Ltd",
+    "website": "https://www.golden-bridge.com/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Food processing and packaging importer."
+  },
+  {
+    "id": 79,
+    "name": "Sinmah Poultry Processing (S) Pte Ltd",
+    "website": "https://www.sinmah.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Poultry processing with significant packaging imports."
+  },
+  {
+    "id": 80,
+    "name": "Sultan Burger Enterprise Pte Ltd",
+    "website": "http://www.sultanburger.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Food services with packaging import requirements."
+  },
+  {
+    "id": 81,
+    "name": "Archer Daniels Midland Singapore Pte Ltd",
+    "website": "https://www.adm.com/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Global food processing company with local packaging imports."
+  },
+  {
+    "id": 82,
+    "name": "Aries Fresh Pte Ltd",
+    "website": "http://www.ariesfresh.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Fresh produce distributor importing packaging materials."
+  },
+  {
+    "id": 83,
+    "name": "China Minzhong Food Corporation Limited",
+    "website": "http://www.minzhong.com.cn/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Food manufacturer with regional packaging logistics in Singapore."
+  },
+  {
+    "id": 84,
+    "name": "Manfu Co., Ltd Singapore",
+    "website": "http://www.manfu.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Supplier of aluminum foil and trays."
+  },
+  {
+    "id": 85,
+    "name": "CMC International (SEA) Pte ltd",
+    "website": "http://www.cmc-sea.com/",
+    "category": "Packaging Supplier",
+    "business_profile": "Industrial and commercial packaging supplier."
+  },
+  {
+    "id": 86,
+    "name": "Pow Leong Corporation Pte Ltd",
+    "website": "http://www.powleong.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Supplier of metal packaging products."
+  },
+  {
+    "id": 87,
+    "name": "Sanford Marketing Services Pte Ltd",
+    "website": "http://www.sanford.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Aluminum container and tray distributor."
+  },
+  {
+    "id": 88,
+    "name": "Gromark Consumers Enterprise Pte Ltd",
+    "website": "http://www.gromark.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of consumer packaging products."
+  },
+  {
+    "id": 89,
+    "name": "Heng Wee Packaging Pte Ltd",
+    "website": "http://www.hengwee.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesale distributor of aluminum foil and trays."
+  },
+  {
+    "id": 90,
+    "name": "Aik Moh",
+    "website": "https://www.aikmoh.com.sg/",
+    "category": "Industrial Supplies & Packaging",
+    "business_profile": "Distributor of chemicals and industrial containers."
+  },
+  {
+    "id": 91,
+    "name": "Econ Trading",
+    "website": "http://www.econ.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "General trading and packaging supplies."
+  },
+  {
+    "id": 92,
+    "name": "Hock Hin",
+    "website": "http://www.hockhin.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of disposable products."
+  },
+  {
+    "id": 93,
+    "name": "Lee Bee",
+    "website": "http://www.leebee.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Distributor of food containers."
+  },
+  {
+    "id": 94,
+    "name": "Teck Soon",
+    "website": "http://www.tecksoon.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Packaging materials wholesaler."
+  },
+  {
+    "id": 95,
+    "name": "Sin Seng",
+    "website": "http://www.sinseng.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of household and packaging goods."
+  },
+  {
+    "id": 96,
+    "name": "Yong Seng",
+    "website": "http://www.yongseng.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Food packaging materials."
+  },
+  {
+    "id": 97,
+    "name": "Ban Choon",
+    "website": "https://www.banchoon.com.sg/",
+    "category": "Packaging User/Importer",
+    "business_profile": "Major fresh produce importer with large packaging requirements."
+  },
+  {
+    "id": 98,
+    "name": "Chop Hup Hin",
+    "website": "http://www.chophuphin.com.sg/",
+    "category": "Packaging Supplier",
+    "business_profile": "Wholesaler of disposable food packaging."
+  },
+  {
+    "id": 99,
+    "name": "SL Metals (M) Sdn Bhd (Singapore branch)",
+    "website": "http://www.slmetalsgroup.com/",
+    "category": "Aluminum Supplier",
+    "business_profile": "Regional distribution office for aluminum products."
+  },
+  {
+    "id": 100,
+    "name": "Allwin (Foil container)",
+    "website": "https://www.reallwinfoilpackaging.com/",
+    "category": "Aluminium Container Manufacturer",
+    "business_profile": "Premium-grade aluminum foil containers manufacturer and supplier."
+  }
+]

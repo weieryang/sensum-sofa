@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1778485113903-k5fcrous",
+      "name": "Daily Sofa Lead Reply Monitor",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1778485113903,
+      "updatedAtMs": 1778662800078,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "tool",
+        "tool": "notify_user",
+        "args": {
+          "message": "Please check for any new replies from the compressed sofa development emails sent earlier and provide a summary of interest level and next steps."
+        }
+      },
+      "state": {
+        "nextRunAtMs": 1778749200000,
+        "lastRunAtMs": 1778662800052,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-99075431U1778479-1D80DB-7039-A7E0D0"
+      },
+      "workspacePath": "C:\\Users\\Administrator\\.accio\\accounts\\1754075431\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    },
+    {
+      "id": "cron-1778485113904-wv47cfou",
+      "name": "Daily Sofa Lead Batch Sending",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1778485113904,
+      "updatedAtMs": 1778725990026,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "Please continue the compressed sofa customer development by sending the next batch of 10 personalized emails to target importers in USA, Canada, and Australia using the Wuhan Funuo Furniture templates. Refer to the research files in the workspace.",
+        "agent": "general"
+      },
+      "state": {
+        "nextRunAtMs": 1778810400000,
+        "lastRunAtMs": 1778725989996,
+        "lastStatus": "error",
+        "lastDurationMs": 0,
+        "lastError": "cron agent runner is not initialized"
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-99075431U1778479-1D80DB-7039-A7E0D0"
+      },
+      "workspacePath": "C:\\Users\\Administrator\\.accio\\accounts\\1754075431\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    }
+  ]
+}

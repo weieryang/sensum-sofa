@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>压缩沙发自动报价工具 - Compressed Sofa Quotation Tool</title>
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --secondary-blue: #00509d;
+            --label-gray: #f2f2f2;
+            --highlight-yellow: #fff9c4;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .config-bar {
+            background: var(--label-gray);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .config-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input, select {
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
+        }
+
+        .input-panel {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--secondary-blue);
+        }
+
+        .btn-add {
+            background: #28a745;
+        }
+        .btn-add:hover {
+            background: #218838;
+        }
+
+        .quotation-panel {
+            overflow-x: auto;
+        }
+
+        .sku-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #999;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 13px;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlight {
+            background-color: var(--highlight-yellow);
+        }
+
+        .summary-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .summary-val {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .remove-btn {
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        #modelSearch {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .dropdown-list {
+            position: absolute;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            background: white;
+            border: 1px solid var(--border-color);
+            z-index: 1000;
+            display: none;
+        }
+
+        .dropdown-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        @media print {
+            .input-panel, .config-bar, .remove-btn, .btn {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>压缩沙发自动报价工具 <small style="font-size: 14px; color: #666;">Compressed Sofa Quotation Tool</small></h1>
+        <div>
+            <button class="btn" onclick="window.print()">导出 PDF / 打印</button>
+        </div>
+    </header>
+
+    <div class="config-bar">
+        <div class="config-item">
+            <label>价格等级 Price Level</label>
+            <select id="priceLevel" onchange="updateCalc()">
+                <option value="1_10">零售/小批量 (1-10件) [+10%]</option>
+                <option value="30_50">大批量 (30-50件) [-10%]</option>
+            </select>
+        </div>
+        <div class="config-item">
+            <label>利润调整 Profit Adj (%)</label>
+            <input type="number" id="profitMargin" value="0" onchange="updateCalc()">
+        </div>
+        <div class="config-item">
+            <label>汇率 Exchange Rate ($1 = )</label>
+            <input type="number" id="exchangeRate" value="7.0" step="0.01" onchange="updateCalc()">
+        </div>
+        <div class="config-item">
+            <label>当前币种 Currency</label>
+            <select id="currency" onchange="updateCalc()">
+                <option value="USD">美元 USD ($)</option>
+                <option value="RMB">人民币 RMB (¥)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <div class="input-panel">
+            <div class="form-group search-container">
+                <label>搜索型号 Search Model</label>
+                <input type="text" id="modelSearch" placeholder="输入 ID 或名称 (如 B-001 / TOGO)" oninput="filterModels()">
+                <div id="modelDropdown" class="dropdown-list"></div>
+            </div>
+
+            <div class="form-group">
+                <label>选择规格 Select Variant</label>
+                <select id="variantSelect" onchange="onVariantChange()">
+                    <option value="">-- 请先选择型号 --</option>
+                </select>
+            </div>
+
+            <div id="productInfo" style="display: none; margin-bottom: 20px; font-size: 13px; color: #666;">
+                <p>尺寸: <span id="infoSize">-</span></p>
+                <p>单重: <span id="infoWeight">-</span> KG</p>
+                <p>体积: <span id="infoCBM">-</span> CBM</p>
+                <p>单价: <span id="infoUnitPrice">-</span></p>
+            </div>
+
+            <div class="form-group">
+                <label>数量 Quantity</label>
+                <input type="number" id="qtyInput" value="1" min="1" oninput="updateCalc()">
+            </div>
+
+            <button class="btn btn-add" onclick="addToQuote()">添加到报价单 Add to List</button>
+        </div>
+
+        <div class="quotation-panel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>预览 Preview</th>
+                        <th>型号 ID</th>
+                        <th>品名 Name</th>
+                        <th>尺寸 Size</th>
+                        <th>数量 Qty</th>
+                        <th>单价 Unit Price</th>
+                        <th>总价 Total</th>
+                        <th>体积 CBM</th>
+                        <th>重量 KG</th>
+                        <th class="remove-btn">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="quoteList">
+                    <!-- Data rows will appear here -->
+                </tbody>
+            </table>
+
+            <p style="font-size: 12px; color: #888; margin-top: 10px;">
+                * 注：SKU 图片默认尝试加载同目录下 <code>images/[型号ID].jpg</code>。请确保图片文件夹名称为 "images"。
+            </p>
+
+            <div class="summary-box">
+                <div class="summary-item">
+                    <label>合计金额 Total Amount</label>
+                    <div class="summary-val" id="totalAmount">-</div>
+                </div>
+                <div class="summary-item">
+                    <label>合计体积 Total Volume</label>
+                    <div class="summary-val" id="totalCBM">-</div>
+                </div>
+                <div class="summary-item">
+                    <label>合计重量 Total Weight</label>
+                    <div class="summary-val" id="totalWeight">-</div>
+                </div>
+                <div class="summary-item">
+                    <label>40HQ 装箱预估 Loading Est.</label>
+                    <div class="summary-val" id="totalLoading">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Pre-populated data from Excel
+    const sofaData = [
+        { id: "B-001", name: "TOGO 毛毛虫", variants: [
+            { sub: "脚踏 Foot pedal", size: "84*62*36", price_1_10: 390, price_30_50: 315, cbm: 0.07056, weight: 6.5, loading: 963 },
+            { sub: "单人 Single", size: "90*101*75", price_1_10: 580, price_30_50: 470, cbm: 0.0837, weight: 13.3, loading: 812 },
+            { sub: "双人 Double", size: "130*101*75", price_1_10: 1315, price_30_50: 1065, cbm: 0.165, weight: 19, loading: 412 },
+            { sub: "多人 Multi", size: "160*101*75", price_1_10: 1575, price_30_50: 1280, cbm: 0.196, weight: 23.65, loading: 346 }
+        ]},
+        { id: "B-002", name: "DUMPLING 饺子", variants: [
+            { sub: "单人 Single", size: "90*90*70", price_1_10: 580, price_30_50: 470, cbm: 0.0837, weight: 10, loading: 812 }
+        ]},
+        { id: "B-003", name: "Washable 戚风", variants: [
+            { sub: "单人 Single", size: "80*95*70", price_1_10: 730, price_30_50: 595, cbm: 0.0837, weight: 15.55, loading: 812 },
+            { sub: "双人 Double", size: "155*100*73", price_1_10: 1600, price_30_50: 1295, cbm: 0.16, weight: 30, loading: 425 }
+        ]},
+        { id: "B-008", name: "PIEDMONT 皮埃蒙特", variants: [
+            { sub: "中号 Medium", size: "85*85*70", price_1_10: 750, price_30_50: 605, cbm: 0.099, weight: 14, loading: 686 },
+            { sub: "大号 Large", size: "100*100*70", price_1_10: 890, price_30_50: 720, cbm: 0.140875, weight: 16, loading: 482 }
+        ]},
+        { id: "B-011", name: "SOCCER 足球椅", variants: [
+            { sub: "单人 Single", size: "120*112*70", price_1_10: 1865, price_30_50: 1510, cbm: 0.153, weight: 21.1, loading: 444 },
+            { sub: "双人 Double", size: "193*108*76", price_1_10: 2420, price_30_50: 1960, cbm: 0.224, weight: 45.4, loading: 303 },
+            { sub: "多人 Multi", size: "243*108*76", price_1_10: 3500, price_30_50: 2835, cbm: 0.35, weight: 55, loading: 194 }
+        ]},
+        { id: "B-101", name: "SOFA BED 沙发床", variants: [
+            { sub: "180型", size: "180*100*70", price_1_10: 1640, price_30_50: 1330, cbm: 0.3135, weight: 39, loading: 216 },
+            { sub: "200型", size: "200*100*70", price_1_10: 1800, price_30_50: 1455, cbm: 0.35475, weight: 43.4, loading: 191 }
+        ]},
+        { id: "B-201", name: "SHARPEI 沙佩", variants: [
+            { sub: "单人 Single", size: "155*160*66", price_1_10: 1755, price_30_50: 1420, cbm: 0.295, weight: 43.45, loading: 230 },
+            { sub: "双人 Double", size: "200*160*66", price_1_10: 2420, price_30_50: 1960, cbm: 0.2695, weight: 69, loading: 252 },
+            { sub: "贵妃 Lounge", size: "255*160*66", price_1_10: 2420, price_30_50: 1960, cbm: 0.2695, weight: 69, loading: 252 }
+        ]},
+        { id: "B-302", name: "LEMMIY 莱米", variants: [
+            { sub: "脚踏 Foot", size: "90*100*37", price_1_10: 690, price_30_50: 530, cbm: 0.07056, weight: 13, loading: 963 },
+            { sub: "单人 Single", size: "92*100*72", price_1_10: 820, price_30_50: 625, cbm: 0.159, weight: 13.5, loading: 427 },
+            { sub: "双人 Double", size: "200*100*72", price_1_10: 1575, price_30_50: 1200, cbm: 0.156, weight: 28, loading: 433 }
+        ]},
+        { id: "B-306", name: "CLOUD 云沙发", variants: [
+            { sub: "单人 Single", size: "100*100*70", price_1_10: 955, price_30_50: 730, cbm: 0.25, weight: 35, loading: 272 },
+            { sub: "双人 Double", size: "200*100*70", price_1_10: 1960, price_30_50: 1500, cbm: 0.2695, weight: 50, loading: 252 },
+            { sub: "三人 Triple", size: "280*100*70", price_1_10: 2670, price_30_50: 2045, cbm: 0.352, weight: 65, loading: 193 }
+        ]},
+        { id: "B-310", name: "TOFU 豆腐块", variants: [
+            { sub: "单人 Single", size: "80*104*73", price_1_10: 660, price_30_50: 535, cbm: 0.1225, weight: 15, loading: 555 },
+            { sub: "双人 Double", size: "220*104*73", price_1_10: 1660, price_30_50: 1345, cbm: 0.281, weight: 42, loading: 241 }
+        ]}
+    ];
+
+    let currentModel = null;
+    let quoteItems = [];
+
+    function filterModels() {
+        const term = document.getElementById('modelSearch').value.toLowerCase();
+        const dropdown = document.getElementById('modelDropdown');
+        dropdown.innerHTML = '';
+        
+        if (!term) {
+            dropdown.style.display = 'none';
+            return;
+        }
+
+        const filtered = sofaData.filter(m => 
+            m.id.toLowerCase().includes(term) || m.name.toLowerCase().includes(term)
+        );
+
+        filtered.forEach(m => {
+            const div = document.createElement('div');
+            div.className = 'dropdown-item';
+            div.innerText = `${m.id} - ${m.name}`;
+            div.onclick = () => selectModel(m);
+            dropdown.appendChild(div);
+        });
+
+        dropdown.style.display = filtered.length ? 'block' : 'none';
+    }
+
+    function selectModel(model) {
+        currentModel = model;
+        document.getElementById('modelSearch').value = `${model.id} - ${model.name}`;
+        document.getElementById('modelDropdown').style.display = 'none';
+        
+        const variantSelect = document.getElementById('variantSelect');
+        variantSelect.innerHTML = '<option value="">-- 选择规格 --</option>';
+        model.variants.forEach((v, idx) => {
+            const opt = document.createElement('option');
+            opt.value = idx;
+            opt.innerText = v.sub;
+            variantSelect.appendChild(opt);
+        });
+        document.getElementById('productInfo').style.display = 'none';
+    }
+
+    function onVariantChange() {
+        const idx = document.getElementById('variantSelect').value;
+        if (idx === "") return;
+
+        const v = currentModel.variants[idx];
+        document.getElementById('productInfo').style.display = 'block';
+        document.getElementById('infoSize').innerText = v.size;
+        document.getElementById('infoWeight').innerText = v.weight;
+        document.getElementById('infoCBM').innerText = v.cbm;
+        updateCalc();
+    }
+
+    function updateCalc() {
+        const idx = document.getElementById('variantSelect').value;
+        if (idx === "" || !currentModel) return;
+
+        const v = currentModel.variants[idx];
+        const priceLevel = document.getElementById('priceLevel').value;
+        const profit = parseFloat(document.getElementById('profitMargin').value) / 100;
+        const rate = parseFloat(document.getElementById('exchangeRate').value);
+        const curr = document.getElementById('currency').value;
+
+        let basePrice = priceLevel === '1_10' ? v.price_1_10 : v.price_30_50;
+        let finalPriceRMB = basePrice * (1 + profit);
+        
+        let displayPrice;
+        if (curr === 'USD') {
+            displayPrice = (finalPriceRMB / rate).toFixed(2);
+            document.getElementById('infoUnitPrice').innerText = "$" + displayPrice;
+        } else {
+            displayPrice = finalPriceRMB.toFixed(2);
+            document.getElementById('infoUnitPrice').innerText = "¥" + displayPrice;
+        }
+
+        renderQuote();
+    }
+
+    function addToQuote() {
+        const idx = document.getElementById('variantSelect').value;
+        if (idx === "" || !currentModel) {
+            alert("请先选择型号和规格");
+            return;
+        }
+
+        const v = currentModel.variants[idx];
+        const qty = parseInt(document.getElementById('qtyInput').value);
+        const priceLevel = document.getElementById('priceLevel').value;
+        const profit = parseFloat(document.getElementById('profitMargin').value) / 100;
+        
+        const basePrice = priceLevel === '1_10' ? v.price_1_10 : v.price_30_50;
+        const finalPriceRMB = basePrice * (1 + profit);
+
+        quoteItems.push({
+            id: currentModel.id,
+            name: currentModel.name + " (" + v.sub + ")",
+            size: v.size,
+            qty: qty,
+            priceRMB: finalPriceRMB,
+            cbm: v.cbm,
+            weight: v.weight
+        });
+
+        renderQuote();
+    }
+
+    function removeItem(idx) {
+        quoteItems.splice(idx, 1);
+        renderQuote();
+    }
+
+    function renderQuote() {
+        const list = document.getElementById('quoteList');
+        const rate = parseFloat(document.getElementById('exchangeRate').value);
+        const curr = document.getElementById('currency').value;
+        
+        list.innerHTML = '';
+        let totalAmt = 0;
+        let totalCBM = 0;
+        let totalWeight = 0;
+
+        quoteItems.forEach((item, idx) => {
+            const row = document.createElement('tr');
+            const unitPrice = curr === 'USD' ? (item.priceRMB / rate) : item.priceRMB;
+            const totalPrice = unitPrice * item.qty;
+            
+            totalAmt += totalPrice;
+            totalCBM += (item.cbm * item.qty);
+            totalWeight += (item.weight * item.qty);
+
+            const symbol = curr === 'USD' ? '$' : '¥';
+            
+            // Image path logic
+            const imgPath = `images/${item.id}.jpg`;
+
+            row.innerHTML = `
+                <td>
+                    <div class="sku-img">
+                        <img src="${imgPath}" alt="N/A" onerror="this.style.display='none'; this.parentElement.innerText='No Image'" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                </td>
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.size}</td>
+                <td>${item.qty}</td>
+                <td>${symbol}${unitPrice.toFixed(2)}</td>
+                <td class="highlight">${symbol}${totalPrice.toFixed(2)}</td>
+                <td>${(item.cbm * item.qty).toFixed(3)}</td>
+                <td>${(item.weight * item.qty).toFixed(2)}</td>
+                <td><span class="remove-btn" onclick="removeItem(${idx})">移除</span></td>
+            `;
+            list.appendChild(row);
+        });
+
+        const symbol = curr === 'USD' ? '$' : '¥';
+        document.getElementById('totalAmount').innerText = symbol + totalAmt.toLocaleString(undefined, {minimumFractionDigits: 2});
+        document.getElementById('totalCBM').innerText = totalCBM.toFixed(3) + " m³";
+        document.getElementById('totalWeight').innerText = totalWeight.toFixed(2) + " kg";
+        
+        // 40HQ is approx 68CBM
+        const containers = (totalCBM / 68).toFixed(2);
+        document.getElementById('totalLoading').innerText = containers + " x 40HQ";
+    }
+
+    // Initialize with some demo item or empty
+    renderQuote();
+</script>
+
+</body>
+</html>

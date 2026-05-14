@@ -1,0 +1,11 @@
+{
+  "name": "buyer-research",
+  "version": "1.0.0",
+  "description": "Generate buyer reports",
+  "main": "index.js",
+  "dependencies": {
+    "docx": "^8.5.0",
+    "exceljs": "^4.4.0",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,462 @@
+[
+  {
+    "name": "IKEA Germany",
+    "website": "https://www.ikea.com/de/de/",
+    "category": "Furniture & Home Decor",
+    "business_profile": "World's largest furniture retailer, specializing in ready-to-assemble furniture and home accessories.",
+    "decision_maker": {
+      "name": "Jon Abrahamsson Ring",
+      "title": "CEO, Inter IKEA Group",
+      "linkedin": "https://www.linkedin.com/in/jonabrahamssonring",
+      "email": "jon.abrahamsson@inter.ikea.com",
+      "phone": "+46 476 810 00"
+    }
+  },
+  {
+    "name": "XXXLutz Group",
+    "website": "https://www.xxxlutz.de/",
+    "category": "Furniture",
+    "business_profile": "One of the largest furniture retailers in Europe, operating brands like Mömax and Poco.",
+    "decision_maker": {
+      "name": "Andreas Seifert",
+      "title": "Owner & CEO",
+      "linkedin": "https://www.linkedin.com/company/xxxlutz",
+      "email": "a.seifert@xxxlutz.com",
+      "phone": "+49 931 3595 0"
+    }
+  },
+  {
+    "name": "Otto Group",
+    "website": "https://www.ottogroup.com/",
+    "category": "Lifestyle & Furniture",
+    "business_profile": "Major German e-commerce group with significant home and living departments (Otto.de).",
+    "decision_maker": {
+      "name": "Alexander Birken",
+      "title": "Chairman of the Executive Board",
+      "linkedin": "https://www.linkedin.com/company/ottogroup",
+      "email": "alexander.birken@ottogroup.com",
+      "phone": "+49 40 6461 0"
+    }
+  },
+  {
+    "name": "Home24 SE",
+    "website": "https://www.home24.de/",
+    "category": "Online Furniture",
+    "business_profile": "Leading pure-play online furniture retailer in Europe.",
+    "decision_maker": {
+      "name": "Marc Appelhoff",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/marcappelhoff",
+      "email": "marc.appelhoff@home24.de",
+      "phone": "+49 30 60988 000"
+    }
+  },
+  {
+    "name": "Westwing Group SE",
+    "website": "https://www.westwing.de/",
+    "category": "Home Decor & Lifestyle",
+    "business_profile": "Curated shoppable lifestyle brand for home and living.",
+    "decision_maker": {
+      "name": "Andreas Hoerning",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/andreas-hoerning",
+      "email": "andreas.hoerning@westwing.de",
+      "phone": "+49 89 550 544 0"
+    }
+  },
+  {
+    "name": "DFS Furniture plc",
+    "website": "https://www.dfs.co.uk/",
+    "category": "Sofa Specialist",
+    "business_profile": "Leading retailer of sofas in the UK.",
+    "decision_maker": {
+      "name": "Tim Stacey",
+      "title": "Group CEO",
+      "linkedin": "https://www.linkedin.com/company/dfs",
+      "email": "tim.stacey@dfs.co.uk",
+      "phone": "+44 1302 330365"
+    }
+  },
+  {
+    "name": "Dunelm Group plc",
+    "website": "https://www.dunelm.com/",
+    "category": "Homeware",
+    "business_profile": "Major UK homeware retailer with wide range of soft furnishings and furniture.",
+    "decision_maker": {
+      "name": "Nick Wilkinson",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/wilkinson-nick",
+      "email": "nick.wilkinson@dunelm.com",
+      "phone": "+44 116 264 4400"
+    }
+  },
+  {
+    "name": "John Lewis & Partners",
+    "website": "https://www.johnlewis.com/",
+    "category": "Department Store",
+    "business_profile": "Premium UK department store with a strong furniture and home accessories section.",
+    "decision_maker": {
+      "name": "Nish Kankiwala",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/nish-kankiwala",
+      "email": "nish.kankiwala@johnlewis.co.uk",
+      "phone": "+44 20 7828 1000"
+    }
+  },
+  {
+    "name": "Maisons du Monde",
+    "website": "https://www.maisonsdumonde.com/",
+    "category": "Home Decor & Furniture",
+    "business_profile": "French furniture and home decor company with over 300 stores.",
+    "decision_maker": {
+      "name": "François-Melchior de Polignac",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/francois-melchior-de-polignac",
+      "email": "fm_depolignac@maisonsdumonde.com",
+      "phone": "+33 2 51 71 17 17"
+    }
+  },
+  {
+    "name": "Conforama",
+    "website": "https://www.conforama.fr/",
+    "category": "Furniture Retail",
+    "business_profile": "Major French furniture retailer, second largest in France.",
+    "decision_maker": {
+      "name": "Flavio Cotini",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/flavio-cotini-9767848584",
+      "email": "flavio.cotini@conforama.fr",
+      "phone": "+33 1 60 95 28 00"
+    }
+  },
+  {
+    "name": "BUT",
+    "website": "https://www.but.fr/",
+    "category": "Furniture Retail",
+    "business_profile": "Leading French furniture store chain.",
+    "decision_maker": {
+      "name": "Alexandre Falck",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/company/but",
+      "email": "alexandre.falck@but.fr",
+      "phone": "+33 1 64 66 10 10"
+    }
+  },
+  {
+    "name": "Roche Bobois",
+    "website": "https://www.roche-bobois.com/",
+    "category": "High-end Furniture",
+    "business_profile": "French high-end furniture retailer known for designer collaborations.",
+    "decision_maker": {
+      "name": "Guillaume Demulier",
+      "title": "Chairman of the Executive Board",
+      "linkedin": "https://www.linkedin.com/company/roche-bobois",
+      "email": "g.demulier@roche-bobois.com",
+      "phone": "+33 1 53 57 45 00"
+    }
+  },
+  {
+    "name": "Decathlon",
+    "website": "https://www.decathlon.com/",
+    "category": "Sporting Goods",
+    "business_profile": "Global sports retailer, major importer of yoga mats (HS 401691/392690).",
+    "decision_maker": {
+      "name": "Barbara Martin Coppola",
+      "title": "Global CEO",
+      "linkedin": "https://www.linkedin.com/in/barbara-martin-coppola",
+      "email": "barbara.martincoppola@decathlon.com",
+      "phone": "+33 3 20 33 50 00"
+    }
+  },
+  {
+    "name": "JYSK",
+    "website": "https://www.jysk.com/",
+    "category": "Furniture & Bedding",
+    "business_profile": "Danish retail chain selling household goods such as mattresses, furniture and interior decor.",
+    "decision_maker": {
+      "name": "Rami Jensen",
+      "title": "President & CEO",
+      "linkedin": "https://www.linkedin.com/in/ramijensen",
+      "email": "rje@jysk.com",
+      "phone": "+45 89 39 75 00"
+    }
+  },
+  {
+    "name": "Wayfair Europe",
+    "website": "https://www.wayfair.de/",
+    "category": "Online Furniture",
+    "business_profile": "Major e-commerce platform for home goods and furniture.",
+    "decision_maker": {
+      "name": "Niraj Shah",
+      "title": "CEO & Co-Founder",
+      "linkedin": "https://www.linkedin.com/in/niraj-shah-6a4a2a",
+      "email": "nshah@wayfair.com",
+      "phone": "+49 30 568 37 3000"
+    }
+  },
+  {
+    "name": "Manduka EU",
+    "website": "https://eu.manduka.com/",
+    "category": "Yoga Specialist",
+    "business_profile": "Premium yoga mat and accessory brand with extensive European distribution.",
+    "decision_maker": {
+      "name": "Pamela Levine",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/company/manduka",
+      "email": "plevine@manduka.com",
+      "phone": "+49 40 4600 000"
+    }
+  },
+  {
+    "name": "Liforme",
+    "website": "https://liforme.com/",
+    "category": "Yoga Specialist",
+    "business_profile": "UK-based high-performance yoga mat company.",
+    "decision_maker": {
+      "name": "James Armitage",
+      "title": "Founder & CEO",
+      "linkedin": "https://www.linkedin.com/company/liforme",
+      "email": "james.armitage@liforme.com",
+      "phone": "+44 20 7060 6600"
+    }
+  },
+  {
+    "name": "Yogamatters",
+    "website": "https://www.yogamatters.com/",
+    "category": "Yoga Specialty Importer",
+    "business_profile": "Leading UK online retailer and distributor of yoga equipment.",
+    "decision_maker": {
+      "name": "Twylla Taylor",
+      "title": "Managing Director",
+      "linkedin": "https://www.linkedin.com/in/twylla-taylor",
+      "email": "twylla@yogamatters.com",
+      "phone": "+44 20 8888 8588"
+    }
+  },
+  {
+    "name": "Bodynova GmbH (Bodhi Yoga)",
+    "website": "https://www.bodynova.de/",
+    "category": "Yoga & Wellness",
+    "business_profile": "Major German distributor of yoga mats and equipment under the Bodhi brand.",
+    "decision_maker": {
+      "name": "Management Team",
+      "title": "Managing Director",
+      "linkedin": "https://www.linkedin.com/company/bodynova-gmbh",
+      "email": "info@bodynova.de",
+      "phone": "+49 221 356 63 50"
+    }
+  },
+  {
+    "name": "Fatboy the Original",
+    "website": "https://www.fatboy.com/",
+    "category": "Lifestyle Seating",
+    "business_profile": "Dutch brand famous for bean bags and \"boneless\" seating, huge export to FR/DE/UK.",
+    "decision_maker": {
+      "name": "Petra Vos",
+      "title": "Former CEO / Advisor",
+      "linkedin": "https://www.linkedin.com/in/petravosutrecht",
+      "email": "petra.vos@fatboy.com",
+      "phone": "+31 73 615 4200"
+    }
+  },
+  {
+    "name": "Big Bertha Original",
+    "website": "https://www.bigberthaoriginal.com/",
+    "category": "Bean Bags & Soft Seating",
+    "business_profile": "UK-based designer and importer of bean bag sofas and chairs.",
+    "decision_maker": {
+      "name": "Mark Dolder",
+      "title": "CEO, Markaro Group",
+      "linkedin": "https://www.linkedin.com/in/mark-dolder-a3b0b514",
+      "email": "mark.dolder@markaro.com",
+      "phone": "+44 191 214 6222"
+    }
+  },
+  {
+    "name": "Bean Bag Bazaar",
+    "website": "https://www.beanbagbazaar.co.uk/",
+    "category": "Soft Seating",
+    "business_profile": "Leading UK e-commerce brand for bean bags and soft furniture.",
+    "decision_maker": {
+      "name": "Mark Dolder",
+      "title": "CEO, Markaro Group",
+      "linkedin": "https://www.linkedin.com/in/mark-dolder-a3b0b514",
+      "email": "mark.dolder@beanbagbazaar.co.uk",
+      "phone": "+44 191 214 6222"
+    }
+  },
+  {
+    "name": "Lumaland",
+    "website": "https://www.lumaland.de/",
+    "category": "Lifestyle Furniture",
+    "business_profile": "German lifestyle brand focusing on bean bags and home comfort items.",
+    "decision_maker": {
+      "name": "Management",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/company/lumaland",
+      "email": "info@lumaland.de",
+      "phone": "+49 30 120 84 100"
+    }
+  },
+  {
+    "name": "Next Home",
+    "website": "https://www.next.co.uk/",
+    "category": "Home & Fashion",
+    "business_profile": "Major UK retailer with massive home furnishings division.",
+    "decision_maker": {
+      "name": "Lord Wolfson",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/company/next",
+      "email": "simon_wolfson@next.co.uk",
+      "phone": "+44 333 777 8000"
+    }
+  },
+  {
+    "name": "La Redoute",
+    "website": "https://www.laredoute.fr/",
+    "category": "Home & Fashion",
+    "business_profile": "French e-commerce leader in fashion and home decor.",
+    "decision_maker": {
+      "name": "Philippe Berlan",
+      "title": "Former CEO",
+      "linkedin": "https://www.linkedin.com/in/philippeberlan",
+      "email": "pberlan@redoute.fr",
+      "phone": "+33 3 20 69 60 00"
+    }
+  },
+  {
+    "name": "Höffner",
+    "website": "https://www.hoeffner.de/",
+    "category": "Furniture Retail",
+    "business_profile": "Major German furniture chain.",
+    "decision_maker": {
+      "name": "Thomas Dankert",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/company/mobel-hoffner",
+      "email": "t.dankert@hoeffner.de",
+      "phone": "+49 30 37444 02"
+    }
+  },
+  {
+    "name": "Roller GmbH & Co. KG",
+    "website": "https://www.roller.de/",
+    "category": "Discount Furniture",
+    "business_profile": "Leading German discount furniture retailer.",
+    "decision_maker": {
+      "name": "Tessner Management",
+      "title": "Executive Board",
+      "linkedin": "https://www.linkedin.com/company/roller-gmbh-&-co-kg",
+      "email": "info@roller.de",
+      "phone": "+49 209 7097 0"
+    }
+  },
+  {
+    "name": "ScS",
+    "website": "https://www.scs.co.uk/",
+    "category": "Sofa & Carpet Specialist",
+    "business_profile": "Major UK sofa and carpet retailer.",
+    "decision_maker": {
+      "name": "Steve Carson",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/steve-carson-24737347",
+      "email": "steve.carson@scs.co.uk",
+      "phone": "+44 191 514 6000"
+    }
+  },
+  {
+    "name": "Alinea",
+    "website": "https://www.alinea.fr/",
+    "category": "Home Decor & Furniture",
+    "business_profile": "French lifestyle furniture chain with Mediterranean style focus.",
+    "decision_maker": {
+      "name": "Alexis Mulliez",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/alexis-mulliez-4aaba59a",
+      "email": "alexis.mulliez@alinea.fr",
+      "phone": "+33 4 42 98 00 00"
+    }
+  },
+  {
+    "name": "Vente-Unique",
+    "website": "https://www.vente-unique.com/",
+    "category": "Online Furniture",
+    "business_profile": "Leading European online furniture specialist.",
+    "decision_maker": {
+      "name": "Sacha Vigna",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/sachavigna",
+      "email": "sacha.vigna@vente-unique.com",
+      "phone": "+33 1 47 64 20 20"
+    }
+  },
+  { "name": "Mömax", "website": "https://www.moemax.de/", "category": "Furniture", "business_profile": "Trend-oriented furniture chain under XXXLutz group." },
+  { "name": "Poco Einrichtungsmärkte", "website": "https://www.poco.de/", "category": "Discount Furniture", "business_profile": "German discount furniture retailer specializing in affordable home goods." },
+  { "name": "Zurbrüggen", "website": "https://www.zurbrueggen.de/", "category": "Furniture", "business_profile": "Traditional German furniture house with multiple large centers." },
+  { "name": "Möbel Kraft", "website": "https://www.moebel-kraft.de/", "category": "Furniture", "business_profile": "Large-scale furniture retailer in Northern Germany." },
+  { "name": "Möbel Rieger", "website": "https://www.moebel-rieger.de/", "category": "Furniture", "business_profile": "Family-owned large furniture retailer in Southern Germany." },
+  { "name": "DEPOT (Gries Deco Company)", "website": "https://www.depot-online.de/", "category": "Home Accessories", "business_profile": "Leading German retailer for home decor and accessories." },
+  { "name": "Butlers", "website": "https://www.butlers.com/", "category": "Lifestyle", "business_profile": "Lifestyle retailer for home decor, tableware, and gift items." },
+  { "name": "Kare Design", "website": "https://www.kare.de/", "category": "Designer Furniture", "business_profile": "Iconic German furniture brand known for eccentric and creative designs." },
+  { "name": "Bolia", "website": "https://www.bolia.com/", "category": "Scandinavian Design", "business_profile": "Danish design brand with high presence in DE/FR/UK." },
+  { "name": "Ambiete Direct", "website": "https://www.ambientedirect.com/", "category": "Online Design Furniture", "business_profile": "High-end online retailer for designer furniture and lighting." },
+  { "name": "Connox", "website": "https://www.connox.de/", "category": "Online Design Furniture", "business_profile": "German online shop for interior design and home accessories." },
+  { "name": "Lampenwelt", "website": "https://www.lampenwelt.de/", "category": "Lighting & Decor", "business_profile": "Europe's leading online shop for lights and lamps." },
+  { "name": "Porta Möbel", "website": "https://www.porta.de/", "category": "Furniture Retail", "business_profile": "One of Germany's largest family-run furniture retailers." },
+  { "name": "Segmüller", "website": "https://www.segmueller.de/", "category": "Furniture Retail", "business_profile": "Bavarian-based giant furniture retailer." },
+  { "name": "Marks & Spencer (Home)", "website": "https://www.marksandspencer.com/", "category": "Department Store", "business_profile": "Iconic UK retailer with a respected home and furniture line." },
+  { "name": "The Range", "website": "https://www.therange.co.uk/", "category": "Discount Home", "business_profile": "Fast-growing UK home, garden, and leisure retailer." },
+  { "name": "B&M (Home)", "website": "https://www.bmstores.co.uk/", "category": "Discount Retail", "business_profile": "Variety retailer with a strong home furnishings section." },
+  { "name": "Home Bargains", "website": "https://www.homebargains.co.uk/", "category": "Discount Retail", "business_profile": "UK discount store with extensive homeware range." },
+  { "name": "Barker and Stonehouse", "website": "https://www.barkerandstonehouse.co.uk/", "category": "Furniture Retail", "business_profile": "Independent UK furniture retailer specializing in quality pieces." },
+  { "name": "Heal's", "website": "https://www.heals.com/", "category": "Designer Furniture", "business_profile": "Historic UK designer furniture retailer." },
+  { "name": "Loaf", "website": "https://loaf.com/", "category": "Sofa & Bed Specialist", "business_profile": "UK brand known for \"laid-back\" furniture and soft seating." },
+  { "name": "Sofa.com", "website": "https://www.sofa.com/", "category": "Sofa Specialist", "business_profile": "Online-focused sofa retailer with UK showrooms." },
+  { "name": "Oak Furnitureland", "website": "https://www.oakfurnitureland.co.uk/", "category": "Hardwood Furniture", "business_profile": "UK's largest hardwood furniture retailer." },
+  { "name": "Furniture Village", "website": "https://www.furniturevillage.co.uk/", "category": "Furniture Retail", "business_profile": "UK's largest independent furniture retailer." },
+  { "name": "Swoon Editions", "website": "https://www.swooneditions.com/", "category": "Online Design", "business_profile": "Direct-to-consumer designer furniture brand." },
+  { "name": "Graham & Green", "website": "https://www.grahamandgreen.co.uk/", "category": "Lifestyle Furniture", "business_profile": "Quirky UK homeware and furniture retailer." },
+  { "name": "Oliver Bonas", "website": "https://www.oliverbonas.com/", "category": "Lifestyle & Gift", "business_profile": "Lifestyle retailer with significant homeware and furniture collection." },
+  { "name": "Anthropologie UK", "website": "https://www.anthropologie.com/en-gb/", "category": "Lifestyle & Home", "business_profile": "Premium lifestyle brand with unique home decor and furniture." },
+  { "name": "Urban Outfitters (Home)", "website": "https://www.urbanoutfitters.com/en-gb/", "category": "Lifestyle", "business_profile": "Trendy retailer with a popular home decor and soft seating section." },
+  { "name": "Amara", "website": "https://www.amara.com/", "category": "Luxury Home", "business_profile": "Online luxury home fashion retailer." },
+  { "name": "Ligne Roset", "website": "https://www.ligne-roset.com/", "category": "Luxury Furniture", "business_profile": "Iconic French manufacturer and retailer of high-end seating." },
+  { "name": "Gautier", "website": "https://www.gautier.fr/", "category": "Furniture Manufacturer/Retail", "business_profile": "French designer and retailer of contemporary furniture." },
+  { "name": "ManoMano (Home)", "website": "https://www.manomano.fr/", "category": "Home Marketplace", "business_profile": "Major European marketplace for DIY and home furnishings." },
+  { "name": "Cdiscount (Home)", "website": "https://www.cdiscount.com/", "category": "General E-commerce", "business_profile": "Leading French e-commerce platform with massive furniture volume." },
+  { "name": "AM.PM (La Redoute)", "website": "https://www.laredoute.fr/am-pm.aspx", "category": "Premium Home", "business_profile": "High-end home brand within the La Redoute group." },
+  { "name": "Camif", "website": "https://www.camif.fr/", "category": "Ethical Furniture", "business_profile": "French online retailer focused on local and sustainable furniture." },
+  { "name": "Menzzo", "website": "https://www.menzzo.fr/", "category": "Online Furniture", "business_profile": "Online specialist in affordable and designer furniture." },
+  { "name": "Meuble de Qualité", "website": "https://www.meublesdequalite.fr/", "category": "Furniture Directory/Retail", "business_profile": "Platform grouping quality French furniture retailers." },
+  { "name": "Atlas", "website": "https://www.meubles-atlas.com/", "category": "Furniture Chain", "business_profile": "French furniture and decoration chain." },
+  { "name": "Fly", "website": "https://www.fly.fr/", "category": "Furniture Retail", "business_profile": "French furniture retailer focused on young and trendy styles." },
+  { "name": "Yoga Mad", "website": "https://www.mad-hq.com/", "category": "Yoga Specialist", "business_profile": "Leading UK supplier of yoga and fitness equipment." },
+  { "name": "Chin Mudra", "website": "https://www.chin-mudra.com/", "category": "Yoga Specialist", "business_profile": "French pioneer in yoga equipment and organic products." },
+  { "name": "Tayrona Yoga", "website": "https://www.tayronayoga.com/", "category": "Yoga Boutique", "business_profile": "French online boutique for eco-responsible yoga gear." },
+  { "name": "Kurma Yoga", "website": "https://kurma-yoga.com/", "category": "Yoga Manufacturer/Distributor", "business_profile": "German brand known for high-quality, sustainable yoga mats." },
+  { "name": "Baya Yoga", "website": "https://www.baya-france.com/", "category": "Yoga Design", "business_profile": "French brand specializing in colorful and high-performance mats." },
+  { "name": "Yoga Studio Store", "website": "https://www.yogastudiostore.com/", "category": "Yoga Distributor", "business_profile": "One of Europe's largest distributors of yoga brands." },
+  { "name": "EcoYoga", "website": "https://www.ecoyoga.co.uk/", "category": "Eco-Yoga Specialist", "business_profile": "UK brand focusing on jute and natural rubber yoga mats." },
+  { "name": "Complete Unity Yoga", "website": "https://completeunityyoga.com/", "category": "Yoga Gear", "business_profile": "UK-based family business creating sustainable yoga products." },
+  { "name": "Southern Shores", "website": "https://southernshores.com/", "category": "Eco-Yoga", "business_profile": "German brand focused on ocean-friendly yoga mats." },
+  { "name": "Jade Yoga (EU Distribution)", "website": "https://jadeyoga.eu/", "category": "Yoga Brand", "business_profile": "European arm of the famous natural rubber yoga mat brand." },
+  { "name": "Casall", "website": "https://www.casall.com/", "category": "Sport & Wellness", "business_profile": "Swedish brand with significant yoga mat distribution in UK/DE." },
+  { "name": "Gaiam (EU Distribution)", "website": "https://www.gaiam.com/", "category": "Yoga Brand", "business_profile": "Major global yoga brand with various European retail partners." },
+  { "name": "Hugger Mugger (EU Distribution)", "website": "https://www.huggermugger.com/", "category": "Yoga Gear", "business_profile": "Professional yoga gear distributor in Europe." },
+  { "name": "MyProtein (Accessories)", "website": "https://www.myprotein.com/", "category": "Fitness & Lifestyle", "business_profile": "Huge UK-based brand with growing yoga and home gym equipment lines." },
+  { "name": "Lotuscrafts", "website": "https://www.lotuscrafts.eu/", "category": "Yoga & Meditation", "business_profile": "Austrian brand with massive sales in Germany and France." },
+  { "name": "Great Bean Bags", "website": "https://www.greatbeanbags.com/", "category": "Soft Seating", "business_profile": "UK manufacturer and importer of custom bean bags." },
+  { "name": "Ambient Lounge", "website": "https://www.ambientlounge.com/", "category": "Luxury Soft Seating", "business_profile": "Designer bean bag and soft furniture brand active across Europe." },
+  { "name": "Extreme Lounging", "website": "https://www.extremelounging.com/", "category": "Lifestyle Seating", "business_profile": "UK-based brand of colorful indoor/outdoor bean bags." },
+  { "name": "EPS-Perlen", "website": "https://www.eps-perlen.de/", "category": "Soft Seating Components/Retail", "business_profile": "German specialist in bean bag fillings and finished seating." },
+  { "name": "Smoothy", "website": "https://www.smoothy.de/", "category": "Bean Bag Specialist", "business_profile": "Premium German brand for bean bags and lounger furniture." },
+  { "name": "Habitat France", "website": "https://www.habitat.fr/", "category": "Furniture Retail", "business_profile": "Renowned French furniture chain (now under Vente-Unique brand)." },
+  { "name": "Roche Bobois UK", "website": "https://www.roche-bobois.com/en-GB/", "category": "Luxury Furniture", "business_profile": "UK branch of the high-end French furniture retailer." },
+  { "name": "Sklum", "website": "https://www.sklum.com/", "category": "Online Design", "business_profile": "Rapidly growing European online design furniture retailer." },
+  { "name": "The Masie", "website": "https://www.themasie.com/", "category": "Lifestyle Furniture", "business_profile": "Contemporary online furniture and decor brand." },
+  { "name": "Kave Home", "website": "https://kavehome.com/", "category": "Design Furniture", "business_profile": "Spanish brand with massive expansion in FR and DE." },
+  { "name": "Kenay Home", "website": "https://kenayhome.com/", "category": "Lifestyle Decor", "business_profile": "Decor and furniture brand active in France." },
+  { "name": "Zara Home", "website": "https://www.zarahome.com/", "category": "Home Decor", "business_profile": "Inditex brand with massive home textile and small furniture volume." },
+  { "name": "H&M Home", "website": "https://www2.hm.com/en_gb/home.html", "category": "Home Decor", "business_profile": "Global fashion retailer with huge home accessories and lifestyle lines." },
+  { "name": "Primark Home", "website": "https://www.primark.com/en-gb/home", "category": "Discount Home", "business_profile": "Mass-market retailer with increasing volume in soft furnishings." },
+  { "name": "Action", "website": "https://www.action.com/", "category": "Non-food Discount", "business_profile": "Huge European discounter, major importer of yoga mats and home basics." }
+]

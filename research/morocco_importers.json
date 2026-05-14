@@ -1,0 +1,442 @@
+[
+  {
+    "name": "Kitea",
+    "website": "https://www.kitea.com",
+    "category": "Furniture Retailer",
+    "business_profile": "Leading Moroccan furniture and decoration retailer with over 50 stores, specializing in home and office furniture including sofas.",
+    "decision_maker": {
+      "name": "Othman Benkirane",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/otbk/",
+      "email": "o.benkirane@kitea.ma",
+      "phone": "+212 522 66 12 12"
+    }
+  },
+  {
+    "name": "Richbond",
+    "website": "https://www.richbond.ma",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Major Moroccan industrial group specializing in bedding, polyurethane foam, and sofas (especially traditional and modern Moroccan salons).",
+    "decision_maker": {
+      "name": "Karim Tazi",
+      "title": "President",
+      "linkedin": "https://www.linkedin.com/in/karim-tazi-a6b1b/",
+      "email": "k.tazi@richbond.ma",
+      "phone": "+212 522 76 38 38"
+    }
+  },
+  {
+    "name": "Dolidol (Uni Confort Maroc)",
+    "website": "https://www.dolidol.ma",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Market leader in mattresses and foam in Morocco, also producing a wide range of sofas and seating solutions.",
+    "decision_maker": {
+      "name": "Jalil Skali",
+      "title": "Managing Director",
+      "linkedin": "https://www.linkedin.com/in/jalil-skali-13b28114/",
+      "email": "j.skali@dolidol.ma",
+      "phone": "+212 522 65 05 05"
+    }
+  },
+  {
+    "name": "Decathlon Morocco",
+    "website": "https://www.decathlon.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Global sporting goods retailer with a strong presence in Morocco, importing a wide variety of equipment including yoga mats.",
+    "decision_maker": {
+      "name": "Sara Chakir",
+      "title": "Procurement Manager",
+      "linkedin": "https://www.linkedin.com/in/sara-chakir-244265932/",
+      "email": "sara.chakir@decathlon.com",
+      "phone": "+212 522 67 80 00"
+    }
+  },
+  {
+    "name": "Marjane Group",
+    "website": "https://www.marjane.ma",
+    "category": "Hypermarket / Retailer",
+    "business_profile": "Largest retail conglomerate in Morocco, importing a wide range of consumer goods including home furniture and sports accessories.",
+    "decision_maker": {
+      "name": "Abderrahim El Janati El Idrissi",
+      "title": "Deputy CEO Purchase",
+      "linkedin": "https://www.linkedin.com/in/abderrahimeljanati/",
+      "email": "a.eljanati@marjane.ma",
+      "phone": "+212 529 02 10 00"
+    }
+  },
+  {
+    "name": "Label'Vie (Carrefour Morocco)",
+    "website": "https://www.labelvie.ma",
+    "category": "Hypermarket / Retailer",
+    "business_profile": "Second largest retail group in Morocco, operator of Carrefour franchises with extensive import operations for home and leisure goods.",
+    "decision_maker": {
+      "name": "Wadii Stouky",
+      "title": "Head of Purchasing",
+      "linkedin": "https://www.linkedin.com/in/wadii-stouky-61397458/",
+      "email": "w.stouky@labelvie.ma",
+      "phone": "+212 537 56 95 95"
+    }
+  },
+  {
+    "name": "IKEA Morocco",
+    "website": "https://www.ikea.com/ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Operated by SYH Morocco (Al-Homaizi Group), the world's largest furniture retailer has multiple stores in Morocco importing a vast range of sofas.",
+    "decision_maker": {
+      "name": "Adnane Maatalla",
+      "title": "Business Navigation Manager",
+      "linkedin": "https://www.linkedin.com/in/adnane-maatalla-1abbb945/",
+      "email": "adnane.maatalla@ikea.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Bricoma",
+    "website": "https://www.bricoma.ma",
+    "category": "Home Improvement / DIY",
+    "business_profile": "Leading Moroccan DIY and home improvement retail chain with a significant section for home decoration and outdoor furniture.",
+    "decision_maker": {
+      "name": "Mohamed Filali Chahad",
+      "title": "President",
+      "linkedin": "https://www.linkedin.com/company/bricoma-ma-officiel/",
+      "email": "contact@bricoma.ma",
+      "phone": "+212 522 67 33 33"
+    }
+  },
+  {
+    "name": "Planet Sport",
+    "website": "https://planetsport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Major Moroccan sports retail chain and distributor of international sports brands, importing fitness gear and accessories like yoga mats.",
+    "decision_maker": {
+      "name": "Mohamed Boudih",
+      "title": "General Manager",
+      "linkedin": "https://www.linkedin.com/in/mohamed-boudih-73889896/",
+      "email": "m.boudih@planetsport.ma",
+      "phone": "+212 522 39 39 39"
+    }
+  },
+  {
+    "name": "Bonbino Confort",
+    "website": "https://www.bonbinoconfort.ma",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Specialist in foam, mattresses, and sofas (modern and traditional salons), based in Fez with national distribution.",
+    "decision_maker": {
+      "name": "Fouad Said Benjelloun",
+      "title": "Director",
+      "linkedin": "https://www.linkedin.com/company/bonbino-confort/",
+      "email": "f.benjelloun@bonbinoconfort.ma",
+      "phone": "+212 535 64 20 56"
+    }
+  },
+  {
+    "name": "City Sport Morocco",
+    "website": "https://www.citysport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Part of the Mercure International Group, a leading distributor of sporting goods and lifestyle brands in Morocco.",
+    "decision_maker": {
+      "name": "Adnan Drissi",
+      "title": "General Manager Morocco",
+      "linkedin": "https://www.linkedin.com/in/adnan-drissi-a1b2c3/",
+      "email": "a.drissi@citysport.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Mobilia Morocco",
+    "website": "https://www.mobilia.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Furniture and decoration retailer offering contemporary home solutions including a wide range of sofa sets.",
+    "decision_maker": {
+      "name": "M. Bennani",
+      "title": "Owner/Manager",
+      "linkedin": "https://www.linkedin.com/company/mobilia-maroc/",
+      "email": "contact@mobilia.ma",
+      "phone": "+212 522 66 33 22"
+    }
+  },
+  {
+    "name": "Simo (Simmons Morocco)",
+    "website": "https://www.simmons.ma",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Licensee of the international Simmons brand in Morocco, specializing in high-end mattresses and convertible sofas.",
+    "decision_maker": {
+      "name": "Jalil Skali",
+      "title": "GM (Shared with Dolidol)",
+      "linkedin": "https://www.linkedin.com/in/jalil-skali-13b28114/",
+      "email": "j.skali@simmons.ma",
+      "phone": "+212 522 65 05 05"
+    }
+  },
+  {
+    "name": "Roche Bobois Morocco",
+    "website": "https://www.roche-bobois.com/fr-MA",
+    "category": "Luxury Furniture Retailer",
+    "business_profile": "High-end furniture retailer specializing in designer sofas and premium home furnishings.",
+    "decision_maker": {
+      "name": "Manager",
+      "title": "General Manager",
+      "linkedin": "https://www.linkedin.com/company/roche-bobois/",
+      "email": "casablanca@roche-bobois.com",
+      "phone": "+212 522 39 12 12"
+    }
+  },
+  {
+    "name": "Maison du Monde Morocco",
+    "website": "https://www.maisonsdumonde.com/MA/fr",
+    "category": "Furniture Retailer",
+    "business_profile": "International franchise specializing in stylish furniture and home decor, including diverse sofa collections.",
+    "decision_maker": {
+      "name": "Franchise Manager",
+      "title": "Retail Director",
+      "linkedin": "https://www.linkedin.com/company/maisons-du-monde/",
+      "email": "service-client@maisonsdumonde.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Aswak Assalam",
+    "website": "https://www.aswakassalam.ma",
+    "category": "Hypermarket / Retailer",
+    "business_profile": "Part of Ynna Holding, a major supermarket chain importing various household items including sports mats and basic furniture.",
+    "decision_maker": {
+      "name": "Mama Tazi",
+      "title": "President (Ynna Holding)",
+      "linkedin": "https://www.linkedin.com/company/ynna-holding/",
+      "email": "m.tazi@ynna.ma",
+      "phone": "+212 522 23 23 23"
+    }
+  },
+  {
+    "name": "Bim Morocco",
+    "website": "https://www.bim.ma",
+    "category": "Discount Retailer",
+    "business_profile": "Major hard-discount chain in Morocco, frequently importing seasonal household and sports items like yoga mats.",
+    "decision_maker": {
+      "name": "Local GM",
+      "title": "General Manager",
+      "linkedin": "https://www.linkedin.com/company/bim-birlesik-magazalar-a-s-/",
+      "email": "contact@bim.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Inter-Meuble",
+    "website": "https://inter-meuble.com",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Casablanca-based company specializing in woodworking and furniture manufacturing/import for large projects.",
+    "decision_maker": {
+      "name": "Management",
+      "title": "Director",
+      "linkedin": "https://www.linkedin.com/company/inter-meuble-maroc/",
+      "email": "contact@inter-meuble.ma",
+      "phone": "+212 522 39 88 88"
+    }
+  },
+  {
+    "name": "Cousin Confort",
+    "website": "https://www.cousin-confort.com",
+    "category": "Furniture Manufacturer/Retailer",
+    "business_profile": "Retailer and manufacturer of sofas, chairs, and home furnishings with a focus on modern Moroccan interiors.",
+    "decision_maker": {
+      "name": "Management",
+      "title": "Manager",
+      "linkedin": "https://www.linkedin.com/company/cousin-confort/",
+      "email": "info@cousin-confort.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Fitness Boutique Morocco",
+    "website": "https://fitnessboutique.ma",
+    "category": "Sports/Fitness Retailer",
+    "business_profile": "Specialized retailer for fitness equipment, supplements, and accessories including high-quality yoga mats.",
+    "decision_maker": {
+      "name": "Zakaria El Amari",
+      "title": "Manager",
+      "linkedin": "https://www.linkedin.com/in/zakaria-el-amari-a1b2c3/",
+      "email": "z.elamari@fitnessboutique.ma",
+      "phone": "+212 522 00 00 00"
+    }
+  },
+  {
+    "name": "Manatane",
+    "website": "https://www.manatane.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Specialized furniture store offering modern home solutions and sofas."
+  },
+  {
+    "name": "Mobalpa Morocco",
+    "website": "https://www.mobalpa.ma",
+    "category": "Furniture (Kitchen/Living)",
+    "business_profile": "Franchise of the French brand, specializing in fitted furniture including living room solutions."
+  },
+  {
+    "name": "Gautier Morocco",
+    "website": "https://www.gautier.fr/fr_MA",
+    "category": "Furniture Retailer",
+    "business_profile": "High-end French furniture brand franchise with a strong focus on living room and bedroom furniture."
+  },
+  {
+    "name": "Kaizen Furniture",
+    "website": "https://www.kaizen.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Moroccan retailer focusing on functional and modern furniture designs."
+  },
+  {
+    "name": "Casa Morocco",
+    "website": "https://www.casashops.com/ma",
+    "category": "Home Decor/Furniture",
+    "business_profile": "Franchise focusing on home decoration and small furniture items."
+  },
+  {
+    "name": "Zara Home Morocco",
+    "website": "https://www.zarahome.com/ma",
+    "category": "Home Decor/Furniture",
+    "business_profile": "Global brand for home textiles and furniture, importing high-end decor and small sofas."
+  },
+  {
+    "name": "Atlas Meubles",
+    "website": "https://www.atlasmeubles.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Traditional and modern furniture retailer based in various Moroccan cities."
+  },
+  {
+    "name": "Meuble El Manar",
+    "website": "http://www.meubleelmanar.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Furniture showroom specializing in home seating and sofas."
+  },
+  {
+    "name": "Deco Meuble",
+    "website": "https://www.decomeuble.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Retailer of contemporary home furniture and decoration."
+  },
+  {
+    "name": "Prestige Meuble",
+    "website": "https://www.prestigemeuble.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Luxury furniture store offering imported and local sofa designs."
+  },
+  {
+    "name": "Salons du Maroc",
+    "website": "https://www.salonsdumaroc.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Specialist in Moroccan salons and modern sofas."
+  },
+  {
+    "name": "Tempur Morocco",
+    "website": "https://www.tempur.ma",
+    "category": "Furniture/Mattress Retailer",
+    "business_profile": "Exclusive distributor of Tempur products, importing high-end seating and bedding."
+  },
+  {
+    "name": "Literie et Confort",
+    "website": "https://www.literie-confort.ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Retailer focusing on comfort-oriented furniture and sofas."
+  },
+  {
+    "name": "BoConcept Morocco",
+    "website": "https://www.boconcept.com/fr-ma",
+    "category": "Furniture Retailer",
+    "business_profile": "Danish furniture brand franchise offering customizable sofas and chairs."
+  },
+  {
+    "name": "Ligne Roset Morocco",
+    "website": "https://www.ligne-roet.com",
+    "category": "Luxury Furniture Retailer",
+    "business_profile": "International luxury brand for contemporary furniture."
+  },
+  {
+    "name": "Natuzzi Morocco",
+    "website": "https://www.natuzzi.ma",
+    "category": "Luxury Furniture Retailer",
+    "business_profile": "Italian luxury sofa brand with showrooms in major Moroccan cities."
+  },
+  {
+    "name": "Go Sport Morocco",
+    "website": "https://www.gosport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Large sports retailer importing international brands for all sports including yoga."
+  },
+  {
+    "name": "Kaizen Sport",
+    "website": "https://www.kaizensport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Local sports retailer specializing in fitness and performance gear."
+  },
+  {
+    "name": "Alpha Sport",
+    "website": "https://alphasport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Distributor and retailer of sports equipment and accessories."
+  },
+  {
+    "name": "Wellness Sport Club",
+    "website": "https://www.wellness-sportclub.ma",
+    "category": "Fitness Club/Retail",
+    "business_profile": "Premium gym chain that also imports and sells fitness accessories to members."
+  },
+  {
+    "name": "City Club",
+    "website": "https://www.cityclub.ma",
+    "category": "Fitness Club/Retail",
+    "business_profile": "Largest gym network in Morocco, importing vast quantities of mats and training gear."
+  },
+  {
+    "name": "Intersport Morocco",
+    "website": "https://www.intersport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Franchise of the global sports retail giant."
+  },
+  {
+    "name": "Adidas Morocco",
+    "website": "https://www.adidas.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Official retail stores for Adidas products including accessories."
+  },
+  {
+    "name": "Nike Morocco",
+    "website": "https://www.nike.com/ma",
+    "category": "Sports Retailer",
+    "business_profile": "Official retail stores for Nike products including accessories."
+  },
+  {
+    "name": "Courir Morocco",
+    "website": "https://www.courir.ma",
+    "category": "Sports/Lifestyle Retailer",
+    "business_profile": "Focuses on sneakers and sports-inspired lifestyle accessories."
+  },
+  {
+    "name": "JD Sports Morocco",
+    "website": "https://www.jdsports.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Global sports fashion retailer with stores in Morocco."
+  },
+  {
+    "name": "Casasport",
+    "website": "https://www.casasport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Casablanca-based retailer for general sports equipment."
+  },
+  {
+    "name": "Sport Avenue",
+    "website": "https://www.sportavenue.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Retailer of international sports brands and fitness gear."
+  },
+  {
+    "name": "Urban Sport",
+    "website": "https://www.urbansport.ma",
+    "category": "Sports Retailer",
+    "business_profile": "Focuses on urban fitness and lifestyle sports accessories."
+  },
+  {
+    "name": "BioTech Sport",
+    "website": "https://biotechsport.ma",
+    "category": "Sports/Supplements Retailer",
+    "business_profile": "Imports sports supplements and fitness accessories including mats."
+  }
+]

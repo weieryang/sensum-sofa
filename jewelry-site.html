@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA JEWELS | Sculptural Fine Jewelry 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #faf9f6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-zoom:hover img { transform: scale(1.05); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #000; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="text-neutral-900">
+
+    <!-- Header -->
+    <nav class="flex justify-between items-center px-12 py-6 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="flex space-x-8 text-xs uppercase tracking-widest font-semibold">
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">About</a>
+        </div>
+        <div class="text-2xl font-bold tracking-tighter">AURA JEWELS</div>
+        <div class="flex space-x-8 text-xs uppercase tracking-widest font-semibold">
+            <a href="#" class="nav-link">Search</a>
+            <a href="#" class="nav-link">Bag (0)</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+        <div class="flex flex-col justify-center px-24 space-y-8 bg-white">
+            <h1 class="text-6xl leading-tight">Sculptural Forms, <br><span class="italic">Timeless Soul.</span></h1>
+            <p class="text-neutral-500 max-w-md leading-relaxed">Introducing the 2026 Collection: A dialogue between organic earth forms and high-density 18k gold craftsmanship.</p>
+            <div>
+                <a href="#collection" class="inline-block bg-neutral-900 text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-neutral-800 transition">Explore Collection</a>
+            </div>
+        </div>
+        <div class="bg-neutral-100 overflow-hidden hero-zoom">
+            <img src="https://sc02.alicdn.com/kf/A5b9d4d08eb9f46218fb456678bea324ec.png" alt="Sculptural Gold Necklace" class="w-full h-full object-cover transition duration-1000">
+        </div>
+    </section>
+
+    <!-- Collection Grid -->
+    <section id="collection" class="px-12 py-24">
+        <div class="flex justify-between items-end mb-16">
+            <h2 class="text-4xl">Featured Pieces</h2>
+            <a href="#" class="text-xs uppercase tracking-widest border-b border-black pb-1">View All</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Product 1 -->
+            <div class="space-y-4 group cursor-pointer">
+                <div class="aspect-square bg-white overflow-hidden">
+                    <img src="https://sc02.alicdn.com/kf/A5b9d4d08eb9f46218fb456678bea324ec.png" alt="The Baroque Statement" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="flex justify-between pt-2">
+                    <div>
+                        <h3 class="text-xl">The Baroque Statement</h3>
+                        <p class="text-neutral-400 text-sm">18k Gold & Irregular Pearl</p>
+                    </div>
+                    <span class="font-semibold">$2,450</span>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="space-y-4 group cursor-pointer">
+                <div class="aspect-square bg-white overflow-hidden">
+                    <img src="https://sc02.alicdn.com/kf/A27f1639c978c438e9eafd906417daed5y.png" alt="Sculptural Mixed Hoops" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="flex justify-between pt-2">
+                    <div>
+                        <h3 class="text-xl">Organic Mixed Hoops</h3>
+                        <p class="text-neutral-400 text-sm">Mixed Metal & Emerald Accents</p>
+                    </div>
+                    <span class="font-semibold">$1,800</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Philosophy -->
+    <section class="bg-neutral-900 text-white py-32 px-12 text-center space-y-8">
+        <h2 class="text-5xl max-w-3xl mx-auto leading-snug font-light italic">"Jewelry is not an accessory, but an extension of the body's natural geometry."</h2>
+        <p class="text-neutral-400 uppercase tracking-widest text-xs">Ethically Sourced • Artisanal Quality • Since 2026</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-12 border-t grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+        <div class="col-span-1 md:col-span-2 space-y-6">
+            <div class="text-xl font-bold tracking-tighter">AURA JEWELS</div>
+            <p class="text-neutral-500 max-w-sm">Sign up for exclusive 2026 collection previews and artisan insights.</p>
+            <div class="flex">
+                <input type="email" placeholder="Email Address" class="bg-transparent border-b border-neutral-300 py-2 focus:outline-none w-64">
+                <button class="ml-4 uppercase tracking-widest text-xs font-bold">Join</button>
+            </div>
+        </div>
+        <div class="flex flex-col space-y-3">
+            <span class="font-bold mb-2">Shop</span>
+            <a href="#" class="text-neutral-500 hover:text-black">All Jewelry</a>
+            <a href="#" class="text-neutral-500 hover:text-black">Earrings</a>
+            <a href="#" class="text-neutral-500 hover:text-black">Necklaces</a>
+        </div>
+        <div class="flex flex-col space-y-3">
+            <span class="font-bold mb-2">Social</span>
+            <a href="#" class="text-neutral-500 hover:text-black">Instagram</a>
+            <a href="#" class="text-neutral-500 hover:text-black">Pinterest</a>
+            <a href="#" class="text-neutral-500 hover:text-black">TikTok</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "Australia": [
+    {"name": "IKEA Australia", "website": "ikea.com/au", "customs": "High Volume; weekly container arrivals", "products": "Sofa beds, modular seating"},
+    {"name": "Harvey Norman", "website": "harveynorman.com.au", "customs": "High Volume; major monthly shipments", "products": "Upholstered sofas, luxury sofa beds"},
+    {"name": "Amart Furniture", "website": "amartfurniture.com.au", "customs": "High Volume; focus on value range", "products": "Compressed sofas, bean bag sofas"},
+    {"name": "Fantastic Furniture", "website": "fantasticfurniture.com.au", "customs": "High Volume; primary focus on China-sourced", "products": "Sofa-in-a-box, sofa beds"},
+    {"name": "Freedom Furniture", "website": "freedom.com.au", "customs": "High Volume; designer range", "products": "Sofa beds, bean bags"},
+    {"name": "Nick Scali", "website": "nickscali.com.au", "customs": "High Volume; premium upholstered", "products": "High-end leather and fabric sofa beds"},
+    {"name": "Kmart Australia", "website": "kmart.com.au", "customs": "Very High Frequency; flat-pack", "products": "Bean bag covers, small foldable beds"},
+    {"name": "Temple & Webster", "website": "templeandwebster.com.au", "customs": "High Frequency; diverse sourcing", "products": "Compressed sofas, bean bag chairs"},
+    {"name": "Koala Sleep Pty Ltd", "website": "koala.com", "customs": "Moderate-High Volume; specialized sofa-in-a-box", "products": "Compressed modular sofas, sofa beds"},
+    {"name": "Ecosa Group Pty Ltd", "website": "ecosa.com.au", "customs": "Moderate Volume; DTC specialist", "products": "Compressed sofas, sofa beds"}
+  ]
+}
