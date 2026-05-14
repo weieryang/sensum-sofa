@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compact Sofa & Foam Product Catalog | Professional OEM/ODM Service</title>
+    <title>FUNUO | Professional Compressed Sofa Catalog 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -13,256 +13,335 @@
         }
         .header-blue { background-color: var(--brand-blue); }
         .label-gray { color: #6b7280; font-size: 0.875rem; }
-        .highlight-data { background-color: var(--highlight-yellow); padding: 2px 4px; border-radius: 4px; font-weight: bold; }
-        .product-card { transition: transform 0.2s; border: 1px solid #e5e7eb; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .highlight-data { background-color: var(--highlight-yellow); padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .product-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #e5e7eb; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); border-color: var(--brand-blue); }
+        .price-badge { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-50 text-slate-900 font-sans">
 
     <!-- Navigation -->
-    <nav class="header-blue text-white p-4 sticky top-0 z-50 shadow-md">
+    <nav class="header-blue text-white p-5 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tight">FOAM MASTER SOLUTIONS</h1>
-            <div class="space-x-6 hidden md:flex">
-                <a href="#catalog" class="hover:text-yellow-200">Product Catalog</a>
-                <a href="#logistics" class="hover:text-yellow-200">Logistics Info</a>
-                <a href="#contact" class="hover:text-yellow-200">Request Quote</a>
+            <div class="flex items-center gap-3">
+                <div class="bg-white text-blue-900 font-black px-2 py-1 rounded text-xl">FN</div>
+                <h1 class="text-xl font-bold tracking-tight uppercase">FUNUO SOLUTIONS</h1>
             </div>
-            <button class="bg-yellow-400 text-blue-900 px-4 py-2 rounded font-bold hover:bg-yellow-300 transition">Download PDF</button>
+            <div class="space-x-8 hidden lg:flex text-sm font-medium tracking-wide">
+                <a href="#catalog" class="hover:text-yellow-200 transition">PRODUCT LINEUP</a>
+                <a href="#tech" class="hover:text-yellow-200 transition">COMPRESSION TECH</a>
+                <a href="#contact" class="hover:text-yellow-200 transition">PARTNERSHIP</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <select id="global-currency" class="bg-blue-800 text-white text-xs border-none rounded p-1 focus:ring-0" onchange="renderCatalog()">
+                    <option value="USD">USD ($)</option>
+                    <option value="RMB">RMB (¥)</option>
+                </select>
+                <button class="bg-yellow-400 text-blue-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-yellow-300 transition shadow-md">Download Full Price List</button>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-white py-12 border-b">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">Professional Compact Sofa & Foam OEM</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Specializing in high-density vacuum-compressed sofas. Reduce shipping costs by up to 60% with our advanced packaging technology.</p>
-            <div class="mt-8 flex justify-center gap-4">
-                <span class="flex items-center gap-2 text-sm font-medium border px-3 py-1 rounded-full bg-blue-50 text-blue-700">CertiPUR-US® Certified</span>
-                <span class="flex items-center gap-2 text-sm font-medium border px-3 py-1 rounded-full bg-blue-50 text-blue-700">BS5852 / CA117 Compliant</span>
+    <!-- Hero -->
+    <header class="bg-white py-16 border-b relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-black text-blue-900 mb-6 leading-tight">High-Density Foam Furniture <br><span class="text-blue-600">Optimized for Global Export.</span></h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">Wuhan Funuo Furniture Co., Ltd. specializes in vacuum-compressed sofa solutions. Our proprietary foam rebound technology ensures 100% recovery after months of trans-oceanic transit.</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-slate-100 px-4 py-2 rounded-lg border flex items-center gap-2">
+                        <span class="text-green-600 font-bold">✓</span> <span class="text-sm font-semibold">CertiPUR-US® Certified</span>
+                    </div>
+                    <div class="bg-slate-100 px-4 py-2 rounded-lg border flex items-center gap-2">
+                        <span class="text-green-600 font-bold">✓</span> <span class="text-sm font-semibold">BS5852 / CA117 Fire Retardant</span>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-blue-50 -skew-x-12 translate-x-1/4 hidden lg:block"></div>
     </header>
 
-    <!-- Catalog Filters -->
-    <section id="catalog" class="py-8 bg-white border-b">
-        <div class="container mx-auto px-4 flex flex-wrap gap-4 items-center">
-            <span class="font-bold text-gray-700">Filter by:</span>
-            <select class="border p-2 rounded bg-gray-50"><option>All Categories</option><option>Compressed Sofas</option><option>Industrial Foam</option></select>
-            <select class="border p-2 rounded bg-gray-50"><option>Density: High to Low</option><option>Density: Low to High</option></select>
-            <div class="ml-auto flex items-center gap-2">
-                <span class="text-sm label-gray">Currency:</span>
-                <select id="currency-select" class="border p-1 rounded text-sm bg-gray-50" onchange="updatePrices()">
-                    <option value="USD">USD ($)</option>
-                    <option value="EUR">EUR (€)</option>
-                    <option value="GBP">GBP (£)</option>
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-16 container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+                <h3 class="text-3xl font-bold text-blue-900 mb-2">2026 Collection</h3>
+                <p class="text-slate-500">Real-time tiered pricing based on order volume.</p>
+            </div>
+            <div class="flex gap-4 w-full md:w-auto">
+                <input type="text" id="search-input" placeholder="Search by model (e.g. FN-001)..." class="flex-1 md:w-64 border p-3 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none" oninput="renderCatalog()">
+                <select id="category-filter" class="border p-3 rounded-xl bg-white outline-none" onchange="renderCatalog()">
+                    <option value="all">All Categories</option>
+                    <option value="single">Single Seats</option>
+                    <option value="sofabed">Sofa Beds</option>
+                    <option value="modular">Modular Systems</option>
                 </select>
             </div>
         </div>
+
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Dynamic Content -->
+        </div>
     </section>
 
-    <!-- Product Grid -->
-    <main class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Product Card 1 -->
-            <div class="product-card bg-white rounded-lg overflow-hidden">
-                <div class="h-64 bg-gray-200 flex items-center justify-center relative">
-                    <span class="text-gray-400">Product Image (1:1)</span>
-                    <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Best Seller</div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">CS-01 Cloud Comfort Sofa</h3>
-                    <p class="text-sm text-gray-500 mb-4 italic">Modern 3-seater with vacuum-compressed high-rebound foam.</p>
-                    
-                    <div class="space-y-2 mb-6">
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Foam Density</span>
-                            <span class="font-medium text-sm">35 kg/m³ (D35)</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Fabric</span>
-                            <span class="font-medium text-sm">Breathable Linen-Touch</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Recovery Time</span>
-                            <span class="font-medium text-sm">24 - 48 Hours</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Loading Capacity</span>
-                            <span class="highlight-data text-xs">280 Units / 40'HQ</span>
-                        </div>
+    <!-- Logistics Advantage -->
+    <section id="tech" class="bg-blue-900 text-white py-20 mt-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h3 class="text-4xl font-black leading-tight">The Funuo <br>Logistics Edge</h3>
+                <p class="text-blue-200 text-lg">Our vacuum compression technology reduces shipping volume by up to 85%. For retailers, this translates to significantly lower landed costs and higher warehouse efficiency.</p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <span class="text-yellow-400 text-3xl font-bold block mb-1">800+</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-300">Units per 40'HQ</span>
                     </div>
-
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold">Estimated FOB Price:</span>
-                            <span class="text-lg font-black text-blue-700 price-value" data-base-usd="125">$125.00</span>
-                        </div>
-                        <input type="range" min="10" max="500" value="100" step="10" class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer" oninput="calculatePrice(this, 'price-1')">
-                        <div class="flex justify-between text-xs label-gray mt-1">
-                            <span>MOQ: 10</span>
-                            <span id="qty-1">Qty: 100 units</span>
-                        </div>
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <span class="text-yellow-400 text-3xl font-bold block mb-1">100%</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-300">Rebound Rate</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Product Card 2 -->
-            <div class="product-card bg-white rounded-lg overflow-hidden">
-                <div class="h-64 bg-gray-200 flex items-center justify-center relative">
-                    <span class="text-gray-400">Product Image (1:1)</span>
-                    <div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Eco-Friendly</div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">FM-75 Memory Gel Layer</h3>
-                    <p class="text-sm text-gray-500 mb-4 italic">Cooling gel-infused memory foam for premium topper markets.</p>
-                    
-                    <div class="space-y-2 mb-6">
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Density Type</span>
-                            <span class="font-medium text-sm">Visco Elastic (D50)</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Airflow Tech</span>
-                            <span class="font-medium text-sm">Open-Cell Structure</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Certifications</span>
-                            <span class="font-medium text-sm">CertiPUR-US / OEKO-TEX</span>
-                        </div>
-                        <div class="flex justify-between border-b pb-1">
-                            <span class="label-gray">Roll-Pack Dim.</span>
-                            <span class="highlight-data text-xs">35x35x105 cm</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold">Estimated FOB Price:</span>
-                            <span class="text-lg font-black text-blue-700 price-value" data-base-usd="45">$45.00</span>
-                        </div>
-                        <input type="range" min="50" max="1000" value="200" step="50" class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer" oninput="calculatePrice(this, 'price-2')">
-                        <div class="flex justify-between text-xs label-gray mt-1">
-                            <span>MOQ: 50</span>
-                            <span id="qty-2">Qty: 200 units</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product Card 3 (Placeholder for more) -->
-            <div class="border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center p-8 text-center text-gray-400">
-                <svg class="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-                <p>Add More Products via Data Integration</p>
-                <button class="mt-4 text-blue-600 hover:underline">Import Excel Data</button>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Logistics Efficiency Visualization -->
-    <section id="logistics" class="py-16 bg-blue-900 text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Logistics Efficiency: Compressed vs Traditional</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/20">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-yellow-400 text-blue-900 px-2 py-0.5 rounded text-sm">PRO</span> Margin Comparison
+                </h4>
                 <div class="space-y-6">
-                    <div class="p-6 bg-blue-800 rounded-lg">
-                        <h4 class="text-yellow-400 font-bold mb-2">Traditional Packaging</h4>
-                        <p class="text-sm text-blue-100">Only 80 units per 40'HQ. High dead-space costs.</p>
-                        <div class="w-full bg-blue-950 h-4 mt-4 rounded-full overflow-hidden">
-                            <div class="bg-red-400 h-full" style="width: 25%"></div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2"><span>Standard Sofa (Non-Compressed)</span> <span class="font-bold">82 Units / 40'HQ</span></div>
+                        <div class="w-full bg-blue-950 h-3 rounded-full overflow-hidden">
+                            <div class="bg-slate-400 h-full w-[10%]"></div>
                         </div>
                     </div>
-                    <div class="p-6 bg-blue-800 rounded-lg">
-                        <h4 class="text-yellow-400 font-bold mb-2">Vacuum Compressed (Ours)</h4>
-                        <p class="text-sm text-blue-100">Up to 300 units per 40'HQ. Save 3.5x on ocean freight.</p>
-                        <div class="w-full bg-blue-950 h-4 mt-4 rounded-full overflow-hidden">
-                            <div class="bg-green-400 h-full" style="width: 95%"></div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2"><span class="text-yellow-400 font-bold">Funuo Compressed Sofa</span> <span class="font-bold">812 Units / 40'HQ</span></div>
+                        <div class="w-full bg-blue-950 h-3 rounded-full overflow-hidden">
+                            <div class="bg-yellow-400 h-full w-[95%]"></div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center md:text-left">
-                    <h3 class="text-4xl font-black mb-4 underline decoration-yellow-400">Reduce $1,200+ per Unit</h3>
-                    <p class="text-blue-200">Our compression technology doesn't just save space; it expands your profit margins by reducing the "air" you pay to ship.</p>
+                    <p class="text-xs text-blue-300 mt-4 italic">* Based on Model FN-001A dimensions. Savings of over $15 per unit in ocean freight alone.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold mb-4 border-b border-gray-700 pb-2">FOAM MASTER</h4>
-                <p class="text-sm text-gray-400">Leading OEM partner for global furniture retailers. Since 2008.</p>
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-slate-800 pb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-blue-600 text-white font-black px-2 py-1 rounded text-lg">FN</div>
+                    <span class="text-xl font-bold tracking-tighter">FUNUO</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">Global leader in compressed foam furniture OEM/ODM. Based in Wuhan, China.</p>
             </div>
             <div>
-                <h4 class="font-bold mb-4 border-b border-gray-700 pb-2">Compliance</h4>
-                <ul class="text-sm text-gray-400 space-y-2">
-                    <li>- CertiPUR-US® Certified</li>
-                    <li>- Standard 100 by OEKO-TEX®</li>
-                    <li>- Fire Retardant: BS5852, CA117</li>
+                <h5 class="font-bold mb-6 text-slate-200">Contact Sales</h5>
+                <p class="text-sm text-slate-400 mb-2">tangkelian@weieryang.com</p>
+                <p class="text-sm text-slate-400">+86 18694073158</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 text-slate-200">Compliance</h5>
+                <ul class="text-sm text-slate-400 space-y-3">
+                    <li>- CertiPUR-US® Foam</li>
+                    <li>- OEKO-TEX Standard 100</li>
+                    <li>- California TB117-2013</li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-4 border-b border-gray-700 pb-2">Contact Sales</h4>
-                <p class="text-sm text-gray-400">WhatsApp: +86 1XX XXXX XXXX</p>
-                <p class="text-sm text-gray-400">Email: sales@foammaster.com</p>
-                <button class="mt-4 w-full bg-blue-600 p-2 rounded font-bold hover:bg-blue-500">Request Custom Sample</button>
+                <h5 class="font-bold mb-6 text-slate-200">Quick Tools</h5>
+                <button class="w-full bg-slate-800 hover:bg-slate-700 p-3 rounded-lg text-sm transition text-left mb-3">Request Custom Samples</button>
+                <button class="w-full bg-slate-800 hover:bg-slate-700 p-3 rounded-lg text-sm transition text-left">Freight Calculator</button>
             </div>
         </div>
-        <div class="text-center mt-12 text-xs text-gray-600 border-t border-gray-800 pt-8">
-            © 2026 Foam Master Solutions. All Rights Reserved. | Generated by Accio Work.
+        <div class="text-center pt-8 text-xs text-slate-600">
+            © 2026 Wuhan Funuo Furniture Co., Ltd. | Managed by Accio Intelligence.
         </div>
     </footer>
 
     <script>
-        const exchangeRates = {
-            USD: 1,
-            EUR: 0.92,
-            GBP: 0.79
-        };
+        const products = [
+            {
+                model: 'FN-001A',
+                category: 'single',
+                name_en: 'Cloud Single',
+                name_cn: '单人云朵沙发',
+                size: '90*101*75',
+                packing_size: '30*30*93',
+                loading_40hq: 812,
+                weight: 13.3,
+                price_usd: [70.59, 67.65, 61.76],
+                price_rmb: [480, 460, 420],
+                tags: ['Best Seller', 'High Rebound']
+            },
+            {
+                model: 'FN-002',
+                category: 'single',
+                name_en: 'Dumpling Chair',
+                name_cn: '饺子单人位',
+                size: '90*90*70',
+                packing_size: '30*30*93',
+                loading_40hq: 812,
+                weight: 10,
+                price_usd: [70.59, 66.18, 60.29],
+                price_rmb: [480, 450, 410],
+                tags: ['Ergonomic']
+            },
+            {
+                model: 'FN-008A',
+                category: 'single',
+                name_en: 'Piedmont Lounge',
+                name_cn: '皮埃蒙特',
+                size: '85*85*75',
+                packing_size: '30*30*110',
+                loading_40hq: 687,
+                weight: 14,
+                price_usd: [86.76, 80.88, 70.59],
+                price_rmb: [590, 550, 480],
+                tags: ['Sculptural']
+            },
+            {
+                model: 'FN-009A',
+                category: 'single',
+                name_en: 'Sun Chair (M)',
+                name_cn: '太阳椅中号',
+                size: '80*80*52',
+                packing_size: '30*30*100',
+                loading_40hq: 756,
+                weight: 10,
+                price_usd: [86.76, 83.82, 80.88],
+                price_rmb: [590, 570, 550],
+                tags: ['Compact']
+            },
+            {
+                model: 'FN-104',
+                category: 'sofabed',
+                name_en: 'Fold-out Guest Bed',
+                name_cn: '折叠沙发床',
+                size: '200*83*64',
+                packing_size: '35*35*110',
+                loading_40hq: 505,
+                weight: 28,
+                price_usd: [161.76, 144.12, 110.29],
+                price_rmb: [1100, 980, 750],
+                tags: ['Multifunctional']
+            },
+            {
+                model: 'FN-202A',
+                category: 'modular',
+                name_en: 'Modular Infinite',
+                name_cn: '模块沙发',
+                size: '275*185*62',
+                packing_size: '39*39*115*2',
+                loading_40hq: 180,
+                weight: 55,
+                price_usd: [250.00, 232.35, 202.21],
+                price_rmb: [1700, 1580, 1375],
+                tags: ['L-Shape', 'Premium']
+            },
+            {
+                model: 'FN-013',
+                category: 'single',
+                name_en: "Mom's Arms",
+                name_cn: '妈妈的怀抱',
+                size: '102*117*91',
+                packing_size: '50*50*100',
+                loading_40hq: 272,
+                weight: 30.7,
+                price_usd: [183.82, 173.53, 158.82],
+                price_rmb: [1250, 1180, 1080],
+                tags: ['Comfort Focus']
+            },
+            {
+                model: 'FN-301A',
+                category: 'modular',
+                name_en: 'Moon Curve Sofa',
+                name_cn: '月亮组合',
+                size: '240*102*66',
+                packing_size: '30*30*100+35',
+                loading_40hq: 295,
+                weight: 36,
+                price_usd: [197.35, 194.12, 191.18],
+                price_rmb: [1342, 1320, 1300],
+                tags: ['Organic Shape']
+            }
+        ];
 
-        function calculatePrice(input, id) {
-            const qty = input.value;
-            const container = input.closest('.p-6');
-            const qtyLabel = container.querySelector('[id^="qty-"]');
-            const priceLabel = container.querySelector('.price-value');
-            const baseUsd = parseFloat(priceLabel.dataset.baseUsd);
-            
-            // Tiered pricing logic
-            let discount = 1;
-            if (qty > 300) discount = 0.85;
-            else if (qty > 100) discount = 0.9;
-            
-            qtyLabel.innerText = `Qty: ${qty} units`;
-            
-            const currentCurrency = document.getElementById('currency-select').value;
-            const finalPrice = (baseUsd * discount * exchangeRates[currentCurrency]).toFixed(2);
-            
-            const symbol = currentCurrency === 'USD' ? '$' : (currentCurrency === 'EUR' ? '€' : '£');
-            priceLabel.innerText = `${symbol}${finalPrice}`;
+        function renderCatalog() {
+            const grid = document.getElementById('product-grid');
+            const search = document.getElementById('search-input').value.toLowerCase();
+            const category = document.getElementById('category-filter').value;
+            const currency = document.getElementById('global-currency').value;
+            const symbol = currency === 'USD' ? '$' : '¥';
+
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p => {
+                const matchesSearch = p.model.toLowerCase().includes(search) || p.name_en.toLowerCase().includes(search);
+                const matchesCategory = category === 'all' || p.category === category;
+                return matchesSearch && matchesCategory;
+            });
+
+            filtered.forEach((p, idx) => {
+                const card = document.createElement('div');
+                card.className = 'product-card bg-white rounded-3xl overflow-hidden flex flex-col';
+                
+                const prices = currency === 'USD' ? p.price_usd : p.price_rmb;
+
+                card.innerHTML = `
+                    <div class="h-64 bg-slate-100 flex items-center justify-center relative group">
+                        <span class="text-slate-300 font-bold text-lg">${p.model}</span>
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            ${p.tags.map(t => `<span class="bg-white/90 backdrop-blur-sm text-[10px] px-2 py-0.5 rounded-full font-bold shadow-sm uppercase tracking-tighter">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="font-black text-blue-900 leading-tight">${p.name_en}</h4>
+                                <p class="text-xs text-slate-400 font-medium">${p.model} | ${p.name_cn}</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6 flex-1">
+                            <div class="flex justify-between text-xs pb-2 border-b border-slate-50">
+                                <span class="text-slate-400">Dimensions</span>
+                                <span class="font-bold text-slate-700">${p.size} cm</span>
+                            </div>
+                            <div class="flex justify-between text-xs pb-2 border-b border-slate-50">
+                                <span class="text-slate-400">Packing Size</span>
+                                <span class="font-bold text-slate-700">${p.packing_size} cm</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-slate-400">Loading (40'HQ)</span>
+                                <span class="highlight-data text-blue-800 text-[10px]">${p.loading_40hq} Units</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-[10px] font-bold uppercase text-slate-400 tracking-widest">Sample Price</span>
+                                <span class="text-xl font-black text-blue-700">${symbol}${prices[0].toFixed(2)}</span>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex justify-between text-[10px] text-slate-500">
+                                    <span>21-100 Sets:</span>
+                                    <span class="font-bold">${symbol}${prices[1].toFixed(2)}</span>
+                                </div>
+                                <div class="flex justify-between text-[10px] text-blue-600 font-bold">
+                                    <span>Bulk (40'HQ):</span>
+                                    <span class="bg-blue-100 px-1 rounded">${symbol}${prices[2].toFixed(2)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
         }
 
-        function updatePrices() {
-            const priceLabels = document.querySelectorAll('.price-value');
-            const currency = document.getElementById('currency-select').value;
-            const symbol = currency === 'USD' ? '$' : (currency === 'EUR' ? '€' : '£');
-            
-            priceLabels.forEach(label => {
-                const baseUsd = parseFloat(label.dataset.baseUsd);
-                const currentVal = parseFloat(label.innerText.replace(/[^0-9.]/g, ''));
-                // Just adjust current based on new rate relative to old rate is complex, 
-                // simpler to trigger re-calculation on all inputs
-            });
-            
-            // Trigger update on all range inputs
-            document.querySelectorAll('input[type="range"]').forEach(input => {
-                input.dispatchEvent(new Event('input'));
-            });
-        }
+        // Initial render
+        renderCatalog();
     </script>
 </body>
 </html>

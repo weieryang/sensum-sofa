@@ -3,134 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SENSUM | Sensorial Living & Modular Comfort</title>
+    <title>FUNUO | Professional Compressed Sofa Catalog 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
-        h1, h2, h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; }
-        .organic-bg { background: linear-gradient(135deg, #f3efea 0%, #fcfcfc 100%); }
-        .btn-shadow { box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); }
+        :root {
+            --brand-blue: #1e40af;
+            --light-gray: #f3f4f6;
+            --highlight-yellow: #fef08a;
+        }
+        .header-blue { background-color: var(--brand-blue); }
+        .label-gray { color: #6b7280; font-size: 0.875rem; }
+        .highlight-data { background-color: var(--highlight-yellow); padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .product-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #e5e7eb; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); border-color: var(--brand-blue); }
+        .price-badge { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
     </style>
 </head>
-<body class="text-neutral-800">
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-    <!-- Nav -->
-    <nav class="flex justify-between items-center px-10 py-6 absolute top-0 w-full z-50">
-        <div class="text-2xl tracking-tighter font-bold">SENSUM</div>
-        <div class="space-x-8 text-sm font-medium">
-            <a href="#" class="hover:text-amber-700">Sofas</a>
-            <a href="#" class="hover:text-amber-700">Modular Systems</a>
-            <a href="#" class="hover:text-amber-700">The Science</a>
-        </div>
-        <div class="flex items-center space-x-6 text-sm">
-            <a href="#">Login</a>
-            <a href="#" class="bg-neutral-900 text-white px-5 py-2 rounded-full font-bold btn-shadow hover:bg-neutral-800">Shop Now</a>
+    <!-- Navigation -->
+    <nav class="header-blue text-white p-5 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-white text-blue-900 font-black px-2 py-1 rounded text-xl">FN</div>
+                <h1 class="text-xl font-bold tracking-tight uppercase">FUNUO SOLUTIONS</h1>
+            </div>
+            <div class="space-x-8 hidden lg:flex text-sm font-medium tracking-wide">
+                <a href="#catalog" class="hover:text-yellow-200 transition">PRODUCT LINEUP</a>
+                <a href="#tech" class="hover:text-yellow-200 transition">COMPRESSION TECH</a>
+                <a href="#contact" class="hover:text-yellow-200 transition">PARTNERSHIP</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <select id="global-currency" class="bg-blue-800 text-white text-xs border-none rounded p-1 focus:ring-0" onchange="renderCatalog()">
+                    <option value="USD">USD ($)</option>
+                    <option value="RMB">RMB (¥)</option>
+                </select>
+                <button class="bg-yellow-400 text-blue-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-yellow-300 transition shadow-md">Download Full Price List</button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="pt-32 pb-20 px-10 organic-bg">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-5 space-y-8">
-                <span class="text-xs font-black uppercase tracking-widest text-amber-800">New 2026 Sensorial Collection</span>
-                <h1 class="text-6xl leading-[1.1]">Comfort You Can <span class="italic font-light text-neutral-400">Feel.</span></h1>
-                <p class="text-lg text-neutral-500 leading-relaxed">Introducing modular furniture designed for the senses. High-density foam architecture meet tactile bouclé textures.</p>
-                <div class="flex space-x-4">
-                    <button class="bg-amber-900 text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide hover:bg-amber-800 transition">Design Your Space</button>
-                    <button class="bg-white border border-neutral-200 px-8 py-4 rounded-full font-bold text-sm tracking-wide hover:border-neutral-400 transition">Order Fabric Swatches</button>
-                </div>
-                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-neutral-200">
-                    <div><span class="block font-bold">100%</span><span class="text-xs text-neutral-400">Recyclable Foam</span></div>
-                    <div><span class="block font-bold">Tool-Free</span><span class="text-xs text-neutral-400">Assembly</span></div>
-                    <div><span class="block font-bold">3-Day</span><span class="text-xs text-neutral-400">Express Delivery</span></div>
+    <header class="bg-white py-16 border-b relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-black text-blue-900 mb-6 leading-tight">High-Density Foam Furniture <br><span class="text-blue-600">Optimized for Global Export.</span></h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">Wuhan Funuo Furniture Co., Ltd. specializes in vacuum-compressed sofa solutions. Our proprietary foam rebound technology ensures 100% recovery after months of trans-oceanic transit.</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-slate-100 px-4 py-2 rounded-lg border flex items-center gap-2">
+                        <span class="text-green-600 font-bold">✓</span> <span class="text-sm font-semibold">CertiPUR-US® Certified</span>
+                    </div>
+                    <div class="bg-slate-100 px-4 py-2 rounded-lg border flex items-center gap-2">
+                        <span class="text-green-600 font-bold">✓</span> <span class="text-sm font-semibold">BS5852 / CA117 Fire Retardant</span>
+                    </div>
                 </div>
             </div>
-            <div class="lg:col-span-7 relative">
-                <div class="rounded-3xl overflow-hidden shadow-2xl rotate-1 group transition hover:rotate-0 duration-700">
-                    <img src="https://sc02.alicdn.com/kf/A2e35e7fef048437386a7c731ed14170an.png" alt="Cloud Boucle Sofa" class="w-full h-full object-cover">
-                </div>
-                <div class="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl max-w-xs space-y-3">
-                    <div class="flex text-amber-400">★★★★★</div>
-                    <p class="text-sm italic text-neutral-600">"The texture is incredible. It's like sitting on a curated cloud that actually supports your back."</p>
-                    <span class="text-xs font-bold">— Sarah J., Architectural Digest</span>
-                </div>
+        </div>
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-blue-50 -skew-x-12 translate-x-1/4 hidden lg:block"></div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-16 container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+                <h3 class="text-3xl font-bold text-blue-900 mb-2">2026 Collection</h3>
+                <p class="text-slate-500">Real-time tiered pricing based on order volume.</p>
             </div>
+            <div class="flex gap-4 w-full md:w-auto">
+                <input type="text" id="search-input" placeholder="Search by model (e.g. FN-001)..." class="flex-1 md:w-64 border p-3 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none" oninput="renderCatalog()">
+                <select id="category-filter" class="border p-3 rounded-xl bg-white outline-none" onchange="renderCatalog()">
+                    <option value="all">All Categories</option>
+                    <option value="single">Single Seats</option>
+                    <option value="sofabed">Sofa Beds</option>
+                    <option value="modular">Modular Systems</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Dynamic Content -->
         </div>
     </section>
 
-    <!-- Showcase -->
-    <section class="py-24 px-10">
-        <div class="text-center mb-20 space-y-4">
-            <h2 class="text-4xl">Sculptural Fluidity</h2>
-            <p class="text-neutral-500">2026 design language focuses on curves that follow the human form.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div class="space-y-6">
-                <div class="aspect-[4/5] rounded-3xl overflow-hidden">
-                    <img src="https://sc02.alicdn.com/kf/Ac9ea645cb5674a9a8854729055458e22b.png" alt="Terracotta Velvet" class="w-full h-full object-cover">
-                </div>
-                <div class="flex justify-between items-center px-4">
-                    <div>
-                        <h3 class="text-2xl">The Aura Sofa</h3>
-                        <p class="text-neutral-400 italic">Muted Terracotta Velvet</p>
+    <!-- Logistics Advantage -->
+    <section id="tech" class="bg-blue-900 text-white py-20 mt-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h3 class="text-4xl font-black leading-tight">The Funuo <br>Logistics Edge</h3>
+                <p class="text-blue-200 text-lg">Our vacuum compression technology reduces shipping volume by up to 85%. For retailers, this translates to significantly lower landed costs and higher warehouse efficiency.</p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <span class="text-yellow-400 text-3xl font-bold block mb-1">800+</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-300">Units per 40'HQ</span>
                     </div>
-                    <span class="text-2xl font-light">$3,200</span>
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <span class="text-yellow-400 text-3xl font-bold block mb-1">100%</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-300">Rebound Rate</span>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center space-y-12 px-10">
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold">Sensorial Fabric Selection</h4>
-                    <p class="text-neutral-500">Choose from 12 performance fabrics including our new 'Liquid Silk' velvet and 2026 bouclé textures.</p>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold">Vacuum-Compressed Express</h4>
-                    <p class="text-neutral-500">Our patented D50 high-density foam allows 80% volume reduction for global shipping without losing 1mm of rebound.</p>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold">Life-Proof Warranty</h4>
-                    <p class="text-neutral-500">Designed for the real world. Removable covers, spill-resistant tech, and a 10-year structural guarantee.</p>
+            <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/20">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-yellow-400 text-blue-900 px-2 py-0.5 rounded text-sm">PRO</span> Margin Comparison
+                </h4>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm mb-2"><span>Standard Sofa (Non-Compressed)</span> <span class="font-bold">82 Units / 40'HQ</span></div>
+                        <div class="w-full bg-blue-950 h-3 rounded-full overflow-hidden">
+                            <div class="bg-slate-400 h-full w-[10%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2"><span class="text-yellow-400 font-bold">Funuo Compressed Sofa</span> <span class="font-bold">812 Units / 40'HQ</span></div>
+                        <div class="w-full bg-blue-950 h-3 rounded-full overflow-hidden">
+                            <div class="bg-yellow-400 h-full w-[95%]"></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-blue-300 mt-4 italic">* Based on Model FN-001A dimensions. Savings of over $15 per unit in ocean freight alone.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-neutral-900 text-white py-20 px-10 mt-20">
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-12 border-b border-neutral-800 pb-20">
-            <div class="col-span-2 space-y-6">
-                <div class="text-3xl tracking-tighter font-bold">SENSUM</div>
-                <p class="text-neutral-400 text-sm max-w-xs">Building the future of home comfort with science, soul, and sensorial materials.</p>
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-slate-800 pb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-blue-600 text-white font-black px-2 py-1 rounded text-lg">FN</div>
+                    <span class="text-xl font-bold tracking-tighter">FUNUO</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">Global leader in compressed foam furniture OEM/ODM. Based in Wuhan, China.</p>
             </div>
-            <div class="space-y-4">
-                <h5 class="font-bold">Products</h5>
-                <nav class="flex flex-col space-y-2 text-sm text-neutral-400">
-                    <a href="#">The Aura Sofa</a>
-                    <a href="#">Cloud Modular</a>
-                    <a href="#">Foam Toppers</a>
-                </nav>
+            <div>
+                <h5 class="font-bold mb-6 text-slate-200">Contact Sales</h5>
+                <p class="text-sm text-slate-400 mb-2">tangkelian@weieryang.com</p>
+                <p class="text-sm text-slate-400">+86 18694073158</p>
             </div>
-            <div class="space-y-4">
-                <h5 class="font-bold">Company</h5>
-                <nav class="flex flex-col space-y-2 text-sm text-neutral-400">
-                    <a href="#">Sustainability</a>
-                    <a href="#">Manufacturing</a>
-                    <a href="#">Trade Program</a>
-                </nav>
+            <div>
+                <h5 class="font-bold mb-6 text-slate-200">Compliance</h5>
+                <ul class="text-sm text-slate-400 space-y-3">
+                    <li>- CertiPUR-US® Foam</li>
+                    <li>- OEKO-TEX Standard 100</li>
+                    <li>- California TB117-2013</li>
+                </ul>
             </div>
-            <div class="space-y-4">
-                <h5 class="font-bold">Support</h5>
-                <nav class="flex flex-col space-y-2 text-sm text-neutral-400">
-                    <a href="#">Shipping</a>
-                    <a href="#">Returns</a>
-                    <a href="#">Contact</a>
-                </nav>
+            <div>
+                <h5 class="font-bold mb-6 text-slate-200">Quick Tools</h5>
+                <button class="w-full bg-slate-800 hover:bg-slate-700 p-3 rounded-lg text-sm transition text-left mb-3">Request Custom Samples</button>
+                <button class="w-full bg-slate-800 hover:bg-slate-700 p-3 rounded-lg text-sm transition text-left">Freight Calculator</button>
             </div>
         </div>
-        <div class="text-center pt-10 text-xs text-neutral-600">
-            © 2026 Sensum Home Inc. | Crafted with Accio Intelligence.
+        <div class="text-center pt-8 text-xs text-slate-600">
+            © 2026 Wuhan Funuo Furniture Co., Ltd. | Managed by Accio Intelligence.
         </div>
     </footer>
 
+    <script>
+        const products = [
+            {
+                model: 'FN-001A',
+                category: 'single',
+                name_en: 'Cloud Single',
+                name_cn: '单人云朵沙发',
+                size: '90*101*75',
+                packing_size: '30*30*93',
+                loading_40hq: 812,
+                weight: 13.3,
+                price_usd: [70.59, 67.65, 61.76],
+                price_rmb: [480, 460, 420],
+                tags: ['Best Seller', 'High Rebound']
+            },
+            {
+                model: 'FN-002',
+                category: 'single',
+                name_en: 'Dumpling Chair',
+                name_cn: '饺子单人位',
+                size: '90*90*70',
+                packing_size: '30*30*93',
+                loading_40hq: 812,
+                weight: 10,
+                price_usd: [70.59, 66.18, 60.29],
+                price_rmb: [480, 450, 410],
+                tags: ['Ergonomic']
+            },
+            {
+                model: 'FN-008A',
+                category: 'single',
+                name_en: 'Piedmont Lounge',
+                name_cn: '皮埃蒙特',
+                size: '85*85*75',
+                packing_size: '30*30*110',
+                loading_40hq: 687,
+                weight: 14,
+                price_usd: [86.76, 80.88, 70.59],
+                price_rmb: [590, 550, 480],
+                tags: ['Sculptural']
+            },
+            {
+                model: 'FN-009A',
+                category: 'single',
+                name_en: 'Sun Chair (M)',
+                name_cn: '太阳椅中号',
+                size: '80*80*52',
+                packing_size: '30*30*100',
+                loading_40hq: 756,
+                weight: 10,
+                price_usd: [86.76, 83.82, 80.88],
+                price_rmb: [590, 570, 550],
+                tags: ['Compact']
+            },
+            {
+                model: 'FN-104',
+                category: 'sofabed',
+                name_en: 'Fold-out Guest Bed',
+                name_cn: '折叠沙发床',
+                size: '200*83*64',
+                packing_size: '35*35*110',
+                loading_40hq: 505,
+                weight: 28,
+                price_usd: [161.76, 144.12, 110.29],
+                price_rmb: [1100, 980, 750],
+                tags: ['Multifunctional']
+            },
+            {
+                model: 'FN-202A',
+                category: 'modular',
+                name_en: 'Modular Infinite',
+                name_cn: '模块沙发',
+                size: '275*185*62',
+                packing_size: '39*39*115*2',
+                loading_40hq: 180,
+                weight: 55,
+                price_usd: [250.00, 232.35, 202.21],
+                price_rmb: [1700, 1580, 1375],
+                tags: ['L-Shape', 'Premium']
+            },
+            {
+                model: 'FN-013',
+                category: 'single',
+                name_en: "Mom's Arms",
+                name_cn: '妈妈的怀抱',
+                size: '102*117*91',
+                packing_size: '50*50*100',
+                loading_40hq: 272,
+                weight: 30.7,
+                price_usd: [183.82, 173.53, 158.82],
+                price_rmb: [1250, 1180, 1080],
+                tags: ['Comfort Focus']
+            },
+            {
+                model: 'FN-301A',
+                category: 'modular',
+                name_en: 'Moon Curve Sofa',
+                name_cn: '月亮组合',
+                size: '240*102*66',
+                packing_size: '30*30*100+35',
+                loading_40hq: 295,
+                weight: 36,
+                price_usd: [197.35, 194.12, 191.18],
+                price_rmb: [1342, 1320, 1300],
+                tags: ['Organic Shape']
+            }
+        ];
+
+        function renderCatalog() {
+            const grid = document.getElementById('product-grid');
+            const search = document.getElementById('search-input').value.toLowerCase();
+            const category = document.getElementById('category-filter').value;
+            const currency = document.getElementById('global-currency').value;
+            const symbol = currency === 'USD' ? '$' : '¥';
+
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p => {
+                const matchesSearch = p.model.toLowerCase().includes(search) || p.name_en.toLowerCase().includes(search);
+                const matchesCategory = category === 'all' || p.category === category;
+                return matchesSearch && matchesCategory;
+            });
+
+            filtered.forEach((p, idx) => {
+                const card = document.createElement('div');
+                card.className = 'product-card bg-white rounded-3xl overflow-hidden flex flex-col';
+                
+                const prices = currency === 'USD' ? p.price_usd : p.price_rmb;
+
+                card.innerHTML = `
+                    <div class="h-64 bg-slate-100 flex items-center justify-center relative group">
+                        <span class="text-slate-300 font-bold text-lg">${p.model}</span>
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            ${p.tags.map(t => `<span class="bg-white/90 backdrop-blur-sm text-[10px] px-2 py-0.5 rounded-full font-bold shadow-sm uppercase tracking-tighter">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="font-black text-blue-900 leading-tight">${p.name_en}</h4>
+                                <p class="text-xs text-slate-400 font-medium">${p.model} | ${p.name_cn}</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6 flex-1">
+                            <div class="flex justify-between text-xs pb-2 border-b border-slate-50">
+                                <span class="text-slate-400">Dimensions</span>
+                                <span class="font-bold text-slate-700">${p.size} cm</span>
+                            </div>
+                            <div class="flex justify-between text-xs pb-2 border-b border-slate-50">
+                                <span class="text-slate-400">Packing Size</span>
+                                <span class="font-bold text-slate-700">${p.packing_size} cm</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-slate-400">Loading (40'HQ)</span>
+                                <span class="highlight-data text-blue-800 text-[10px]">${p.loading_40hq} Units</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-[10px] font-bold uppercase text-slate-400 tracking-widest">Sample Price</span>
+                                <span class="text-xl font-black text-blue-700">${symbol}${prices[0].toFixed(2)}</span>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex justify-between text-[10px] text-slate-500">
+                                    <span>21-100 Sets:</span>
+                                    <span class="font-bold">${symbol}${prices[1].toFixed(2)}</span>
+                                </div>
+                                <div class="flex justify-between text-[10px] text-blue-600 font-bold">
+                                    <span>Bulk (40'HQ):</span>
+                                    <span class="bg-blue-100 px-1 rounded">${symbol}${prices[2].toFixed(2)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Initial render
+        renderCatalog();
+    </script>
 </body>
 </html>
