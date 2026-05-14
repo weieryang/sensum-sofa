@@ -172,6 +172,7 @@
                 weight: 13.3,
                 price_usd: [70.59, 67.65, 61.76],
                 price_rmb: [480, 460, 420],
+                image: 'images/FN-001A.jpeg',
                 tags: ['Best Seller', 'High Rebound']
             },
             {
@@ -185,6 +186,7 @@
                 weight: 10,
                 price_usd: [70.59, 66.18, 60.29],
                 price_rmb: [480, 450, 410],
+                image: 'images/FN-002.jpeg',
                 tags: ['Ergonomic']
             },
             {
@@ -198,6 +200,7 @@
                 weight: 14,
                 price_usd: [86.76, 80.88, 70.59],
                 price_rmb: [590, 550, 480],
+                image: 'images/FN-008A.jpeg',
                 tags: ['Sculptural']
             },
             {
@@ -211,6 +214,7 @@
                 weight: 10,
                 price_usd: [86.76, 83.82, 80.88],
                 price_rmb: [590, 570, 550],
+                image: 'images/FN-009A.png',
                 tags: ['Compact']
             },
             {
@@ -224,6 +228,7 @@
                 weight: 28,
                 price_usd: [161.76, 144.12, 110.29],
                 price_rmb: [1100, 980, 750],
+                image: 'images/FN-104.png',
                 tags: ['Multifunctional']
             },
             {
@@ -237,20 +242,22 @@
                 weight: 55,
                 price_usd: [250.00, 232.35, 202.21],
                 price_rmb: [1700, 1580, 1375],
+                image: 'images/FN-202A.png',
                 tags: ['L-Shape', 'Premium']
             },
             {
-                model: 'FN-013',
+                model: 'FN-011A',
                 category: 'single',
-                name_en: "Mom's Arms",
-                name_cn: '妈妈的怀抱',
-                size: '102*117*91',
-                packing_size: '50*50*100',
-                loading_40hq: 272,
-                weight: 30.7,
-                price_usd: [183.82, 173.53, 158.82],
-                price_rmb: [1250, 1180, 1080],
-                tags: ['Comfort Focus']
+                name_en: 'Soccer Chair',
+                name_cn: '足球椅',
+                size: '120*110*65',
+                packing_size: '35*35*125',
+                loading_40hq: 412,
+                weight: 18,
+                price_usd: [116.18, 108.82, 95.59],
+                price_rmb: [790, 740, 650],
+                image: 'images/FN-011A.jpeg',
+                tags: ['Fun Design']
             },
             {
                 model: 'FN-301A',
@@ -263,6 +270,7 @@
                 weight: 36,
                 price_usd: [197.35, 194.12, 191.18],
                 price_rmb: [1342, 1320, 1300],
+                image: 'images/FN-301A.jpeg',
                 tags: ['Organic Shape']
             }
         ];
@@ -289,8 +297,8 @@
                 const prices = currency === 'USD' ? p.price_usd : p.price_rmb;
 
                 card.innerHTML = `
-                    <div class="h-64 bg-slate-100 flex items-center justify-center relative group">
-                        <span class="text-slate-300 font-bold text-lg">${p.model}</span>
+                    <div class="h-64 bg-slate-100 flex items-center justify-center relative group overflow-hidden">
+                        ${p.image ? `<img src="${p.image}" alt="${p.name_en}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">` : `<span class="text-slate-300 font-bold text-lg">${p.model}</span>`}
                         <div class="absolute top-4 left-4 flex gap-2">
                             ${p.tags.map(t => `<span class="bg-white/90 backdrop-blur-sm text-[10px] px-2 py-0.5 rounded-full font-bold shadow-sm uppercase tracking-tighter">${t}</span>`).join('')}
                         </div>
