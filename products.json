@@ -1,0 +1,918 @@
+[
+    {
+        "model": "FN-001A",
+        "category": "single",
+        "name_en": "FN-001A",
+        "name_cn": "90*101*75",
+        "size": "30*30*93",
+        "packing_size": "1",
+        "loading_40hq": 812,
+        "weight": 13.3,
+        "price_rmb": [
+            480.0,
+            460.0,
+            420.0
+        ],
+        "price_usd": [
+            70.59,
+            67.65,
+            61.76
+        ],
+        "image": "images/FN-001A.jpeg",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-002",
+        "category": "single",
+        "name_en": "FN-002",
+        "name_cn": "90*90*70",
+        "size": "30*30*93",
+        "packing_size": "1",
+        "loading_40hq": 812,
+        "weight": 10.0,
+        "price_rmb": [
+            480.0,
+            450.0,
+            410.0
+        ],
+        "price_usd": [
+            70.59,
+            66.18,
+            60.29
+        ],
+        "image": "images/FN-002.jpeg",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-008A",
+        "category": "single",
+        "name_en": "FN-008A",
+        "name_cn": "85*85*75",
+        "size": "30*30*110",
+        "packing_size": "1",
+        "loading_40hq": 687,
+        "weight": 14.0,
+        "price_rmb": [
+            590.0,
+            550.0,
+            480.0
+        ],
+        "price_usd": [
+            86.76,
+            80.88,
+            70.59
+        ],
+        "image": "images/FN-008A.jpeg",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-008B",
+        "category": "single",
+        "name_en": "FN-008B",
+        "name_cn": "100*100*75",
+        "size": "35*35*115",
+        "packing_size": "1",
+        "loading_40hq": 483,
+        "weight": 16.0,
+        "price_rmb": [
+            720.0,
+            650.0,
+            600.0
+        ],
+        "price_usd": [
+            105.88,
+            95.59,
+            88.24
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-009A",
+        "category": "single",
+        "name_en": "FN-009A",
+        "name_cn": "80*80*52",
+        "size": "30*30*100",
+        "packing_size": "1",
+        "loading_40hq": 756,
+        "weight": 10.0,
+        "price_rmb": [
+            590.0,
+            570.0,
+            550.0
+        ],
+        "price_usd": [
+            86.76,
+            83.82,
+            80.88
+        ],
+        "image": "images/FN-009A.png",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-009B",
+        "category": "single",
+        "name_en": "FN-009B",
+        "name_cn": "100*100*70",
+        "size": "30*30*100",
+        "packing_size": "1",
+        "loading_40hq": 756,
+        "weight": 13.65,
+        "price_rmb": [
+            750.0,
+            700.0,
+            650.0
+        ],
+        "price_usd": [
+            110.29,
+            102.94,
+            95.59
+        ],
+        "image": "",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-010脚踏",
+        "category": "single",
+        "name_en": "FN-010脚踏",
+        "name_cn": "60*60*32",
+        "size": "23*23*70",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 6.0,
+        "price_rmb": [
+            388.0,
+            365.0,
+            330.0
+        ],
+        "price_usd": [
+            57.06,
+            53.68,
+            48.53
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-010A",
+        "category": "single",
+        "name_en": "FN-010A",
+        "name_cn": "单人105x105x67",
+        "size": "33x33X115",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 20.0,
+        "price_rmb": [
+            1150.0,
+            980.0,
+            900.0
+        ],
+        "price_usd": [
+            169.12,
+            144.12,
+            132.35
+        ],
+        "image": "images/FN-010A.png",
+        "tags": []
+    },
+    {
+        "model": "FN-010B",
+        "category": "single",
+        "name_en": "FN-010B",
+        "name_cn": "双人190*105*67",
+        "size": "42x42X120",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 43.0,
+        "price_rmb": [
+            2300.0,
+            2150.0,
+            2030.0
+        ],
+        "price_usd": [
+            338.24,
+            316.18,
+            298.53
+        ],
+        "image": "images/FN-010B.png",
+        "tags": []
+    },
+    {
+        "model": "FN-010C",
+        "category": "single",
+        "name_en": "FN-010C",
+        "name_cn": "三人240*105*67",
+        "size": "50x50Ⅹ120",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 58.0,
+        "price_rmb": [
+            3000.0,
+            2750.0,
+            2570.0
+        ],
+        "price_usd": [
+            441.18,
+            404.41,
+            377.94
+        ],
+        "image": "images/FN-010C.png",
+        "tags": []
+    },
+    {
+        "model": "FN-011脚踏",
+        "category": "single",
+        "name_en": "FN-011脚踏",
+        "name_cn": "80*80*35",
+        "size": "25*25*85",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 10.0,
+        "price_rmb": [
+            620.0,
+            580.0,
+            530.0
+        ],
+        "price_usd": [
+            91.18,
+            85.29,
+            77.94
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-011A",
+        "category": "single",
+        "name_en": "FN-011A",
+        "name_cn": "120*110*65",
+        "size": "35*35*125",
+        "packing_size": "1",
+        "loading_40hq": 444,
+        "weight": 21.1,
+        "price_rmb": [
+            1350.0,
+            1250.0,
+            1180.0
+        ],
+        "price_usd": [
+            198.53,
+            183.82,
+            173.53
+        ],
+        "image": "images/FN-011A.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-011B",
+        "category": "single",
+        "name_en": "FN-011B",
+        "name_cn": "180*60*36",
+        "size": "38*38*80",
+        "packing_size": "1",
+        "loading_40hq": 308,
+        "weight": 20.0,
+        "price_rmb": [
+            1500.0,
+            1420.0,
+            1350.0
+        ],
+        "price_usd": [
+            220.59,
+            208.82,
+            198.53
+        ],
+        "image": "images/FN-011B.png",
+        "tags": []
+    },
+    {
+        "model": "FN-011C",
+        "category": "single",
+        "name_en": "FN-011C",
+        "name_cn": "193*103*79",
+        "size": "40*40*140",
+        "packing_size": "1",
+        "loading_40hq": 304,
+        "weight": 45.5,
+        "price_rmb": [
+            2150.0,
+            2120.0,
+            2080.0
+        ],
+        "price_usd": [
+            316.18,
+            311.76,
+            305.88
+        ],
+        "image": "images/FN-011C.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-011D",
+        "category": "single",
+        "name_en": "FN-011D",
+        "name_cn": "243*108*76",
+        "size": "50*50*140",
+        "packing_size": "1",
+        "loading_40hq": 194,
+        "weight": 61.7,
+        "price_rmb": [
+            2850.0,
+            2780.0,
+            2680.0
+        ],
+        "price_usd": [
+            419.12,
+            408.82,
+            394.12
+        ],
+        "image": "images/FN-011D.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-013",
+        "category": "single",
+        "name_en": "FN-013",
+        "name_cn": "102*117*91",
+        "size": "50*50*100",
+        "packing_size": "1",
+        "loading_40hq": 272,
+        "weight": 30.7,
+        "price_rmb": [
+            1250.0,
+            1180.0,
+            1080.0
+        ],
+        "price_usd": [
+            183.82,
+            173.53,
+            158.82
+        ],
+        "image": "images/FN-013.png",
+        "tags": []
+    },
+    {
+        "model": "FN-101A",
+        "category": "single",
+        "name_en": "FN-101A",
+        "name_cn": "150*100*70",
+        "size": "35*75*110",
+        "packing_size": "1",
+        "loading_40hq": 227,
+        "weight": 31.0,
+        "price_rmb": [
+            1130.0,
+            980.0,
+            890.0
+        ],
+        "price_usd": [
+            166.18,
+            144.12,
+            130.88
+        ],
+        "image": "images/FN-101A.png",
+        "tags": []
+    },
+    {
+        "model": "FN-101A",
+        "category": "single",
+        "name_en": "FN-101A",
+        "name_cn": "180*100*70",
+        "size": "38*75*110",
+        "packing_size": "1",
+        "loading_40hq": 217,
+        "weight": 39.0,
+        "price_rmb": [
+            1280.0,
+            1200.0,
+            1100.0
+        ],
+        "price_usd": [
+            188.24,
+            176.47,
+            161.76
+        ],
+        "image": "images/FN-101A.png",
+        "tags": []
+    },
+    {
+        "model": "FN-101B",
+        "category": "single",
+        "name_en": "FN-101B",
+        "name_cn": "200*100*70",
+        "size": "43*75*110",
+        "packing_size": "1",
+        "loading_40hq": 192,
+        "weight": 43.4,
+        "price_rmb": [
+            1420.0,
+            1300.0,
+            1200.0
+        ],
+        "price_usd": [
+            208.82,
+            191.18,
+            176.47
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-104",
+        "category": "single",
+        "name_en": "FN-104",
+        "name_cn": "200*83*64",
+        "size": "35*35*110",
+        "packing_size": "1",
+        "loading_40hq": 505,
+        "weight": 28.0,
+        "price_rmb": [
+            1100.0,
+            980.0,
+            750.0
+        ],
+        "price_usd": [
+            161.76,
+            144.12,
+            110.29
+        ],
+        "image": "images/FN-104.png",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-105A",
+        "category": "single",
+        "name_en": "FN-105A",
+        "name_cn": "150*75*64",
+        "size": "35*35*110",
+        "packing_size": "1",
+        "loading_40hq": 505,
+        "weight": 0.0,
+        "price_rmb": [
+            1100.0,
+            900.0,
+            700.0
+        ],
+        "price_usd": [
+            161.76,
+            132.35,
+            102.94
+        ],
+        "image": "images/FN-105A.png",
+        "tags": [
+            "Hot"
+        ]
+    },
+    {
+        "model": "FN-201B",
+        "category": "single",
+        "name_en": "FN-201B",
+        "name_cn": "200*150*66",
+        "size": "35*35*110*2",
+        "packing_size": "2",
+        "loading_40hq": 252,
+        "weight": 69.0,
+        "price_rmb": [
+            1850.0,
+            1600.0,
+            1450.0
+        ],
+        "price_usd": [
+            272.06,
+            235.29,
+            213.24
+        ],
+        "image": "images/FN-201B.png",
+        "tags": []
+    },
+    {
+        "model": "FN-201C",
+        "category": "single",
+        "name_en": "FN-201C",
+        "name_cn": "255*155*66",
+        "size": "35*35*110*2",
+        "packing_size": "2",
+        "loading_40hq": 252,
+        "weight": 69.0,
+        "price_rmb": [
+            1900.0,
+            1800.0,
+            1550.0
+        ],
+        "price_usd": [
+            279.41,
+            264.71,
+            227.94
+        ],
+        "image": "images/FN-201C.png",
+        "tags": []
+    },
+    {
+        "model": "FN-202A",
+        "category": "single",
+        "name_en": "FN-202A",
+        "name_cn": "275*185*62",
+        "size": "39*39*115*2",
+        "packing_size": "2",
+        "loading_40hq": 180,
+        "weight": 55.0,
+        "price_rmb": [
+            1700.0,
+            1580.0,
+            1375.0
+        ],
+        "price_usd": [
+            250.0,
+            232.35,
+            202.21
+        ],
+        "image": "images/FN-202A.png",
+        "tags": []
+    },
+    {
+        "model": "FN-204",
+        "category": "single",
+        "name_en": "FN-204",
+        "name_cn": "100*90*70 Single  seat without armrest",
+        "size": "28*28*100",
+        "packing_size": "1",
+        "loading_40hq": 427,
+        "weight": 18.0,
+        "price_rmb": [
+            980.0,
+            880.0,
+            830.0
+        ],
+        "price_usd": [
+            144.12,
+            129.41,
+            122.06
+        ],
+        "image": "images/FN-204.png",
+        "tags": []
+    },
+    {
+        "model": "FN-204A",
+        "category": "single",
+        "name_en": "FN-204A",
+        "name_cn": "160*90*70 2seat",
+        "size": "40*40*110",
+        "packing_size": "2",
+        "loading_40hq": 386,
+        "weight": 30.0,
+        "price_rmb": [
+            1485.0,
+            1380.0,
+            1260.0
+        ],
+        "price_usd": [
+            218.38,
+            202.94,
+            185.29
+        ],
+        "image": "images/FN-204A.png",
+        "tags": []
+    },
+    {
+        "model": "FN-204B",
+        "category": "single",
+        "name_en": "FN-204B",
+        "name_cn": "200*90*70 3seat",
+        "size": "45*45*110",
+        "packing_size": "2",
+        "loading_40hq": 343,
+        "weight": 36.0,
+        "price_rmb": [
+            1762.0,
+            1650.0,
+            1500.0
+        ],
+        "price_usd": [
+            259.12,
+            242.65,
+            220.59
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-204C",
+        "category": "single",
+        "name_en": "FN-204C",
+        "name_cn": "250*90*70 4seat",
+        "size": "35*35*110*2",
+        "packing_size": "2",
+        "loading_40hq": 0,
+        "weight": 0.0,
+        "price_rmb": [
+            2160.0,
+            2000.0,
+            1830.0
+        ],
+        "price_usd": [
+            317.65,
+            294.12,
+            269.12
+        ],
+        "image": "images/FN-204C.png",
+        "tags": []
+    },
+    {
+        "model": "FN-301A",
+        "category": "single",
+        "name_en": "FN-301A",
+        "name_cn": "240*102*66",
+        "size": "30*30*100+35 *35*115",
+        "packing_size": "2",
+        "loading_40hq": 295,
+        "weight": 36.0,
+        "price_rmb": [
+            1342.0,
+            1320.0,
+            1300.0
+        ],
+        "price_usd": [
+            197.35,
+            194.12,
+            191.18
+        ],
+        "image": "images/FN-301A.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-301B",
+        "category": "single",
+        "name_en": "FN-301B",
+        "name_cn": "280*102*66",
+        "size": "35*35*110+40 *40*115",
+        "packing_size": "2",
+        "loading_40hq": 213,
+        "weight": 44.0,
+        "price_rmb": [
+            1460.0,
+            1430.0,
+            1380.0
+        ],
+        "price_usd": [
+            214.71,
+            210.29,
+            202.94
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-301C",
+        "category": "single",
+        "name_en": "FN-301C",
+        "name_cn": "340*102*66",
+        "size": "35*35*110+40 *40*115",
+        "packing_size": "2",
+        "loading_40hq": 213,
+        "weight": 52.0,
+        "price_rmb": [
+            1725.0,
+            1650.0,
+            1430.0
+        ],
+        "price_usd": [
+            253.68,
+            242.65,
+            210.29
+        ],
+        "image": "",
+        "tags": []
+    },
+    {
+        "model": "FN-302E",
+        "category": "single",
+        "name_en": "FN-302E",
+        "name_cn": "292*100*72",
+        "size": "28*28*100*3",
+        "packing_size": "3",
+        "loading_40hq": 289,
+        "weight": 41.5,
+        "price_rmb": [
+            1896.0,
+            1550.0,
+            1350.0
+        ],
+        "price_usd": [
+            278.82,
+            227.94,
+            198.53
+        ],
+        "image": "images/FN-302E.png",
+        "tags": []
+    },
+    {
+        "model": "FN-304C",
+        "category": "single",
+        "name_en": "FN-304C",
+        "name_cn": "285*95*73",
+        "size": "110*110*30",
+        "packing_size": "3",
+        "loading_40hq": 60,
+        "weight": 81.5,
+        "price_rmb": [
+            2250.0,
+            2050.0,
+            1750.0
+        ],
+        "price_usd": [
+            330.88,
+            301.47,
+            257.35
+        ],
+        "image": "images/FN-304C.png",
+        "tags": []
+    },
+    {
+        "model": "FN-305D",
+        "category": "single",
+        "name_en": "FN-305D",
+        "name_cn": "272*92*66 2seat+Foot",
+        "size": "35*35*110*2+ 30*30*100",
+        "packing_size": "3",
+        "loading_40hq": 189,
+        "weight": 47.0,
+        "price_rmb": [
+            1660.0,
+            1450.0,
+            1250.0
+        ],
+        "price_usd": [
+            244.12,
+            213.24,
+            183.82
+        ],
+        "image": "images/FN-305D.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-308A",
+        "category": "single",
+        "name_en": "FN-308A",
+        "name_cn": "200*100*70 2  seats",
+        "size": "115*59*38",
+        "packing_size": "1",
+        "loading_40hq": 264,
+        "weight": 40.0,
+        "price_rmb": [
+            1360.0,
+            1190.0,
+            960.0
+        ],
+        "price_usd": [
+            200.0,
+            175.0,
+            141.18
+        ],
+        "image": "images/FN-308A.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-308A",
+        "category": "single",
+        "name_en": "FN-308A",
+        "name_cn": "280*100*70",
+        "size": "115*72*40",
+        "packing_size": "2",
+        "loading_40hq": 206,
+        "weight": 50.0,
+        "price_rmb": [
+            1650.0,
+            1450.0,
+            1250.0
+        ],
+        "price_usd": [
+            242.65,
+            213.24,
+            183.82
+        ],
+        "image": "images/FN-308A.jpeg",
+        "tags": []
+    },
+    {
+        "model": "FN-311F",
+        "category": "single",
+        "name_en": "FN-311F",
+        "name_cn": "260*104*73",
+        "size": "35*35*115*2",
+        "packing_size": "2",
+        "loading_40hq": 241,
+        "weight": 50.7,
+        "price_rmb": [
+            1500.0,
+            1450.0,
+            1350.0
+        ],
+        "price_usd": [
+            220.59,
+            213.24,
+            198.53
+        ],
+        "image": "images/FN-311F.png",
+        "tags": []
+    },
+    {
+        "model": "FN-801",
+        "category": "single",
+        "name_en": "FN-801",
+        "name_cn": "190*70*40",
+        "size": "38*38*76",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 23.0,
+        "price_rmb": [
+            650.0,
+            580.0,
+            530.0
+        ],
+        "price_usd": [
+            95.59,
+            85.29,
+            77.94
+        ],
+        "image": "images/FN-801.png",
+        "tags": []
+    },
+    {
+        "model": "FN-802",
+        "category": "single",
+        "name_en": "FN-802",
+        "name_cn": "200*70*40",
+        "size": "36*36*75",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 20.0,
+        "price_rmb": [
+            660.0,
+            590.0,
+            540.0
+        ],
+        "price_usd": [
+            97.06,
+            86.76,
+            79.41
+        ],
+        "image": "images/FN-802.png",
+        "tags": []
+    },
+    {
+        "model": "FN-804",
+        "category": "single",
+        "name_en": "FN-804",
+        "name_cn": "110*168*72",
+        "size": "38*38*120",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 30.5,
+        "price_rmb": [
+            1050.0,
+            950.0,
+            800.0
+        ],
+        "price_usd": [
+            154.41,
+            139.71,
+            117.65
+        ],
+        "image": "images/FN-804.png",
+        "tags": []
+    },
+    {
+        "model": "FN-805",
+        "category": "single",
+        "name_en": "FN-805",
+        "name_cn": "243*112*82",
+        "size": "46*46*125",
+        "packing_size": "1",
+        "loading_40hq": 0,
+        "weight": 45.0,
+        "price_rmb": [
+            1300.0,
+            1150.0,
+            1050.0
+        ],
+        "price_usd": [
+            191.18,
+            169.12,
+            154.41
+        ],
+        "image": "images/FN-805.png",
+        "tags": []
+    }
+]

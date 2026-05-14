@@ -160,120 +160,17 @@
     </footer>
 
     <script>
-        const products = [
-            {
-                model: 'FN-001A',
-                category: 'single',
-                name_en: 'Cloud Single',
-                name_cn: '单人云朵沙发',
-                size: '90*101*75',
-                packing_size: '30*30*93',
-                loading_40hq: 812,
-                weight: 13.3,
-                price_usd: [70.59, 67.65, 61.76],
-                price_rmb: [480, 460, 420],
-                image: 'images/FN-001A.jpeg',
-                tags: ['Best Seller', 'High Rebound']
-            },
-            {
-                model: 'FN-002',
-                category: 'single',
-                name_en: 'Dumpling Chair',
-                name_cn: '饺子单人位',
-                size: '90*90*70',
-                packing_size: '30*30*93',
-                loading_40hq: 812,
-                weight: 10,
-                price_usd: [70.59, 66.18, 60.29],
-                price_rmb: [480, 450, 410],
-                image: 'images/FN-002.jpeg',
-                tags: ['Ergonomic']
-            },
-            {
-                model: 'FN-008A',
-                category: 'single',
-                name_en: 'Piedmont Lounge',
-                name_cn: '皮埃蒙特',
-                size: '85*85*75',
-                packing_size: '30*30*110',
-                loading_40hq: 687,
-                weight: 14,
-                price_usd: [86.76, 80.88, 70.59],
-                price_rmb: [590, 550, 480],
-                image: 'images/FN-008A.jpeg',
-                tags: ['Sculptural']
-            },
-            {
-                model: 'FN-009A',
-                category: 'single',
-                name_en: 'Sun Chair (M)',
-                name_cn: '太阳椅中号',
-                size: '80*80*52',
-                packing_size: '30*30*100',
-                loading_40hq: 756,
-                weight: 10,
-                price_usd: [86.76, 83.82, 80.88],
-                price_rmb: [590, 570, 550],
-                image: 'images/FN-009A.png',
-                tags: ['Compact']
-            },
-            {
-                model: 'FN-104',
-                category: 'sofabed',
-                name_en: 'Fold-out Guest Bed',
-                name_cn: '折叠沙发床',
-                size: '200*83*64',
-                packing_size: '35*35*110',
-                loading_40hq: 505,
-                weight: 28,
-                price_usd: [161.76, 144.12, 110.29],
-                price_rmb: [1100, 980, 750],
-                image: 'images/FN-104.png',
-                tags: ['Multifunctional']
-            },
-            {
-                model: 'FN-202A',
-                category: 'modular',
-                name_en: 'Modular Infinite',
-                name_cn: '模块沙发',
-                size: '275*185*62',
-                packing_size: '39*39*115*2',
-                loading_40hq: 180,
-                weight: 55,
-                price_usd: [250.00, 232.35, 202.21],
-                price_rmb: [1700, 1580, 1375],
-                image: 'images/FN-202A.png',
-                tags: ['L-Shape', 'Premium']
-            },
-            {
-                model: 'FN-011A',
-                category: 'single',
-                name_en: 'Soccer Chair',
-                name_cn: '足球椅',
-                size: '120*110*65',
-                packing_size: '35*35*125',
-                loading_40hq: 412,
-                weight: 18,
-                price_usd: [116.18, 108.82, 95.59],
-                price_rmb: [790, 740, 650],
-                image: 'images/FN-011A.jpeg',
-                tags: ['Fun Design']
-            },
-            {
-                model: 'FN-301A',
-                category: 'modular',
-                name_en: 'Moon Curve Sofa',
-                name_cn: '月亮组合',
-                size: '240*102*66',
-                packing_size: '30*30*100+35',
-                loading_40hq: 295,
-                weight: 36,
-                price_usd: [197.35, 194.12, 191.18],
-                price_rmb: [1342, 1320, 1300],
-                image: 'images/FN-301A.jpeg',
-                tags: ['Organic Shape']
+        let products = [];
+
+        async function loadProducts() {
+            try {
+                const response = await fetch('products.json');
+                products = await response.json();
+                renderCatalog();
+            } catch (error) {
+                console.error("Error loading products:", error);
             }
-        ];
+        }
 
         function renderCatalog() {
             const grid = document.getElementById('product-grid');
@@ -285,10 +182,15 @@
             grid.innerHTML = '';
 
             const filtered = products.filter(p => {
-                const matchesSearch = p.model.toLowerCase().includes(search) || p.name_en.toLowerCase().includes(search);
+                const matchesSearch = p.model.toLowerCase().includes(search) || p.name_en.toLowerCase().includes(search) || p.name_cn.toLowerCase().includes(search);
                 const matchesCategory = category === 'all' || p.category === category;
                 return matchesSearch && matchesCategory;
             });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-20 text-slate-400">No products found matching your criteria.</div>';
+                return;
+            }
 
             filtered.forEach((p, idx) => {
                 const card = document.createElement('div');
@@ -348,8 +250,8 @@
             });
         }
 
-        // Initial render
-        renderCatalog();
+        // Initial load
+        loadProducts();
     </script>
 </body>
 </html>
