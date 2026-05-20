@@ -7,7 +7,7 @@
       "enabled": true,
       "deleteAfterRun": false,
       "createdAtMs": 1778485113903,
-      "updatedAtMs": 1778662800078,
+      "updatedAtMs": 1779181200123,
       "schedule": {
         "kind": "cron",
         "expr": "0 17 * * *",
@@ -21,8 +21,8 @@
         }
       },
       "state": {
-        "nextRunAtMs": 1778749200000,
-        "lastRunAtMs": 1778662800052,
+        "nextRunAtMs": 1779267600000,
+        "lastRunAtMs": 1779181200080,
         "lastStatus": "ok",
         "lastDurationMs": 0
       },
@@ -42,7 +42,7 @@
       "enabled": true,
       "deleteAfterRun": false,
       "createdAtMs": 1778485113904,
-      "updatedAtMs": 1778725990026,
+      "updatedAtMs": 1779242400112,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * 1-5",
@@ -54,11 +54,10 @@
         "agent": "general"
       },
       "state": {
-        "nextRunAtMs": 1778810400000,
-        "lastRunAtMs": 1778725989996,
-        "lastStatus": "error",
-        "lastDurationMs": 0,
-        "lastError": "cron agent runner is not initialized"
+        "nextRunAtMs": 1779328800000,
+        "lastRunAtMs": 1779242400080,
+        "lastStatus": "ok",
+        "lastDurationMs": 33
       },
       "target": {
         "type": "conversation",
