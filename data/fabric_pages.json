@@ -1,0 +1,67 @@
+[
+  {
+    "title": "条纹灯芯绒",
+    "subtitle": "Corduroy Stripe Fabric",
+    "category": "条纹灯芯绒",
+    "desc": "包含三种条纹密度色板，适合压缩沙发、沙发床和休闲椅的高质感面料选择。",
+    "page": 1,
+    "image": "assets/images/fabric_0_条纹灯芯绒.png",
+    "badges": [
+      "6条/0.42cm",
+      "2.5条/1cm",
+      "1条/2.5cm"
+    ]
+  },
+  {
+    "title": "雪尼尔",
+    "subtitle": "Chenille Fabric",
+    "category": "雪尼尔",
+    "desc": "雪尼尔面料色板，适合温暖、柔和、亲肤风格的家居沙发产品。",
+    "page": 2,
+    "image": "assets/images/fabric_1_雪尼尔.png",
+    "badges": [
+      "柔软触感",
+      "多色可选",
+      "家居常用"
+    ]
+  },
+  {
+    "title": "棉麻",
+    "subtitle": "Cotton Linen Fabric",
+    "category": "棉麻",
+    "desc": "棉麻面料色板，适合北欧、简约、自然风格产品，颜色跨度较完整。",
+    "page": 3,
+    "image": "assets/images/fabric_2_棉麻.png",
+    "badges": [
+      "自然纹理",
+      "41色",
+      "透气耐看"
+    ]
+  },
+  {
+    "title": "冰点绒",
+    "subtitle": "Ice Velvet Fabric",
+    "category": "冰点绒",
+    "desc": "冰点绒面料色板，适合强调柔软触感和高级绒面视觉的沙发产品。",
+    "page": 4,
+    "image": "assets/images/fabric_3_冰点绒.png",
+    "badges": [
+      "细腻绒感",
+      "25色",
+      "柔和光泽"
+    ]
+  },
+  {
+    "title": "羊羔绒 / 天鹅绒 / 麂皮绒",
+    "subtitle": "Sherpa / Velvet / Suede Fabric",
+    "category": "羊羔绒 天鹅绒 麂皮绒",
+    "desc": "集合多种热门绒面面料，适合蓬松、复古、柔软或更强装饰性的产品系列。",
+    "page": 5,
+    "image": "assets/images/fabric_4_羊羔绒 _ 天鹅绒 _ 麂皮绒.png",
+    "badges": [
+      "羊羔绒",
+      "天鹅绒-1/2",
+      "麂皮绒"
+    ]
+  }
+]
