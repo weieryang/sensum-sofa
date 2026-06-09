@@ -22,6 +22,9 @@
   <meta name="twitter:description" content="Compressed sofa, sofa bed and modular sofa catalog for B2B furniture buyers. OEM/ODM customization available.">
   <meta name="twitter:image" content="https://weieryang.com/assets/images/hero_banner.png">
   <meta name="theme-color" content="#1c1917">
+  <link rel="preload" as="image" href="assets/images/hero_banner.png" fetchpriority="high">
+  <link rel="preload" as="fetch" href="data/products.json" crossorigin>
+  <link rel="preload" as="fetch" href="data/fabric_pages.json" crossorigin>
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <script type="application/ld+json">
 [
@@ -194,7 +197,7 @@
 <body>
 <header><div class="wrap nav"><div class="brand"><div class="logo">WY</div><div>Weieryang Sofa Catalog<br><span style="font-size:12px;color:#78716c;font-weight:500">Compressed Sofa B2B Directory</span></div></div><nav class="navlinks"><a href="#products">Products</a><a href="#packing">Packing</a><a href="#catalog">Catalog</a><a href="certificates/">Certificates</a><a href="#contact">Contact</a></nav><button class="btn" onclick="openCart()">Inquiry <span id="cartCount">0</span></button></div></header>
 <main>
-<section class="hero wrap"><div class="hero-grid"><div><span class="eyebrow">Compressed Sofa · Sofa Bed · Modular Sofa · OEM / ODM</span><h1>Compressed Sofa Manufacturer &amp; B2B Product Catalog</h1><p>Weieryang supplies compressed sofas, sofa beds and modular sofas for B2B importers, wholesalers and furniture distributors. Browse product series, compare sizes, packing data, 40HQ loading quantity and request OEM / ODM quotation directly.</p><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="#products">View Products</a><a class="btn light" href="#catalog">Download Catalog</a><a class="btn light" href="certificates/">Certificates</a></div><div class="stats"><div class="stat"><b id="modelCount">41</b><span>Imported models</span></div><div class="stat"><b id="groupCount">--</b><span>Product cards</span></div><div class="stat"><b>OEM</b><span>Custom colors</span></div></div></div><div class="hero-img"><img class="hero-banner" src="assets/images/hero_banner.png" alt="FUNUO WEIERYANG foam source factory banner"></div></div></section>
+<section class="hero wrap"><div class="hero-grid"><div><span class="eyebrow">Compressed Sofa · Sofa Bed · Modular Sofa · OEM / ODM</span><h1>Compressed Sofa Manufacturer &amp; B2B Product Catalog</h1><p>Weieryang supplies compressed sofas, sofa beds and modular sofas for B2B importers, wholesalers and furniture distributors. Browse product series, compare sizes, packing data, 40HQ loading quantity and request OEM / ODM quotation directly.</p><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="#products">View Products</a><a class="btn light" href="#catalog">Download Catalog</a><a class="btn light" href="certificates/">Certificates</a></div><div class="stats"><div class="stat"><b id="modelCount">41</b><span>Imported models</span></div><div class="stat"><b id="groupCount">--</b><span>Product cards</span></div><div class="stat"><b>OEM</b><span>Custom colors</span></div></div></div><div class="hero-img"><img class="hero-banner" src="assets/images/hero_banner.png" alt="FUNUO WEIERYANG foam source factory banner" fetchpriority="high" decoding="async"></div></div></section>
 
 <section id="compressed-sofa-manufacturer" class="section wrap">
   <div class="seo-panel">
@@ -256,7 +259,7 @@
       <button type="button" class="fabric-filter-chip" onclick="filterFabric('麂皮绒')">麂皮绒</button>
     </div>
     <div class="fabric-layout">
-      <div class="fabric-preview"><img id="fabricMainImage" src="assets/images/inline_image_0.png" alt="Fabric preview" onclick="openFabricModal()"></div>
+      <div class="fabric-preview"><img id="fabricMainImage" src="assets/images/inline_image_0.png" alt="Fabric preview" onclick="openFabricModal()" loading="lazy" decoding="async"></div>
       <div class="fabric-info">
         <div class="fabric-kicker" id="fabricPageLabel">Page 1 / 5</div>
         <h3 id="fabricTitle">条纹灯芯绒</h3>
@@ -268,23 +271,23 @@
       </div>
     </div>
     <div class="fabric-thumb-grid" id="fabricThumbGrid"><button class="fabric-thumb-card" data-index="0" data-category="条纹灯芯绒" onclick="selectFabric(0)" type="button">
-      <img src="assets/images/inline_image_1.png" alt="条纹灯芯绒" />
+      <img src="assets/images/inline_image_1.png" alt="条纹灯芯绒" loading="lazy" decoding="async" />
       <div class="fabric-thumb-title">条纹灯芯绒</div>
       <div class="fabric-thumb-meta">Page 1 · Corduroy Stripe Fabric</div>
     </button><button class="fabric-thumb-card" data-index="1" data-category="雪尼尔" onclick="selectFabric(1)" type="button">
-      <img src="assets/images/inline_image_2.png" alt="雪尼尔" />
+      <img src="assets/images/inline_image_2.png" alt="雪尼尔" loading="lazy" decoding="async" />
       <div class="fabric-thumb-title">雪尼尔</div>
       <div class="fabric-thumb-meta">Page 2 · Chenille Fabric</div>
     </button><button class="fabric-thumb-card" data-index="2" data-category="棉麻" onclick="selectFabric(2)" type="button">
-      <img src="assets/images/inline_image_3.png" alt="棉麻" />
+      <img src="assets/images/inline_image_3.png" alt="棉麻" loading="lazy" decoding="async" />
       <div class="fabric-thumb-title">棉麻</div>
       <div class="fabric-thumb-meta">Page 3 · Cotton Linen Fabric</div>
     </button><button class="fabric-thumb-card" data-index="3" data-category="冰点绒" onclick="selectFabric(3)" type="button">
-      <img src="assets/images/inline_image_4.png" alt="冰点绒" />
+      <img src="assets/images/inline_image_4.png" alt="冰点绒" loading="lazy" decoding="async" />
       <div class="fabric-thumb-title">冰点绒</div>
       <div class="fabric-thumb-meta">Page 4 · Ice Velvet Fabric</div>
     </button><button class="fabric-thumb-card" data-index="4" data-category="羊羔绒 天鹅绒 麂皮绒" onclick="selectFabric(4)" type="button">
-      <img src="assets/images/inline_image_5.png" alt="羊羔绒 / 天鹅绒 / 麂皮绒" />
+      <img src="assets/images/inline_image_5.png" alt="羊羔绒 / 天鹅绒 / 麂皮绒" loading="lazy" decoding="async" />
       <div class="fabric-thumb-title">羊羔绒 / 天鹅绒 / 麂皮绒</div>
       <div class="fabric-thumb-meta">Page 5 · Sherpa / Velvet / Suede Fabric</div>
     </button></div>
@@ -297,10 +300,10 @@
       <div><div class="fabric-lightbox-title" id="fabricModalTitle">条纹灯芯绒</div><div style="color:#78716c;font-size:13px" id="fabricModalSub">Page 1 / 5</div></div>
       <button class="close" type="button" onclick="closeFabricModal()">×</button>
     </div>
-    <div class="fabric-lightbox-img-wrap"><img id="fabricModalImage" src="assets/images/inline_image_6.png" alt="Fabric large preview"></div>
+    <div class="fabric-lightbox-img-wrap"><img id="fabricModalImage" src="assets/images/inline_image_6.png" alt="Fabric large preview" loading="lazy" decoding="async"></div>
     <div class="fabric-lightbox-controls">
       <div style="display:flex;gap:10px"><button class="btn light small" type="button" onclick="prevFabric()">Previous</button><button class="btn small" type="button" onclick="nextFabric()">Next</button></div>
-      <div class="fabric-mini-thumbs" id="fabricMiniThumbs"><button type="button" onclick="selectFabric(0);openFabricModal(0)"><img src="assets/images/inline_image_7.png" alt="条纹灯芯绒"></button><button type="button" onclick="selectFabric(1);openFabricModal(1)"><img src="assets/images/inline_image_8.png" alt="雪尼尔"></button><button type="button" onclick="selectFabric(2);openFabricModal(2)"><img src="assets/images/inline_image_9.png" alt="棉麻"></button><button type="button" onclick="selectFabric(3);openFabricModal(3)"><img src="assets/images/inline_image_10.png" alt="冰点绒"></button><button type="button" onclick="selectFabric(4);openFabricModal(4)"><img src="assets/images/inline_image_11.png" alt="羊羔绒 / 天鹅绒 / 麂皮绒"></button></div>
+      <div class="fabric-mini-thumbs" id="fabricMiniThumbs"><button type="button" onclick="selectFabric(0);openFabricModal(0)"><img src="assets/images/inline_image_7.png" alt="条纹灯芯绒" loading="lazy" decoding="async"></button><button type="button" onclick="selectFabric(1);openFabricModal(1)"><img src="assets/images/inline_image_8.png" alt="雪尼尔" loading="lazy" decoding="async"></button><button type="button" onclick="selectFabric(2);openFabricModal(2)"><img src="assets/images/inline_image_9.png" alt="棉麻" loading="lazy" decoding="async"></button><button type="button" onclick="selectFabric(3);openFabricModal(3)"><img src="assets/images/inline_image_10.png" alt="冰点绒" loading="lazy" decoding="async"></button><button type="button" onclick="selectFabric(4);openFabricModal(4)"><img src="assets/images/inline_image_11.png" alt="羊羔绒 / 天鹅绒 / 麂皮绒" loading="lazy" decoding="async"></button></div>
     </div>
   </div>
 </div>
@@ -308,7 +311,7 @@
 <section id="certificates-preview" class="cert-preview-section wrap">
   <div class="cert-preview-card">
     <div class="cert-preview-media">
-      <img src="assets/cert_previews/certificates_banner_replacement.png" alt="CE RoHS Certificate Preview">
+      <img src="assets/cert_previews/certificates_banner_replacement.png" alt="CE RoHS Certificate Preview" loading="lazy" decoding="async">
     </div>
     <div class="cert-preview-content">
       <span class="eyebrow">Certificates · Reports · Compliance</span>
@@ -388,7 +391,7 @@ async function loadData() {
 }
 loadData();
 
-let selectedCat='All', selectedSeat='All', selectedTier='All', cart=[], cardSelections={};
+let selectedCat='All', selectedSeat='All', selectedTier='All', cart=[], cardSelections={}, productLimit=12;
 const uniq = arr => ['All', ...Array.from(new Set(arr.filter(Boolean)))];
 function seriesKey(p){
   const id = p.id || p.model || '';
@@ -427,7 +430,7 @@ function makeGroups(){
 
 
 function makeChips(id, items, get, set){document.getElementById(id).innerHTML=items.map(x=>`<button class="chip ${get()===x?'active':''}" onclick="${set}('${String(x).replace(/'/g,"\'")}')">${x}</button>`).join('')}
-function setCat(x){selectedCat=x; renderProducts()} function setSeat(x){selectedSeat=x; renderProducts()} function setTier(x){selectedTier=x; renderProducts()}
+function setCat(x){selectedCat=x; productLimit=12; renderProducts()} function setSeat(x){selectedSeat=x; productLimit=12; renderProducts()} function setTier(x){selectedTier=x; productLimit=12; renderProducts()}
 function initChips(){makeChips('catChips',uniq(GROUPS.flatMap(g=>g.variants.map(p=>p.category))),()=>selectedCat,'setCat');makeChips('seatChips',uniq(GROUPS.flatMap(g=>g.variants.map(p=>p.seats))),()=>selectedSeat,'setSeat');makeChips('tierChips',uniq(GROUPS.flatMap(g=>g.variants.map(p=>p.tier))),()=>selectedTier,'setTier')}
 function imgLabel(cat){return cat.includes('Sofa Bed')?'Sofa Bed':cat.includes('Floor')?'Floor Sofa':cat.includes('Modular')?'Modular':cat.includes('Footstool')?'Footstool':'Compressed'}
 function firstPrice(g){let nums=g.variants.map(v=>parseFloat(v.price40HQUSD)).filter(n=>!isNaN(n)); if(!nums.length)return '-'; return 'US$'+Math.min(...nums).toFixed(2).replace('.00','')+'+'}
@@ -436,7 +439,7 @@ function jsq(s){return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'")}
 function getGroupByKey(key){return GROUPS.find(x=>x.key===key)||GROUPS.find(x=>x.variants.some(v=>v.id===key))}
 function currentCardVariant(g){const id=cardSelections[g.key]; return g.variants.find(v=>v.id===id) || g.main}
 function getCardByKey(key){return Array.from(document.querySelectorAll('.card')).find(card=>card.dataset.key===key)}
-function cardImageHtml(v,g){const img=v.img || (g.main && g.main.img) || ''; return `${img?`<img src="${img}" alt="${esc(v.model)} ${esc(v.name)}">`:''}<span class="tag">${imgLabel(v.category||g.categories)}</span>${g.variants.length>1?`<span class="variant-tag">${g.variants.length} specs</span>`:''}`}
+function cardImageHtml(v,g){const img=v.img || (g.main && g.main.img) || ''; return `${img?`<img src="${img}" alt="${esc(v.model)} ${esc(v.name)}" loading="lazy" decoding="async">`:''}<span class="tag">${imgLabel(v.category||g.categories)}</span>${g.variants.length>1?`<span class="variant-tag">${g.variants.length} specs</span>`:''}`}
 function cardPrice(v){return v.price40HQUSD ? `US$${v.price40HQUSD}` : '-'}
 function selectCardVariant(key,id){
   const g=getGroupByKey(key); if(!g)return;
@@ -456,8 +459,17 @@ function selectCardVariant(key,id){
 function renderProducts(){
   initChips(); const q=document.getElementById('q').value.toLowerCase();
   const list=GROUPS.filter(g=>g.search.includes(q)&&(selectedCat==='All'||g.variants.some(p=>p.category===selectedCat))&&(selectedSeat==='All'||g.variants.some(p=>p.seats===selectedSeat))&&(selectedTier==='All'||g.variants.some(p=>p.tier===selectedTier)));
-  document.getElementById('resultCount').innerHTML=`Showing <b>${list.length}</b> product cards · <b>${list.reduce((s,g)=>s+g.variants.length,0)}</b> specifications`;
-  document.getElementById('productGrid').innerHTML=list.map(g=>{const p=currentCardVariant(g);return `<div class="card" data-key="${esc(g.key)}"><div class="pic ${p.img?'has-img':''}">${cardImageHtml(p,g)}</div><div class="card-body"><div class="model">${g.key}</div><h3>${g.variants.length>1?g.key+' 系列':p.name}</h3><p>${g.categories} · ${g.seats}</p>${g.variants.length>1?`<div class="variant-list">${g.variants.slice(0,6).map(v=>`<button type="button" class="variant-pill ${v.id===p.id?'active':''}" data-id="${esc(v.id)}" onclick="event.stopPropagation();selectCardVariant('${jsq(g.key)}','${jsq(v.id)}')">${v.id} · ${v.seats}</button>`).join('')}${g.variants.length>6?`<span class="variant-pill">+${g.variants.length-6}</span>`:''}</div><div class="selected-card-spec" data-card-field="selected">当前规格：${p.model} · ${p.seats}</div>`:''}<div class="meta"><div class="box"><small>Size</small><b data-card-field="size">${p.size||'-'}</b></div><div class="box"><small>40HQ Price</small><b data-card-field="price">${cardPrice(p)}</b></div><div class="box"><small>Packing</small><b data-card-field="packing">${p.packingSize||'-'}</b></div><div class="box"><small>40HQ Load</small><b data-card-field="load">${p.load40hq?`${p.load40hq} CTN`:'- CTN'}</b></div></div><div class="actions"><button class="btn light small" data-card-action="details" onclick="showDetail('${jsq(g.key)}','${jsq(p.id)}')">Details</button><button class="btn small" data-card-action="inquiry" onclick="addCart('${jsq(p.id)}')">Add Inquiry</button></div></div></div>`}).join('')
+  const shown=list.slice(0, productLimit);
+  document.getElementById('resultCount').innerHTML=`Showing <b>${shown.length}</b> / <b>${list.length}</b> product cards · <b>${list.reduce((s,g)=>s+g.variants.length,0)}</b> specifications`;
+  document.getElementById('productGrid').innerHTML=shown.map(g=>{const p=currentCardVariant(g);return `<div class="card" data-key="${esc(g.key)}"><div class="pic ${p.img?'has-img':''}">${cardImageHtml(p,g)}</div><div class="card-body"><div class="model">${g.key}</div><h3>${g.variants.length>1?g.key+' 系列':p.name}</h3><p>${g.categories} · ${g.seats}</p>${g.variants.length>1?`<div class="variant-list">${g.variants.slice(0,6).map(v=>`<button type="button" class="variant-pill ${v.id===p.id?'active':''}" data-id="${esc(v.id)}" onclick="event.stopPropagation();selectCardVariant('${jsq(g.key)}','${jsq(v.id)}')">${v.id} · ${v.seats}</button>`).join('')}${g.variants.length>6?`<span class="variant-pill">+${g.variants.length-6}</span>`:''}</div><div class="selected-card-spec" data-card-field="selected">当前规格：${p.model} · ${p.seats}</div>`:''}<div class="meta"><div class="box"><small>Size</small><b data-card-field="size">${p.size||'-'}</b></div><div class="box"><small>40HQ Price</small><b data-card-field="price">${cardPrice(p)}</b></div><div class="box"><small>Packing</small><b data-card-field="packing">${p.packingSize||'-'}</b></div><div class="box"><small>40HQ Load</small><b data-card-field="load">${p.load40hq?`${p.load40hq} CTN`:'- CTN'}</b></div></div><div class="actions"><button class="btn light small" data-card-action="details" onclick="showDetail('${jsq(g.key)}','${jsq(p.id)}')">Details</button><button class="btn small" data-card-action="inquiry" onclick="addCart('${jsq(p.id)}')">Add Inquiry</button></div></div></div>`}).join('');
+  let more=document.getElementById('loadMoreProducts');
+  if(!more){
+    more=document.createElement('div');
+    more.id='loadMoreProducts';
+    more.style.cssText='text-align:center;margin-top:24px';
+    document.getElementById('productGrid').after(more);
+  }
+  more.innerHTML = list.length>productLimit ? `<button class="btn light" onclick="productLimit+=12;renderProducts()">Load More Products</button>` : '';
 }
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function displayValue(v,suffix=''){return v ? `${v}${suffix}` : '-'}
@@ -473,7 +485,7 @@ function selectedVariantSpecs(v){return [
   ['Package Qty', v.packages || '-'],
   ['Color', v.colors || '-']
 ].map(([a,b])=>`<div class="spec"><small>${a}</small><b>${b}</b></div>`).join('')}
-function imageBoxHtml(v,g){const img=v.img || (g.main && g.main.img) || ''; return `${img?`<img id="detailImage" src="${img}" alt="${esc(v.model)} ${esc(v.name)}">`:''}<span class="tag">${g.categories}</span>${g.variants.length>1?`<span class="variant-tag">${g.variants.length} specs</span>`:''}`}
+function imageBoxHtml(v,g){const img=v.img || (g.main && g.main.img) || ''; return `${img?`<img id="detailImage" src="${img}" alt="${esc(v.model)} ${esc(v.name)}" loading="lazy" decoding="async">`:''}<span class="tag">${g.categories}</span>${g.variants.length>1?`<span class="variant-tag">${g.variants.length} specs</span>`:''}`}
 function variantButtons(g,selectedId){return g.variants.map(v=>`<button class="variant-button ${v.id===selectedId?'active':''}" data-id="${esc(v.id)}" onclick="selectVariant('${esc(v.id)}')">${v.model} · ${v.seats}</button>`).join('')}
 function variantRows(g,selectedId){return g.variants.map(v=>`<tr class="variant-row ${v.id===selectedId?'active':''}" data-id="${esc(v.id)}" onclick="selectVariant('${esc(v.id)}')"><td>${v.id}</td><td>${v.name}</td><td>${v.seats}</td><td>${v.size}</td><td>${v.packingSize}</td><td>US$${v.price40HQUSD||'-'}</td><td>${v.cbm||'-'}</td><td>${v.weight||'-'} kg</td><td>${v.load40hq||'-'}</td><td><button class="btn small" onclick="event.stopPropagation();addCart('${esc(v.id)}')">Add</button></td></tr>`).join('')}
 function selectVariant(id){
@@ -491,7 +503,7 @@ function closeModal(){document.getElementById('modal').classList.remove('open')}
 function addCart(id){const p=PRODUCTS.find(x=>x.id===id); const item=cart.find(x=>x.id===id); if(item)item.qty++;else cart.push({...p,qty:1}); updateCount(); openCart()}
 function removeCart(id){cart=cart.filter(x=>x.id!==id); updateCount(); renderCart()}
 function updateCount(){document.getElementById('cartCount').innerText=cart.reduce((s,x)=>s+x.qty,0)}
-function renderCart(){document.getElementById('cartItems').innerHTML=cart.length?cart.map(p=>`<div class="cart-item"><div class="thumb">${p.img?`<img src="${p.img}" alt="${p.model}">`:''}</div><div><b>${p.model} · ${p.name}</b><p>${p.size}<br>40HQ: US$${p.price40HQUSD}</p><div class="qty">Qty: ${p.qty} <button onclick="removeCart('${p.id}')">×</button></div></div></div>`).join(''):'<p>暂无选择产品</p>'}
+function renderCart(){document.getElementById('cartItems').innerHTML=cart.length?cart.map(p=>`<div class="cart-item"><div class="thumb">${p.img?`<img src="${p.img}" alt="${p.model}" loading="lazy" decoding="async">`:''}</div><div><b>${p.model} · ${p.name}</b><p>${p.size}<br>40HQ: US$${p.price40HQUSD}</p><div class="qty">Qty: ${p.qty} <button onclick="removeCart('${p.id}')">×</button></div></div></div>`).join(''):'<p>暂无选择产品</p>'}
 
 </script>
 
