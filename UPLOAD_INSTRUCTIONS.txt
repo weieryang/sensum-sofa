@@ -1,0 +1,19 @@
+Weieryang homepage emergency fix
+
+Upload only these root files to the GitHub repository root:
+- index.html
+- robots.txt
+- sitemap.xml
+- llms.txt
+
+Important:
+1. When GitHub says index.html already exists, choose Replace/Commit to overwrite the existing index.html.
+2. Do not rename the file to index (1).html.
+3. Keep assets/ and data/ folders unchanged.
+4. After upload, delete extra duplicate files from root if present:
+   - index (1).html
+   - index (3).html
+   - index (5).html
+   - index (7).html
+   - index (9).html
+5. Keep .nojekyll and CNAME.
