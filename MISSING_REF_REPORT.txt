@@ -1,0 +1,5 @@
+('index.html', '${img}', '${img}')
+('index.html', '${img}', '${img}')
+('index.html', '${p.img}', '${p.img}')
+('certificates.html', 'assets/cert_previews/certificates_banner_replacement_v2.png', 'assets/cert_previews/certificates_banner_replacement_v2.png')
+('certificates/index.html', '../assets/cert_previews/certificates_banner_replacement_v2.png', 'assets/cert_previews/certificates_banner_replacement_v2.png')
