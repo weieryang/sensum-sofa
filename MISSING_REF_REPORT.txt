@@ -1,5 +1,3 @@
-('index.html', '${img}', '${img}')
-('index.html', '${img}', '${img}')
-('index.html', '${p.img}', '${p.img}')
-('certificates.html', 'assets/cert_previews/certificates_banner_replacement_v2.png', 'assets/cert_previews/certificates_banner_replacement_v2.png')
-('certificates/index.html', '../assets/cert_previews/certificates_banner_replacement_v2.png', 'assets/cert_previews/certificates_banner_replacement_v2.png')
+No unresolved static file references were found after deployment preparation.
+
+Dynamic template references such as ${img} and ${p.img} are generated at runtime.
