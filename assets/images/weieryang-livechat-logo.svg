@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Weieryang logo">
+  <rect width="256" height="256" rx="56" fill="#ffffff"/>
+  <circle cx="128" cy="128" r="102" fill="none" stroke="#03A84E" stroke-width="18"/>
+  <path d="M58 101l25 58 27-58h26l-41 84H73L32 101h26z" fill="#03A84E"/>
+  <path d="M139 101h72v22h-45v16h38v21h-38v25h-27v-84z" fill="#1c1917"/>
+  <path d="M73 181h110c14 0 25 11 25 25v8H48v-8c0-14 11-25 25-25z" fill="#03A84E"/>
+  <path d="M62 205h132" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M58 194c-9 0-17 7-17 17v19h25v-36H58zm140 0h8c9 0 17 7 17 17v19h-25v-36z" fill="#03A84E"/>
+</svg>
