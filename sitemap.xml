@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://weieryang.com/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
-  <url><loc>https://weieryang.com/products/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/</loc><lastmod>2026-06-11</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
+  <url><loc>https://weieryang.com/products/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/certificates/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/fabric/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/oem-odm/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
@@ -48,4 +48,6 @@
   <url><loc>https://weieryang.com/products/fn-802-floor-sofa/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/products/fn-804-floor-sofa/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/products/fn-805-floor-sofa/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/blog/</loc><lastmod>2026-06-11</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://weieryang.com/blog/compressed-sofa-packing-guide-for-importers.html</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
 </urlset>
