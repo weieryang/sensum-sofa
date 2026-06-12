@@ -29,3 +29,5 @@ Buyers should provide model number, order quantity, destination country, preferr
 Useful buyer guides:
 - Compressed sofa packing guide for importers: https://weieryang.com/blog/compressed-sofa-packing-guide-for-importers.html
 - Compressed sofa sourcing blog: https://weieryang.com/blog/
+
+- Compressed sofa manufacturer buyer checklist: https://weieryang.com/blog/how-to-choose-compressed-sofa-manufacturer.html
