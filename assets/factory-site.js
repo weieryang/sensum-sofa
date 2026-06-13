@@ -11,11 +11,25 @@
     menuButton.setAttribute("aria-expanded", "false");
     navigation.classList.remove("open");
     document.body.classList.remove("menu-open");
+    closeLanguageSwitchers();
+  }
+
+  function updateMobileNavigationPosition() {
+    if (!header || !navigation) return;
+    navigation.style.setProperty(
+      "--mobile-nav-top",
+      Math.max(0, Math.round(header.getBoundingClientRect().bottom)) + "px"
+    );
   }
 
   if (menuButton && navigation) {
     menuButton.addEventListener("click", function () {
       var isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        closeMenu();
+        return;
+      }
+      updateMobileNavigationPosition();
       menuButton.setAttribute("aria-expanded", String(!isOpen));
       navigation.classList.toggle("open", !isOpen);
       document.body.classList.toggle("menu-open", !isOpen);
@@ -27,6 +41,66 @@
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") closeMenu();
+    });
+
+    window.addEventListener("resize", function () {
+      if (navigation.classList.contains("open")) {
+        updateMobileNavigationPosition();
+      }
+    });
+  }
+
+  var languageSwitchers = document.querySelectorAll(
+    "[data-language-switcher]"
+  );
+
+  function closeLanguageSwitchers(exception) {
+    languageSwitchers.forEach(function (switcher) {
+      if (switcher === exception) return;
+      switcher.classList.remove("is-open");
+      var trigger = switcher.querySelector(".language-trigger");
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  languageSwitchers.forEach(function (switcher) {
+    var trigger = switcher.querySelector(".language-trigger");
+    if (!trigger) return;
+
+    trigger.addEventListener("click", function (event) {
+      event.stopPropagation();
+      var isOpen = switcher.classList.toggle("is-open");
+      closeLanguageSwitchers(isOpen ? switcher : null);
+      trigger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    switcher.querySelectorAll("[data-language-code]").forEach(function (link) {
+      var languageCode = link.getAttribute("data-language-code");
+      if (!languageCode || languageCode === "en") return;
+
+      var sourceUrl =
+        "https://weieryang.com" +
+        window.location.pathname +
+        window.location.hash;
+      link.href =
+        "https://translate.google.com/translate?sl=en&tl=" +
+        encodeURIComponent(languageCode) +
+        "&u=" +
+        encodeURIComponent(sourceUrl);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+  });
+
+  if (languageSwitchers.length) {
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest("[data-language-switcher]")) {
+        closeLanguageSwitchers();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeLanguageSwitchers();
     });
   }
 
