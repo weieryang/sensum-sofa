@@ -1113,6 +1113,55 @@ h2 {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.faq-preview-section {
+  background: #f6f1e8;
+}
+
+.faq-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 34px 0;
+}
+
+.faq-preview-card {
+  min-height: 100%;
+  padding: 28px;
+  border: 1px solid rgba(34, 49, 36, .14);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, .62);
+  box-shadow: 0 18px 45px rgba(35, 45, 32, .07);
+}
+
+.faq-preview-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.faq-preview-card h3 {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.04;
+}
+
+.faq-preview-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 .request-label {
   display: inline-block;
   margin-bottom: 18px;
@@ -1514,6 +1563,10 @@ h2 {
   }
 
   .process-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-preview-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -2735,6 +2788,14 @@ h2 {
 
   .banner-actions .button {
     width: 100%;
+  }
+
+  .faq-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-preview-card {
+    padding: 24px;
   }
 
   .banner-factory-badge {
