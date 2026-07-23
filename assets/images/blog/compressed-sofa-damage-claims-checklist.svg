@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa Damage Claims Checklist for Importers</title>
+  <desc id="desc">Infographic showing the buyer workflow for carton damage, unpacking evidence, recovery checks, supplier notice and replacement decision on compressed sofas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe6"/>
+      <stop offset="100%" stop-color="#ebe0d0"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d1813"/>
+      <stop offset="100%" stop-color="#3b2e25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="48" y="40" width="1104" height="820" rx="30" fill="#fffaf2" stroke="#d7cab7"/>
+  <text x="84" y="102" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7b6c59">Weieryang Buyer Guide</text>
+  <text x="84" y="150" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#1f1a14">Compressed Sofa Damage Claims Checklist</text>
+  <text x="84" y="191" font-family="Arial, sans-serif" font-size="22" fill="#62574b">Document the issue before it becomes a freight or quality dispute.</text>
+  <rect x="84" y="232" width="320" height="164" rx="24" fill="url(#dark)"/>
+  <text x="112" y="276" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1. Delivery Check</text>
+  <text x="112" y="320" font-family="Arial, sans-serif" font-size="21" fill="#f6e9d8">Check outer carton damage, wet marks, crush points,</text>
+  <text x="112" y="350" font-family="Arial, sans-serif" font-size="21" fill="#f6e9d8">quantity mismatch and label identity before signing.</text>
+  <rect x="440" y="232" width="320" height="164" rx="24" fill="#fff2dc" stroke="#d7cab7"/>
+  <text x="468" y="276" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#1f1a14">2. Evidence Pack</text>
+  <text x="468" y="320" font-family="Arial, sans-serif" font-size="21" fill="#4a4036">Take photos of carton labels, damage area,</text>
+  <text x="468" y="350" font-family="Arial, sans-serif" font-size="21" fill="#4a4036">inner protection, sofa condition and unpack timing.</text>
+  <rect x="796" y="232" width="272" height="164" rx="24" fill="#176b45"/>
+  <text x="824" y="276" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">3. Notify Fast</text>
+  <text x="824" y="320" font-family="Arial, sans-serif" font-size="21" fill="#e5fff2">Send the supplier one issue file with PO,</text>
+  <text x="824" y="350" font-family="Arial, sans-serif" font-size="21" fill="#e5fff2">SKU, carton count and photo sequence.</text>
+  <path d="M404 314h26" stroke="#c58a2a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M760 314h24" stroke="#c58a2a" stroke-width="8" stroke-linecap="round"/>
+  <rect x="84" y="448" width="984" height="140" rx="24" fill="#fff" stroke="#d7cab7"/>
+  <text x="114" y="494" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#1f1a14">Core File Set for Every Claim</text>
+  <g font-family="Arial, sans-serif" font-size="21" fill="#4a4036">
+    <circle cx="126" cy="533" r="6" fill="#03a84e"/>
+    <text x="144" y="540">Signed delivery note or receiving record</text>
+    <circle cx="448" cy="533" r="6" fill="#03a84e"/>
+    <text x="466" y="540">Carton label and barcode photos</text>
+    <circle cx="734" cy="533" r="6" fill="#03a84e"/>
+    <text x="752" y="540">Unpacking and recovery timeline photos</text>
+    <circle cx="126" cy="568" r="6" fill="#03a84e"/>
+    <text x="144" y="575">Damage summary by SKU and carton count</text>
+    <circle cx="448" cy="568" r="6" fill="#03a84e"/>
+    <text x="466" y="575">Inner protection and compression state</text>
+    <circle cx="734" cy="568" r="6" fill="#03a84e"/>
+    <text x="752" y="575">Requested solution: replacement, credit or parts</text>
+  </g>
+  <rect x="84" y="630" width="460" height="174" rx="24" fill="#fff2dc" stroke="#d7cab7"/>
+  <text x="114" y="676" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#1f1a14">Common Buyer Mistakes</text>
+  <text x="114" y="719" font-family="Arial, sans-serif" font-size="21" fill="#4a4036">Signing before checking labels and carton condition</text>
+  <text x="114" y="751" font-family="Arial, sans-serif" font-size="21" fill="#4a4036">Sending scattered photos without SKU or carton count</text>
+  <text x="114" y="783" font-family="Arial, sans-serif" font-size="21" fill="#4a4036">Waiting too long before recording recovery issues</text>
+  <rect x="576" y="630" width="492" height="174" rx="24" fill="url(#dark)"/>
+  <text x="606" y="676" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">Practical Resolution Goal</text>
+  <text x="606" y="719" font-family="Arial, sans-serif" font-size="21" fill="#f6e9d8">Give the supplier a clean claim file within 24 hours</text>
+  <text x="606" y="751" font-family="Arial, sans-serif" font-size="21" fill="#f6e9d8">so root cause, responsibility and replacement path</text>
+  <text x="606" y="783" font-family="Arial, sans-serif" font-size="21" fill="#f6e9d8">can be decided before the case turns into a dispute.</text>
+  <text x="84" y="841" font-family="Arial, sans-serif" font-size="18" fill="#6a6055">Recommended companion guides: Packing, Pre-shipment Inspection, Certificates and Import Documents, Storage and Handling</text>
+</svg>
