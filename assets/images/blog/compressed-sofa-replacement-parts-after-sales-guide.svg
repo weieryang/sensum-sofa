@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa Replacement Parts and After-Sales Support Guide</title>
+  <desc id="desc">Infographic showing spare parts list, response window, issue file, replacement path and after-sales workflow for compressed sofa buyers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f1e9"/>
+      <stop offset="100%" stop-color="#e8dece"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#201914"/>
+      <stop offset="100%" stop-color="#403126"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="44" y="36" width="1112" height="828" rx="30" fill="#fffaf2" stroke="#d7cab8"/>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7b6a58">Weieryang Buyer Guide</text>
+  <text x="80" y="146" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#1f1914">Compressed Sofa Replacement Parts and After-Sales Support</text>
+  <text x="80" y="186" font-family="Arial, sans-serif" font-size="22" fill="#62564a">Agree the service path before the first claim or spare-parts request arrives.</text>
+  <rect x="80" y="228" width="324" height="172" rx="24" fill="url(#ink)"/>
+  <text x="108" y="274" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1. Define The Parts List</text>
+  <text x="108" y="318" font-family="Arial, sans-serif" font-size="21" fill="#f6ead9">Fabric swatch, cushion core, cover, zipper,</text>
+  <text x="108" y="348" font-family="Arial, sans-serif" font-size="21" fill="#f6ead9">label, leg, connector and carton accessories.</text>
+  <rect x="438" y="228" width="324" height="172" rx="24" fill="#fff1dc" stroke="#d7cab8"/>
+  <text x="466" y="274" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#1f1914">2. Response Window</text>
+  <text x="466" y="318" font-family="Arial, sans-serif" font-size="21" fill="#4d4237">Set who replies, what evidence is required,</text>
+  <text x="466" y="348" font-family="Arial, sans-serif" font-size="21" fill="#4d4237">and how fast the supplier confirms the case.</text>
+  <rect x="796" y="228" width="280" height="172" rx="24" fill="#186a44"/>
+  <text x="824" y="274" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">3. Resolution Path</text>
+  <text x="824" y="318" font-family="Arial, sans-serif" font-size="21" fill="#e8fff1">Spare parts, replacement unit,</text>
+  <text x="824" y="348" font-family="Arial, sans-serif" font-size="21" fill="#e8fff1">credit note or mixed solution.</text>
+  <rect x="80" y="438" width="996" height="150" rx="24" fill="#ffffff" stroke="#d7cab8"/>
+  <text x="112" y="484" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#1f1914">The Buyer File Needed For Every After-Sales Case</text>
+  <g font-family="Arial, sans-serif" font-size="21" fill="#4d4237">
+    <circle cx="126" cy="525" r="6" fill="#03a84e"/>
+    <text x="144" y="532">PO or shipment reference</text>
+    <circle cx="400" cy="525" r="6" fill="#03a84e"/>
+    <text x="418" y="532">SKU and affected quantity</text>
+    <circle cx="676" cy="525" r="6" fill="#03a84e"/>
+    <text x="694" y="532">Photos, labels and recovery timing</text>
+    <circle cx="126" cy="562" r="6" fill="#03a84e"/>
+    <text x="144" y="569">Requested parts or replacement scope</text>
+    <circle cx="400" cy="562" r="6" fill="#03a84e"/>
+    <text x="418" y="569">Destination and urgency</text>
+    <circle cx="676" cy="562" r="6" fill="#03a84e"/>
+    <text x="694" y="569">Preferred shipping method for support items</text>
+  </g>
+  <rect x="80" y="626" width="470" height="180" rx="24" fill="#fff1dc" stroke="#d7cab8"/>
+  <text x="110" y="672" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#1f1914">What Buyers Should Agree Before Bulk Order</text>
+  <text x="110" y="716" font-family="Arial, sans-serif" font-size="21" fill="#4d4237">Support contact, claim photos, spare-parts SKUs,</text>
+  <text x="110" y="746" font-family="Arial, sans-serif" font-size="21" fill="#4d4237">service window, courier method and cost logic.</text>
+  <text x="110" y="776" font-family="Arial, sans-serif" font-size="21" fill="#4d4237">Do not wait until a marketplace complaint appears.</text>
+  <rect x="584" y="626" width="492" height="180" rx="24" fill="url(#ink)"/>
+  <text x="614" y="672" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">Commercial Goal</text>
+  <text x="614" y="716" font-family="Arial, sans-serif" font-size="21" fill="#f6ead9">A clean after-sales process protects ratings,</text>
+  <text x="614" y="746" font-family="Arial, sans-serif" font-size="21" fill="#f6ead9">warehouse labor and replacement cost before</text>
+  <text x="614" y="776" font-family="Arial, sans-serif" font-size="21" fill="#f6ead9">small issues turn into margin loss or repeat claims.</text>
+  <text x="80" y="844" font-family="Arial, sans-serif" font-size="18" fill="#695f54">Recommended companion guides: Damage Claims, Import Checklist, MOQ and Lead Time, Private Label Planning</text>
+</svg>
