@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa Warranty Terms and Claim Response SLA Guide</title>
+  <desc id="desc">Infographic showing warranty scope, excluded cases, response SLA, commercial risk and buyer best practice for compressed sofa import programs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3ede1"/>
+      <stop offset="100%" stop-color="#d9e4d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="60" y="58" width="1080" height="784" rx="32" fill="#fffaf2" stroke="#1f3b2f" stroke-width="3"/>
+  <text x="110" y="135" fill="#1f3b2f" font-family="Arial, sans-serif" font-size="42" font-weight="700">Compressed Sofa Warranty Terms</text>
+  <text x="110" y="185" fill="#495d54" font-family="Arial, sans-serif" font-size="30">Claim Response SLA Guide for Import Buyers</text>
+
+  <rect x="110" y="235" width="455" height="170" rx="22" fill="#234535"/>
+  <text x="140" y="285" fill="#f8f3e7" font-family="Arial, sans-serif" font-size="28" font-weight="700">Warranty Scope</text>
+  <text x="140" y="328" fill="#f8f3e7" font-family="Arial, sans-serif" font-size="22">Define covered defects, valid evidence,</text>
+  <text x="140" y="360" fill="#f8f3e7" font-family="Arial, sans-serif" font-size="22">claim window and approved resolution paths.</text>
+
+  <rect x="635" y="235" width="455" height="170" rx="22" fill="#d8c3a5"/>
+  <text x="665" y="285" fill="#1f2a22" font-family="Arial, sans-serif" font-size="28" font-weight="700">Excluded Cases</text>
+  <text x="665" y="328" fill="#1f2a22" font-family="Arial, sans-serif" font-size="22">Clarify misuse, storage errors, delayed</text>
+  <text x="665" y="360" fill="#1f2a22" font-family="Arial, sans-serif" font-size="22">reporting and unauthorized repairs.</text>
+
+  <rect x="110" y="445" width="455" height="170" rx="22" fill="#eef3e7" stroke="#234535" stroke-width="2"/>
+  <text x="140" y="495" fill="#234535" font-family="Arial, sans-serif" font-size="28" font-weight="700">Response SLA</text>
+  <text x="140" y="538" fill="#234535" font-family="Arial, sans-serif" font-size="22">Set acknowledgment time, review window,</text>
+  <text x="140" y="570" fill="#234535" font-family="Arial, sans-serif" font-size="22">escalation owner and final approval timing.</text>
+
+  <rect x="635" y="445" width="455" height="170" rx="22" fill="#fff3db" stroke="#8b6b42" stroke-width="2"/>
+  <text x="665" y="495" fill="#6f4f27" font-family="Arial, sans-serif" font-size="28" font-weight="700">Commercial Risk</text>
+  <text x="665" y="538" fill="#6f4f27" font-family="Arial, sans-serif" font-size="22">Loose wording turns small quality cases</text>
+  <text x="665" y="570" fill="#6f4f27" font-family="Arial, sans-serif" font-size="22">into margin loss, delay and channel disputes.</text>
+
+  <rect x="110" y="655" width="980" height="120" rx="24" fill="#1f3b2f"/>
+  <text x="145" y="705" fill="#f8f3e7" font-family="Arial, sans-serif" font-size="28" font-weight="700">Best Practice</text>
+  <text x="145" y="747" fill="#f8f3e7" font-family="Arial, sans-serif" font-size="22">Lock warranty scope, excluded cases, parts support, full-unit replacement logic and evidence rules before bulk order.</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa Certificates and Import Documents Checklist</title>
+  <desc id="desc">Infographic showing compliance files, carton files, shipment files and buyer checks for compressed sofa imports.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe5"/>
+      <stop offset="100%" stop-color="#ebe2d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="52" y="42" width="1096" height="816" rx="30" fill="#fffdf8" stroke="#d9cdb8"/>
+  <text x="86" y="98" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7b6d59">Weieryang Buyer Checklist</text>
+  <text x="86" y="148" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#201a14">Compressed Sofa Certificates and Import Documents</text>
+  <text x="86" y="186" font-family="Arial, sans-serif" font-size="22" fill="#5f5447">Match every file to the exact model, market and shipment stage.</text>
+
+  <rect x="86" y="236" width="496" height="250" rx="24" fill="#1f1a14"/>
+  <text x="118" y="284" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1. Compliance Files</text>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#ffffff">
+    <text x="118" y="334">CE / RoHS certificates or reports</text>
+    <text x="118" y="376">GCC / 16 CFR 1640 reports when relevant</text>
+    <text x="118" y="418">Model match, issue date, report number</text>
+    <text x="118" y="460">Buyer check: same material and same market</text>
+  </g>
+
+  <rect x="614" y="236" width="500" height="250" rx="24" fill="#fff5e8" stroke="#d9cdb8"/>
+  <text x="646" y="284" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#201a14">2. Carton and OEM Files</text>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#40352c">
+    <text x="646" y="334">Carton size, gross weight, CBM</text>
+    <text x="646" y="376">Barcode, SKU label and shipping marks</text>
+    <text x="646" y="418">Artwork approval and package count</text>
+    <text x="646" y="460">Buyer check: no old SKU or wrong destination mark</text>
+  </g>
+
+  <rect x="86" y="530" width="496" height="248" rx="24" fill="#fff5e8" stroke="#d9cdb8"/>
+  <text x="118" y="578" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#201a14">3. Shipment Files</text>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#40352c">
+    <text x="118" y="628">Packing list and commercial invoice</text>
+    <text x="118" y="670">Inspection photos and carton photos</text>
+    <text x="118" y="712">Booking and loading confirmation</text>
+    <text x="118" y="754">Buyer check: quantity and carton count match PO</text>
+  </g>
+
+  <rect x="614" y="530" width="500" height="248" rx="24" fill="#1a6f46"/>
+  <text x="646" y="578" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">4. Release Rules</text>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#ffffff">
+    <text x="646" y="628">Do not approve generic certificates only</text>
+    <text x="646" y="670">Recheck after fabric or carton revision</text>
+    <text x="646" y="712">Save one final document pack per order</text>
+    <text x="646" y="754">Link documents to sample and shipment evidence</text>
+  </g>
+
+  <text x="86" y="822" font-family="Arial, sans-serif" font-size="18" fill="#6c6258">Recommended related pages: Certificates, How to Import, Carton Labeling Guide, RFQ Checklist</text>
+</svg>
