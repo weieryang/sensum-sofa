@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa Warranty Claim Form and Evidence Pack</title>
+  <desc id="desc">Five-step infographic for compressed sofa importers showing order reference, product identity, visual evidence, issue timeline and resolution request.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe3"/>
+      <stop offset="100%" stop-color="#d8e5d8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#17362b" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="1070" cy="90" r="145" fill="#d9b98c" opacity=".26"/>
+  <circle cx="80" cy="820" r="180" fill="#244b3b" opacity=".08"/>
+  <rect x="58" y="52" width="1084" height="796" rx="34" fill="#fffaf2" stroke="#244b3b" stroke-width="3" filter="url(#shadow)"/>
+
+  <text x="105" y="126" fill="#1d3a2f" font-family="Arial, sans-serif" font-size="41" font-weight="700">Warranty Claim Evidence Pack</text>
+  <text x="105" y="173" fill="#50635a" font-family="Arial, sans-serif" font-size="25">One complete file. Five connected evidence blocks. One actionable decision.</text>
+
+  <line x1="185" y1="303" x2="1015" y2="303" stroke="#b9c8bf" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="185" cy="303" r="54" fill="#244b3b"/>
+    <text x="185" y="316" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="35" font-weight="700">1</text>
+    <rect x="105" y="382" width="160" height="170" rx="20" fill="#244b3b"/>
+    <text x="185" y="430" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="23" font-weight="700">ORDER</text>
+    <text x="185" y="468" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="18">PO / invoice</text>
+    <text x="185" y="497" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="18">shipment</text>
+    <text x="185" y="526" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="18">claim ID</text>
+  </g>
+
+  <g>
+    <circle cx="390" cy="303" r="54" fill="#cfaa77"/>
+    <text x="390" y="316" text-anchor="middle" fill="#1d3028" font-family="Arial, sans-serif" font-size="35" font-weight="700">2</text>
+    <rect x="310" y="382" width="160" height="170" rx="20" fill="#ead4b4"/>
+    <text x="390" y="430" text-anchor="middle" fill="#1d3028" font-family="Arial, sans-serif" font-size="23" font-weight="700">IDENTITY</text>
+    <text x="390" y="468" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">SKU / color</text>
+    <text x="390" y="497" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">carton label</text>
+    <text x="390" y="526" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">batch</text>
+  </g>
+
+  <g>
+    <circle cx="595" cy="303" r="54" fill="#376851"/>
+    <text x="595" y="316" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="35" font-weight="700">3</text>
+    <rect x="515" y="382" width="160" height="170" rx="20" fill="#dce9df"/>
+    <text x="595" y="430" text-anchor="middle" fill="#244b3b" font-family="Arial, sans-serif" font-size="23" font-weight="700">PHOTOS</text>
+    <text x="595" y="468" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">full view</text>
+    <text x="595" y="497" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">close-up</text>
+    <text x="595" y="526" text-anchor="middle" fill="#32463d" font-family="Arial, sans-serif" font-size="18">packaging</text>
+  </g>
+
+  <g>
+    <circle cx="800" cy="303" r="54" fill="#a76544"/>
+    <text x="800" y="316" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="35" font-weight="700">4</text>
+    <rect x="720" y="382" width="160" height="170" rx="20" fill="#f2ded0"/>
+    <text x="800" y="430" text-anchor="middle" fill="#70442f" font-family="Arial, sans-serif" font-size="23" font-weight="700">TIMELINE</text>
+    <text x="800" y="468" text-anchor="middle" fill="#70442f" font-family="Arial, sans-serif" font-size="18">discovery</text>
+    <text x="800" y="497" text-anchor="middle" fill="#70442f" font-family="Arial, sans-serif" font-size="18">recovery</text>
+    <text x="800" y="526" text-anchor="middle" fill="#70442f" font-family="Arial, sans-serif" font-size="18">quantity</text>
+  </g>
+
+  <g>
+    <circle cx="1005" cy="303" r="54" fill="#1c3544"/>
+    <text x="1005" y="316" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="35" font-weight="700">5</text>
+    <rect x="925" y="382" width="160" height="170" rx="20" fill="#dce5ea"/>
+    <text x="1005" y="430" text-anchor="middle" fill="#1c3544" font-family="Arial, sans-serif" font-size="23" font-weight="700">REQUEST</text>
+    <text x="1005" y="468" text-anchor="middle" fill="#314b59" font-family="Arial, sans-serif" font-size="18">parts</text>
+    <text x="1005" y="497" text-anchor="middle" fill="#314b59" font-family="Arial, sans-serif" font-size="18">replacement</text>
+    <text x="1005" y="526" text-anchor="middle" fill="#314b59" font-family="Arial, sans-serif" font-size="18">credit</text>
+  </g>
+
+  <rect x="105" y="618" width="980" height="145" rx="25" fill="#1d3a2f"/>
+  <text x="145" y="674" fill="#fffaf2" font-family="Arial, sans-serif" font-size="27" font-weight="700">Review-ready handoff</text>
+  <text x="145" y="718" fill="#e4eee7" font-family="Arial, sans-serif" font-size="22">Identify the exact unit, prove the issue in context, show the timing, quantify impact,</text>
+  <text x="145" y="751" fill="#e4eee7" font-family="Arial, sans-serif" font-size="22">then request the resolution that matches repair feasibility and commercial risk.</text>
+  <text x="1080" y="817" text-anchor="end" fill="#667970" font-family="Arial, sans-serif" font-size="18">Weieryang Buyer Guide</text>
+</svg>
