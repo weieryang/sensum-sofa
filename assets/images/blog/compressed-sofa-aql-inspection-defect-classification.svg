@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed Sofa AQL Inspection and Defect Classification</title>
+  <desc id="desc">Infographic showing lot sampling, critical major and minor defect classification, inspection evidence and shipment disposition for compressed sofa importers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe4"/>
+      <stop offset="100%" stop-color="#dce8dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#17362b" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="1085" cy="90" r="155" fill="#d7b17a" opacity=".24"/>
+  <circle cx="80" cy="845" r="190" fill="#234b3a" opacity=".08"/>
+  <rect x="58" y="52" width="1084" height="796" rx="34" fill="#fffaf2" stroke="#244b3b" stroke-width="3" filter="url(#shadow)"/>
+
+  <text x="105" y="126" fill="#1d3a2f" font-family="Arial, sans-serif" font-size="40" font-weight="700">Compressed Sofa AQL Inspection</text>
+  <text x="105" y="171" fill="#52655c" font-family="Arial, sans-serif" font-size="24">Sample the lot. Classify the finding. Record the evidence. Control the release.</text>
+
+  <rect x="105" y="220" width="990" height="100" rx="23" fill="#1f4435"/>
+  <text x="145" y="263" fill="#fffaf2" font-family="Arial, sans-serif" font-size="25" font-weight="700">LOT + AGREED PLAN</text>
+  <text x="145" y="297" fill="#e6eee8" font-family="Arial, sans-serif" font-size="20">PO / SKU / quantity  +  inspection level  +  AQL values  +  random sample</text>
+
+  <line x1="600" y1="320" x2="600" y2="365" stroke="#9eb3a7" stroke-width="7" stroke-linecap="round"/>
+  <polygon points="585,356 615,356 600,378" fill="#9eb3a7"/>
+
+  <rect x="105" y="382" width="300" height="210" rx="24" fill="#f1d8cf" stroke="#a8573c" stroke-width="2"/>
+  <circle cx="155" cy="432" r="27" fill="#a64d35"/>
+  <text x="155" y="442" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="25" font-weight="700">C</text>
+  <text x="200" y="443" fill="#7b3f2d" font-family="Arial, sans-serif" font-size="28" font-weight="700">CRITICAL</text>
+  <text x="145" y="490" fill="#65443a" font-family="Arial, sans-serif" font-size="20">Safety or serious</text>
+  <text x="145" y="521" fill="#65443a" font-family="Arial, sans-serif" font-size="20">compliance risk</text>
+  <text x="145" y="560" fill="#8b4b37" font-family="Arial, sans-serif" font-size="18" font-weight="700">Immediate escalation</text>
+
+  <rect x="450" y="382" width="300" height="210" rx="24" fill="#ead8b8" stroke="#9b7335" stroke-width="2"/>
+  <circle cx="500" cy="432" r="27" fill="#9b7335"/>
+  <text x="500" y="442" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="25" font-weight="700">M</text>
+  <text x="545" y="443" fill="#705126" font-family="Arial, sans-serif" font-size="28" font-weight="700">MAJOR</text>
+  <text x="490" y="490" fill="#624f34" font-family="Arial, sans-serif" font-size="20">Function, specification</text>
+  <text x="490" y="521" fill="#624f34" font-family="Arial, sans-serif" font-size="20">or saleability affected</text>
+  <text x="490" y="560" fill="#7a5b2b" font-family="Arial, sans-serif" font-size="18" font-weight="700">Count against agreed rule</text>
+
+  <rect x="795" y="382" width="300" height="210" rx="24" fill="#dce8df" stroke="#376851" stroke-width="2"/>
+  <circle cx="845" cy="432" r="27" fill="#376851"/>
+  <text x="845" y="442" text-anchor="middle" fill="#fffaf2" font-family="Arial, sans-serif" font-size="25" font-weight="700">m</text>
+  <text x="890" y="443" fill="#284e3e" font-family="Arial, sans-serif" font-size="28" font-weight="700">MINOR</text>
+  <text x="835" y="490" fill="#3d5a4d" font-family="Arial, sans-serif" font-size="20">Limited cosmetic</text>
+  <text x="835" y="521" fill="#3d5a4d" font-family="Arial, sans-serif" font-size="20">deviation</text>
+  <text x="835" y="560" fill="#315c48" font-family="Arial, sans-serif" font-size="18" font-weight="700">Count against agreed rule</text>
+
+  <line x1="600" y1="592" x2="600" y2="633" stroke="#9eb3a7" stroke-width="7" stroke-linecap="round"/>
+  <polygon points="585,624 615,624 600,646" fill="#9eb3a7"/>
+
+  <rect x="105" y="650" width="990" height="118" rx="24" fill="#1c3544"/>
+  <text x="145" y="698" fill="#fffaf2" font-family="Arial, sans-serif" font-size="25" font-weight="700">EVIDENCE + DISPOSITION</text>
+  <text x="145" y="735" fill="#e4edf1" font-family="Arial, sans-serif" font-size="20">Unit / carton / photo / defect count  ->  release / conditional accept / rework / hold</text>
+  <text x="1080" y="817" text-anchor="end" fill="#687b72" font-family="Arial, sans-serif" font-size="18">Weieryang Buyer Guide</text>
+</svg>
