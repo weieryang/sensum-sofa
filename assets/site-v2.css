@@ -701,6 +701,26 @@ body.site-v2.menu-open {
   text-decoration: none;
 }
 
+.page-article .article figure {
+  margin: 34px 0;
+}
+
+.page-article .article figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--wy-line);
+  border-radius: var(--wy-radius-md);
+  background: var(--wy-bg);
+}
+
+.page-article .article figcaption {
+  margin-top: 10px;
+  color: var(--wy-text-soft);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 .page-article .cta {
   margin: 48px 0;
   border-radius: var(--wy-radius-md);
