@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed sofa product specification sheet</title>
+  <desc id="desc">Buyer specification diagram connecting product dimensions, materials, packing, labels and inspection evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee9df"/><stop offset="1" stop-color="#dfe5d7"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#263024" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1390" cy="110" r="250" fill="#c9d1bc" opacity=".55"/>
+  <circle cx="120" cy="810" r="300" fill="#e1c5b8" opacity=".42"/>
+  <text x="90" y="102" fill="#ad4a35" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">BUYER CONTROL DOCUMENT</text>
+  <text x="90" y="165" fill="#20251f" font-family="Georgia, serif" font-size="54">Compressed Sofa Specification Sheet</text>
+  <text x="90" y="208" fill="#60665d" font-family="Arial, sans-serif" font-size="24">One approved file from quotation to shipment release</text>
+  <g filter="url(#shadow)">
+    <rect x="90" y="270" width="620" height="470" rx="28" fill="#fffdf8"/>
+    <rect x="755" y="270" width="755" height="470" rx="28" fill="#263024"/>
+  </g>
+  <g fill="none" stroke="#263024" stroke-width="10" stroke-linejoin="round">
+    <path d="M205 536v-90c0-31 25-56 56-56h278c31 0 56 25 56 56v90"/>
+    <path d="M168 532h464v115H168z"/>
+    <path d="M210 647v34M590 647v34"/>
+    <path d="M318 390v142M482 390v142" stroke="#ad4a35" stroke-width="4" stroke-dasharray="10 9"/>
+  </g>
+  <g fill="#ad4a35" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="174" y="340">MODEL + CONFIGURATION</text>
+    <text x="174" y="710">DIMENSIONS + APPROVED TOLERANCES</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="810" y="340" fill="#f4f0e7" font-size="24" font-weight="700">01  Product identity</text>
+    <text x="810" y="386" fill="#bcc6b5" font-size="20">Model, version, seat count, approved sample</text>
+    <line x1="810" y1="414" x2="1455" y2="414" stroke="#546151"/>
+    <text x="810" y="468" fill="#f4f0e7" font-size="24" font-weight="700">02  Materials and construction</text>
+    <text x="810" y="514" fill="#bcc6b5" font-size="20">Frame, support, foam, fabric, color, accessories</text>
+    <line x1="810" y1="542" x2="1455" y2="542" stroke="#546151"/>
+    <text x="810" y="596" fill="#f4f0e7" font-size="24" font-weight="700">03  Packing and labeling</text>
+    <text x="810" y="642" fill="#bcc6b5" font-size="20">Cartons, CBM, marks, barcode, recovery method</text>
+    <line x1="810" y1="670" x2="1455" y2="670" stroke="#546151"/>
+    <text x="810" y="714" fill="#e6b29f" font-size="20" font-weight="700">LOCK BEFORE BULK PRODUCTION</text>
+  </g>
+  <g fill="#263024" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="90" y="820">RFQ</text><text x="340" y="820">SAMPLE</text><text x="640" y="820">PRODUCTION</text><text x="1000" y="820">INSPECTION</text><text x="1370" y="820">SHIPMENT</text>
+  </g>
+  <path d="M145 790H1460" stroke="#ad4a35" stroke-width="4"/>
+  <g fill="#ad4a35"><circle cx="145" cy="790" r="10"/><circle cx="400" cy="790" r="10"/><circle cx="720" cy="790" r="10"/><circle cx="1080" cy="790" r="10"/><circle cx="1460" cy="790" r="10"/></g>
+</svg>
