@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Compressed sofa factory audit checklist</title>
+  <desc id="desc">Six audit gates covering identity, capacity, materials, production control, compression packing and export readiness.</desc>
+  <rect width="1600" height="900" fill="#f2eee5"/>
+  <path d="M0 0h1600v225L0 430Z" fill="#17352f"/>
+  <text x="110" y="110" fill="#d6a84f" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">BUYER AUDIT WORKFLOW</text>
+  <text x="110" y="176" fill="#fffaf0" font-family="Georgia, serif" font-size="54" font-weight="700">Verify the factory behind the quotation</text>
+  <text x="110" y="226" fill="#dce8e3" font-family="Arial, sans-serif" font-size="24">Evidence first: observe, record, sample, reconcile and close every gap.</text>
+  <g font-family="Arial, sans-serif">
+    <path d="M160 405H1440" stroke="#b8afa0" stroke-width="4" stroke-dasharray="10 14"/>
+    <g transform="translate(110 330)">
+      <circle cx="90" cy="75" r="64" fill="#d6a84f"/>
+      <text x="90" y="88" text-anchor="middle" fill="#17352f" font-size="38" font-weight="700">01</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">IDENTITY</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">Legal entity</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">Site and scope</text>
+    </g>
+    <g transform="translate(360 330)">
+      <circle cx="90" cy="75" r="64" fill="#fffaf0" stroke="#17352f" stroke-width="5"/>
+      <text x="90" y="88" text-anchor="middle" fill="#17352f" font-size="38" font-weight="700">02</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">CAPACITY</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">People and flow</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">Order evidence</text>
+    </g>
+    <g transform="translate(610 330)">
+      <circle cx="90" cy="75" r="64" fill="#fffaf0" stroke="#17352f" stroke-width="5"/>
+      <text x="90" y="88" text-anchor="middle" fill="#17352f" font-size="38" font-weight="700">03</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">MATERIALS</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">Foam and fabric</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">Lot traceability</text>
+    </g>
+    <g transform="translate(860 330)">
+      <circle cx="90" cy="75" r="64" fill="#fffaf0" stroke="#17352f" stroke-width="5"/>
+      <text x="90" y="88" text-anchor="middle" fill="#17352f" font-size="38" font-weight="700">04</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">PROCESS</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">Work instructions</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">QC checkpoints</text>
+    </g>
+    <g transform="translate(1110 330)">
+      <circle cx="90" cy="75" r="64" fill="#fffaf0" stroke="#17352f" stroke-width="5"/>
+      <text x="90" y="88" text-anchor="middle" fill="#17352f" font-size="38" font-weight="700">05</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">PACKING</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">Compression record</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">Carton controls</text>
+    </g>
+    <g transform="translate(1360 330)">
+      <circle cx="90" cy="75" r="64" fill="#17352f"/>
+      <text x="90" y="88" text-anchor="middle" fill="#fffaf0" font-size="38" font-weight="700">06</text>
+      <text x="90" y="173" text-anchor="middle" fill="#17352f" font-size="23" font-weight="700">EXPORT</text>
+      <text x="90" y="207" text-anchor="middle" fill="#554f46" font-size="18">Documents</text>
+      <text x="90" y="234" text-anchor="middle" fill="#554f46" font-size="18">Shipment release</text>
+    </g>
+  </g>
+  <g transform="translate(110 660)">
+    <rect width="1380" height="136" rx="18" fill="#fffaf0" stroke="#c9c0b2" stroke-width="2"/>
+    <text x="45" y="48" fill="#17352f" font-family="Arial, sans-serif" font-size="22" font-weight="700">AUDIT OUTPUT</text>
+    <text x="45" y="92" fill="#554f46" font-family="Arial, sans-serif" font-size="22">Photo evidence</text>
+    <text x="270" y="92" fill="#d6a84f" font-family="Arial, sans-serif" font-size="28">+</text>
+    <text x="320" y="92" fill="#554f46" font-family="Arial, sans-serif" font-size="22">Document references</text>
+    <text x="585" y="92" fill="#d6a84f" font-family="Arial, sans-serif" font-size="28">+</text>
+    <text x="635" y="92" fill="#554f46" font-family="Arial, sans-serif" font-size="22">Risk owner and due date</text>
+    <text x="930" y="92" fill="#d6a84f" font-family="Arial, sans-serif" font-size="28">=</text>
+    <rect x="980" y="39" width="350" height="68" rx="34" fill="#d6a84f"/>
+    <text x="1155" y="82" text-anchor="middle" fill="#17352f" font-family="Arial, sans-serif" font-size="22" font-weight="700">ORDER DECISION</text>
+  </g>
+  <text x="1490" y="850" text-anchor="end" fill="#70685e" font-family="Arial, sans-serif" font-size="18">weieryang.com</text>
+</svg>
