@@ -2,7 +2,7 @@
   "use strict";
 
   // Production GA4 Measurement ID for weieryang.com.
-  var GA4_MEASUREMENT_ID = "";
+  var GA4_MEASUREMENT_ID = "G-RH7F2SQEQ1";
 
   if (!/^G-[A-Z0-9]+$/i.test(GA4_MEASUREMENT_ID)) return;
   if (!/^https?:$/.test(window.location.protocol)) return;
