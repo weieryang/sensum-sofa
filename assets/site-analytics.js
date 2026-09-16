@@ -1,9 +1,8 @@
 (function () {
   "use strict";
 
-  // Paste the GA4 Measurement ID here, for example: G-ABC123DE45.
-  // Leave this empty until the production GA4 property is ready.
-  var GA4_MEASUREMENT_ID = "";
+  // Production GA4 Measurement ID for weieryang.com.
+  var GA4_MEASUREMENT_ID = "G-NWC2CQBEPE";
 
   if (!/^G-[A-Z0-9]+$/i.test(GA4_MEASUREMENT_ID)) return;
   if (!/^https?:$/.test(window.location.protocol)) return;
