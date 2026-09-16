@@ -78,6 +78,22 @@
       var languageCode = link.getAttribute("data-language-code");
       if (!languageCode || languageCode === "en") return;
 
+      if (languageCode === "ru") {
+        var russianRoutes = {
+          "/": "/ru/",
+          "/compressed-sofa/": "/ru/compressed-sofa/",
+          "/packing/": "/ru/packing/",
+          "/contact/": "/ru/contact/",
+          "/products/fn-011b-compressed-sofa/": "/ru/products/fn-011b-compressed-sofa/",
+          "/products/fn-104-sofa-bed/": "/ru/products/fn-104-sofa-bed/",
+          "/products/fn-802-floor-sofa/": "/ru/products/fn-802-floor-sofa/"
+        };
+        link.href = russianRoutes[window.location.pathname] || "/ru/";
+        link.removeAttribute("target");
+        link.removeAttribute("rel");
+        return;
+      }
+
       var sourceUrl =
         "https://weieryang.com" +
         window.location.pathname +
@@ -126,6 +142,7 @@
       { threshold: 0.12, rootMargin: "0px 0px -40px" }
     );
 
+    document.documentElement.classList.add("reveal-ready");
     revealItems.forEach(function (item) {
       observer.observe(item);
     });
@@ -218,11 +235,17 @@
     if (maximizeChat() || chatState === "loading") return;
 
     chatState = "loading";
+    var chatTimeout = window.setTimeout(function () {
+      if (chatState !== "loading") return;
+      chatState = "failed";
+      window.location.href = "/contact/?source=live-chat-timeout";
+    }, 8000);
     window.Tawk_API = window.Tawk_API || {};
     window.Tawk_LoadStart = new Date();
 
     var previousOnLoad = window.Tawk_API.onLoad;
     window.Tawk_API.onLoad = function () {
+      window.clearTimeout(chatTimeout);
       chatState = "ready";
       if (typeof previousOnLoad === "function") previousOnLoad();
       maximizeChat();
@@ -235,6 +258,7 @@
     chatScript.charset = "UTF-8";
     chatScript.setAttribute("crossorigin", "*");
     chatScript.onerror = function () {
+      window.clearTimeout(chatTimeout);
       chatState = "failed";
       window.location.href = "/contact/?source=live-chat-unavailable";
     };

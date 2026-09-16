@@ -56,11 +56,17 @@
     if (maximizeChat() || chatState === "loading") return;
 
     chatState = "loading";
+    var chatTimeout = window.setTimeout(function () {
+      if (chatState !== "loading") return;
+      chatState = "failed";
+      window.location.href = "/contact/?source=live-chat-timeout";
+    }, 8000);
     window.Tawk_API = window.Tawk_API || {};
     window.Tawk_LoadStart = new Date();
 
     var previousOnLoad = window.Tawk_API.onLoad;
     window.Tawk_API.onLoad = function () {
+      window.clearTimeout(chatTimeout);
       chatState = "ready";
       if (typeof previousOnLoad === "function") previousOnLoad();
       maximizeChat();
@@ -73,6 +79,7 @@
     chatScript.charset = "UTF-8";
     chatScript.setAttribute("crossorigin", "*");
     chatScript.onerror = function () {
+      window.clearTimeout(chatTimeout);
       chatState = "failed";
       window.location.href = "/contact/?source=live-chat-unavailable";
     };
