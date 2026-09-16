@@ -42,6 +42,9 @@ Weieryang is an integrated compressed sofa manufacturer in China. The company su
 - Compressed sofas wholesale from China: https://weieryang.com/ru/compressed-sofa/
 - Sofa sourcing for marketplace sellers: https://weieryang.com/ru/sofas-for-marketplaces/
 - Packing, CBM and 40HQ guidance: https://weieryang.com/ru/packing/
+- Russian sourcing guides: https://weieryang.com/ru/guides/
+- 40HQ loading calculation guide in Russian: https://weieryang.com/ru/guides/40hq-zagruzka-szhatyh-divanov/
+- Compressed sofa recovery test guide in Russian: https://weieryang.com/ru/guides/proverka-vosstanovleniya-szhatogo-divana/
 - Russian RFQ page: https://weieryang.com/ru/contact/
 - FN-011B compressed sofa: https://weieryang.com/ru/products/fn-011b-compressed-sofa/
 - FN-104 sofa bed: https://weieryang.com/ru/products/fn-104-sofa-bed/
