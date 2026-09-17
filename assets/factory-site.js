@@ -53,6 +53,203 @@
   var languageSwitchers = document.querySelectorAll(
     "[data-language-switcher]"
   );
+  var languageStatusDefault = "On-device translation · stays on this page";
+  var languageNames = {
+    ja: "Japanese",
+    es: "Spanish",
+    fr: "French",
+    de: "German",
+    pt: "Portuguese",
+    ar: "Arabic",
+    ko: "Korean",
+    "zh-CN": "Chinese"
+  };
+  var translationNodes = null;
+  var translationCache = {};
+  var translationRequest = 0;
+
+  function updateLanguageStatus(message, state) {
+    document.querySelectorAll("[data-language-status]").forEach(function (item) {
+      item.textContent = message;
+      item.classList.toggle("is-loading", state === "loading");
+      item.classList.toggle("is-error", state === "error");
+    });
+  }
+
+  function updateLanguageControls(languageCode) {
+    document.querySelectorAll("[data-language-code]").forEach(function (link) {
+      var isCurrent = link.getAttribute("data-language-code") === languageCode;
+      link.classList.toggle("is-current", isCurrent);
+      if (isCurrent) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
+
+    document.querySelectorAll(".language-code").forEach(function (label) {
+      label.textContent = languageCode === "zh-CN" ? "ZH" : languageCode.toUpperCase();
+    });
+  }
+
+  function collectTranslationNodes() {
+    if (translationNodes) return translationNodes;
+
+    translationNodes = [];
+    var walker = document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function (node) {
+          var parent = node.parentElement;
+          var text = node.nodeValue.trim();
+          if (!parent || !text || !/[A-Za-z]/.test(text)) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          if (
+            parent.closest(
+              "script, style, noscript, svg, [data-language-switcher], .brand, .brand-mark"
+            )
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          if (
+            text === "Weieryang" ||
+            /@|\+86|^FN-|^\d+[+%]?$/i.test(text)
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    var node;
+    while ((node = walker.nextNode())) {
+      var value = node.nodeValue;
+      translationNodes.push({
+        node: node,
+        original: value.trim(),
+        leading: (value.match(/^\s*/) || [""])[0],
+        trailing: (value.match(/\s*$/) || [""])[0]
+      });
+    }
+    return translationNodes;
+  }
+
+  function restoreEnglish() {
+    collectTranslationNodes().forEach(function (entry) {
+      entry.node.nodeValue = entry.leading + entry.original + entry.trailing;
+    });
+    document.documentElement.lang = "en";
+    document.documentElement.dir = "ltr";
+    document.body.classList.remove("is-translating");
+    updateLanguageControls("en");
+    updateLanguageStatus(languageStatusDefault);
+    window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+  }
+
+  async function translatePage(languageCode) {
+    var requestId = ++translationRequest;
+    var targetLanguage = languageCode === "zh-CN" ? "zh" : languageCode;
+    var languageName = languageNames[languageCode] || languageCode;
+    var entries = collectTranslationNodes();
+
+    entries.forEach(function (entry) {
+      entry.node.nodeValue = entry.leading + entry.original + entry.trailing;
+    });
+
+    if (!("Translator" in window)) {
+      updateLanguageStatus(
+        "Inline translation requires desktop Chrome 138 or newer.",
+        "error"
+      );
+      return;
+    }
+
+    document.body.classList.add("is-translating");
+    updateLanguageStatus(
+      "Preparing " + languageName + " · first use downloads a browser language pack…",
+      "loading"
+    );
+
+    var translator;
+    var translationTimeout;
+    try {
+      var createTranslator = window.Translator.create({
+        sourceLanguage: "en",
+        targetLanguage: targetLanguage,
+        monitor: function (monitor) {
+          monitor.addEventListener("downloadprogress", function (event) {
+            updateLanguageStatus(
+              "Downloading " + languageName + " language pack · " +
+                Math.round(event.loaded * 100) + "%",
+              "loading"
+            );
+          });
+        }
+      });
+      var timedOut = new Promise(function (_, reject) {
+        translationTimeout = window.setTimeout(function () {
+          reject(new Error("The browser language pack took too long to download. Please try again."));
+        }, 120000);
+      });
+      translator = await Promise.race([createTranslator, timedOut]);
+
+      if (!translationCache[languageCode]) {
+        translationCache[languageCode] = {};
+        var uniqueText = [];
+        entries.forEach(function (entry) {
+          if (uniqueText.indexOf(entry.original) === -1) {
+            uniqueText.push(entry.original);
+          }
+        });
+
+        for (var index = 0; index < uniqueText.length; index += 1) {
+          if (requestId !== translationRequest) return;
+          if (index % 8 === 0) {
+            updateLanguageStatus(
+              "Translating to " + languageName + " · " +
+                Math.round((index / uniqueText.length) * 100) + "%",
+              "loading"
+            );
+          }
+          translationCache[languageCode][uniqueText[index]] =
+            await translator.translate(uniqueText[index]);
+        }
+      }
+
+      if (requestId !== translationRequest) return;
+      entries.forEach(function (entry) {
+        var translated = translationCache[languageCode][entry.original];
+        if (translated) {
+          entry.node.nodeValue = entry.leading + translated + entry.trailing;
+        }
+      });
+
+      document.documentElement.lang = languageCode;
+      document.documentElement.dir = languageCode === "ar" ? "rtl" : "ltr";
+      updateLanguageControls(languageCode);
+      updateLanguageStatus(languageName + " · translated on this page");
+      window.history.replaceState(
+        null,
+        "",
+        window.location.pathname + "?lang=" + encodeURIComponent(languageCode) +
+          window.location.hash
+      );
+      closeLanguageSwitchers();
+    } catch (error) {
+      updateLanguageStatus(
+        error && error.message
+          ? error.message
+          : "Inline translation is unavailable in this browser.",
+        "error"
+      );
+    } finally {
+      window.clearTimeout(translationTimeout);
+      document.body.classList.remove("is-translating");
+      if (translator && typeof translator.destroy === "function") {
+        translator.destroy();
+      }
+    }
+  }
 
   function closeLanguageSwitchers(exception) {
     languageSwitchers.forEach(function (switcher) {
@@ -76,7 +273,7 @@
 
     switcher.querySelectorAll("[data-language-code]").forEach(function (link) {
       var languageCode = link.getAttribute("data-language-code");
-      if (!languageCode || languageCode === "en") return;
+      if (!languageCode) return;
 
       if (languageCode === "ru") {
         var russianRoutes = {
@@ -94,17 +291,19 @@
         return;
       }
 
-      var sourceUrl =
-        "https://weieryang.com" +
-        window.location.pathname +
-        window.location.hash;
-      link.href =
-        "https://translate.google.com/translate?sl=en&tl=" +
-        encodeURIComponent(languageCode) +
-        "&u=" +
-        encodeURIComponent(sourceUrl);
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
+      link.href = languageCode === "en" ? "/" : "?lang=" + languageCode;
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (languageCode === "en") {
+          translationRequest += 1;
+          restoreEnglish();
+          closeLanguageSwitchers();
+          return;
+        }
+        translatePage(languageCode);
+      });
     });
   });
 

@@ -317,6 +317,63 @@ body.editorial-en.factory-v2 .catalog-image img,
 body.editorial-en.factory-v2 .product-visual img,
 body.editorial-en.factory-v2 .related-card img { object-fit: contain; }
 
+/* Keep document artwork and product photography complete instead of stretching
+   intrinsic HTML dimensions into uneven cards. */
+body.editorial-en.factory-v2 .packing-visual {
+  display: grid;
+  overflow: hidden;
+  padding: 0;
+}
+
+body.editorial-en.factory-v2 .packing-visual img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 0;
+  background: #fff;
+}
+
+body.editorial-en.factory-v2 .packing-caption {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: baseline;
+  padding: 16px 20px;
+  border: 0;
+  border-top: 1px solid var(--editorial-line);
+  border-radius: 0;
+  background: var(--editorial-paper);
+  backdrop-filter: none;
+}
+
+body.editorial-en.factory-v2 .output-grid article > a {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+body.editorial-en.factory-v2 .output-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 0;
+  background: #ebe5d9;
+}
+
+body.editorial-en .language-status {
+  min-height: 1.35em;
+}
+
+body.editorial-en .language-status.is-loading { color: var(--editorial-forest); }
+body.editorial-en .language-status.is-error { color: #9b3f2f; }
+body.editorial-en.is-translating { cursor: progress; }
+body.editorial-en.is-translating [data-language-code]:not([data-language-code="en"]) {
+  pointer-events: none;
+  opacity: 0.52;
+}
+
 body.editorial-en.factory-v2 .product-hero,
 body.editorial-en.factory-v2 .catalog-hero {
   border-bottom: 1px solid var(--editorial-line);
@@ -346,6 +403,10 @@ body.editorial-en.factory-v2 .site-footer { background: var(--editorial-ink); }
 }
 
 @media (max-width: 900px) {
+  body.editorial-en.factory-v2 .output-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   body.editorial-en.page-landing .hero,
   body.editorial-en.page-blog-index .hero,
   body.editorial-en.page-article .hero { grid-template-columns: 1fr; }
@@ -367,6 +428,8 @@ body.editorial-en.factory-v2 .site-footer { background: var(--editorial-ink); }
 }
 
 @media (max-width: 620px) {
+  body.editorial-en.factory-v2 .output-grid { grid-template-columns: 1fr; }
+
   body.editorial-en .site-nav,
   body.editorial-en .header-inner { min-height: 66px; }
 
