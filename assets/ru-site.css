@@ -168,7 +168,10 @@ h3 { margin: 0 0 10px; font-size: 24px; }
 .article-body h2:first-child { margin-top: 0; }
 .article-body h3 { margin-top: 34px; }
 .article-body p, .article-body li { max-width: 72ch; color: #48554b; }
-.article-body img { width: 100%; height: auto; max-height: 560px; margin: 34px 0 44px; object-fit: cover; }
+.article-body img { width: 100%; height: auto; max-height: 560px; margin: 34px 0 12px; object-fit: contain; background: var(--cream); }
+.article-body figure { margin: 34px 0 44px; }
+.article-body figure img { margin: 0; }
+.article-body figcaption { margin-top: 10px; color: #687269; font-size: 12px; line-height: 1.5; }
 .answer-box { margin: 28px 0; padding: 28px; border-top: 4px solid var(--clay); background: var(--cream); }
 .answer-box strong { display: block; margin-bottom: 8px; font-family: Georgia, serif; font-size: 23px; }
 .process-list { display: grid; gap: 1px; margin: 30px 0; padding: 0; list-style: none; background: var(--line); border: 1px solid var(--line); counter-reset: process; }
