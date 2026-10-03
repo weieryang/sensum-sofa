@@ -1,0 +1,13 @@
+.wy-cushion-pilot{padding:54px 0;background:#eee9dd;color:#233a2c;border-top:1px solid #d4d8cb;border-bottom:1px solid #d4d8cb}.wy-cushion-pilot__inner{max-width:1200px;width:calc(100% - 48px);margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:45px;align-items:center}.wy-cushion-pilot__eyebrow{font:600 10px/1.5 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#976448;margin:0 0 14px}.wy-cushion-pilot h2{font:400 clamp(28px,3vw,41px)/1.14 Georgia,serif;letter-spacing:-.02em;max-width:680px;margin:0 0 17px}.wy-cushion-pilot__copy{font:400 14px/1.8 Arial,sans-serif;color:#596759;max-width:580px;margin:0 0 24px}.wy-cushion-pilot__link{display:inline-flex;align-items:center;gap:25px;padding:13px 21px;border:1px solid #233a2c;color:#fff;background:#233a2c;font:400 12px/1.5 Arial,sans-serif;text-decoration:none}.wy-cushion-pilot__link:hover{background:#3b5440}.wy-cushion-pilot__link:focus-visible{outline:3px solid #a76548;outline-offset:4px}.wy-cushion-pilot__visual{margin:0;padding:12px 16px;background:#f6f3eb;border:1px solid #d6d5c8}.wy-cushion-pilot__visual svg{width:100%;height:auto;display:block}.wy-cushion-pilot__visual figcaption{text-align:center;font:400 10px/1.5 Arial,sans-serif;color:#877b66;margin:2px 0 8px}.wy-cushion-pilot__note{display:block;font:400 10px/1.6 Arial,sans-serif;color:#687568;margin-top:13px}.wy-cushion-pilot a{white-space:normal}.wy-cushion-pilot__eyebrow span{letter-spacing:0;margin-left:8px;color:#687568;font-weight:400;text-transform:none}
+@media(max-width:800px){.wy-cushion-pilot{padding:35px 0}.wy-cushion-pilot__inner{grid-template-columns:1fr;gap:25px;width:calc(100% - 36px)}.wy-cushion-pilot h2{font-size:31px}.wy-cushion-pilot__visual{max-width:520px;width:100%}.wy-cushion-pilot__link{min-height:45px}}
+
+/* Loaded only by the two pilot homepages. Keep every existing navigation link. */
+.site-header a.wy-cushion-header-link{color:#99583e;font-weight:700}
+@media(min-width:901px){
+  body.editorial-en .site-header .header-inner{grid-template-columns:auto minmax(0,1fr) auto;gap:18px}
+  body.editorial-en .site-header .main-nav{flex-wrap:wrap;gap:8px 16px}
+}
+@media(min-width:961px){
+  html[lang="ru"] .site-header .nav{grid-template-columns:auto minmax(0,1fr) auto;gap:18px}
+  html[lang="ru"] .site-header .main-nav{flex-wrap:wrap;gap:8px 16px}
+}
