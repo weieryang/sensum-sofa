@@ -5,14 +5,31 @@
   var toggle = document.querySelector(".menu-toggle");
 
   if (menu && toggle) {
+    function closeMenu(restoreFocus) {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+      if (restoreFocus) toggle.focus();
+    }
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("open");
       toggle.setAttribute("aria-expanded", String(open));
+      if (open) {
+        var firstLink = menu.querySelector("a");
+        if (firstLink) firstLink.focus();
+      }
     });
     menu.addEventListener("click", function (event) {
       if (!event.target.closest("a")) return;
-      menu.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
+      closeMenu(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && menu.classList.contains("open")) closeMenu(true);
+    });
+    document.addEventListener("click", function (event) {
+      if (!menu.contains(event.target) && !toggle.contains(event.target)) closeMenu(false);
+    });
+    window.addEventListener("resize", function () {
+      if (!window.matchMedia("(max-width: 960px)").matches) closeMenu(false);
     });
   }
 

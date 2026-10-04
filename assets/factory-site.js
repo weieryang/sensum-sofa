@@ -33,6 +33,7 @@
       menuButton.setAttribute("aria-expanded", String(!isOpen));
       navigation.classList.toggle("open", !isOpen);
       document.body.classList.toggle("menu-open", !isOpen);
+      if (!isOpen && navigationLinks.length) navigationLinks[0].focus();
     });
 
     navigationLinks.forEach(function (link) {
@@ -40,11 +41,15 @@
     });
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeMenu();
+      if (event.key === "Escape" && navigation.classList.contains("open")) {
+        closeMenu();
+        menuButton.focus();
+      }
     });
 
     window.addEventListener("resize", function () {
-      if (navigation.classList.contains("open")) {
+      if (!window.matchMedia("(max-width: 900px)").matches) closeMenu();
+      else if (navigation.classList.contains("open")) {
         updateMobileNavigationPosition();
       }
     });
