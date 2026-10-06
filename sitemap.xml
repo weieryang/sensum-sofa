@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://weieryang.com/</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
-  <url><loc>https://weieryang.com/ru/</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://weieryang.com/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
+  <url><loc>https://weieryang.com/ru/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
   <url><loc>https://weieryang.com/ru/compressed-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
   <url><loc>https://weieryang.com/ru/oem-odm/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
   <url><loc>https://weieryang.com/ru/sofas-for-marketplaces/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
@@ -15,7 +15,7 @@
   <url><loc>https://weieryang.com/ru/products/fn-011b-compressed-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/ru/products/fn-104-sofa-bed/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/ru/products/fn-802-floor-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
-  <url><loc>https://weieryang.com/products/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://weieryang.com/products/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
   <url><loc>https://weieryang.com/blog/</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/blog/compressed-sofa-factory-audit-checklist.html</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://weieryang.com/blog/compressed-sofa-compression-recovery-test-protocol.html</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
@@ -96,4 +96,15 @@
   <url><loc>https://weieryang.com/products/fn-802-floor-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://weieryang.com/products/fn-804-floor-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://weieryang.com/products/fn-805-floor-sofa/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://weieryang.com/window-seat-cushions/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/window-seat-cushions/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/products/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/products/teddy-fleece-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/products/teddy-fleece-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/products/corduroy-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/products/corduroy-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/products/cotton-linen-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/products/cotton-linen-window-seat-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/products/textured-woven-bay-window-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://weieryang.com/ru/products/textured-woven-bay-window-cushion/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
 </urlset>

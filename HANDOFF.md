@@ -49,3 +49,19 @@
 5. 仅对实际新增或更新的 URL 运行 `scripts/submit-indexnow.ps1`；之后在 Search Console/GA4 看结果，不承诺即时收录或排名。
 
 本文件是工作交接快照，不包含 GitHub、GA4 或 Search Console 的登录凭据。
+
+## 2026-10-06 飘窗垫类目扩展
+
+- 官网保留静态 GitHub Pages 架构。原有 23 个沙发/座椅系列、41 个配置与六个细分类目继续使用原地址；新增独立的飘窗垫方向。产品总目录可筛选“沙发与座椅”或“飘窗垫”。
+- 英文类目 `/window-seat-cushions/`，俄文类目 `/ru/window-seat-cushions/`；新增俄文总目录 `/ru/products/`，保留原 `/ru/compressed-sofa/` 入口与页面。
+- 新增四个询价系列，每个都有英文和俄文产品页：`teddy-fleece-window-seat-cushion`（WY-WC01）、`corduroy-window-seat-cushion`（WY-WC02）、`cotton-linen-window-seat-cushion`（WY-WC03）、`textured-woven-bay-window-cushion`（WY-WC04）。英文地址为 `/products/<slug>/`，俄文地址为 `/ru/products/<slug>/`。这些是新分配的网页目录编号，不是已确认的工厂型号或 GTIN。
+- 图片来自用户提供的飘窗垫素材。主图使用原始参考图，泰迪绒补充场景注明 AI 优化。18 张响应式 WebP 资源共约 1.43 MB；AI 场景不进入 Product 的图片字段。
+- 每页具备独立标题/描述、可抓取正文、规格说明、测量方法、问答、询价入口、相关产品内链、canonical、双向 EN/RU/x-default hreflang、社交元数据和与正文对应的结构化数据。新目录使用 CollectionPage/ItemList，新产品使用 Product/BreadcrumbList。
+- 商业状态仍是**确认报价后下单**。照片款式无已确认的在线售价、库存、标准尺寸表、面料百分比、泡棉密度、洗护或交期。不能用原沙发数据或通用试算器价格替代其正式报价，不能添加虚构 Offer、评分、评论或可售库存。棉麻名称仅表示外观风格，实际成分待确认。
+- 官网首页只替换已有表头飘窗垫入口的目标地址，首页 title/H1、沙发主文案及其他结构保持原样。所有原沙发详情文件保持逐字节一致。未改 DNS、CNAME、robots.txt、旧共享 JS/CSS、GA4 ID 或付款路由。
+- 原英文产品总目录的 title、description、H1 和 canonical 保留；新增飘窗垫关键词由独立类目/产品页承接，目录仅增加分组、筛选、卡片、内链及对应列表数据。
+- sitemap 保留原 96 个 URL，新增 11 个 URL；仅首页 EN/RU、产品总目录及新页面更新 lastmod。llms.txt 保留原沙发定位，补充飘窗垫准确说明和页面链接；该文件本身不能保证 AI 搜索引用。
+- 数据源为 `data/cushions.json`，生成脚本 `scripts/build-cushion-catalog.py`。修改该数据源后运行脚本生成静态页面；它不重新生成旧沙发详情。照片资源位于 `assets/cushions/`。
+- 本地发布校验覆盖 613 个内部引用、JSON-LD、互返语言链接、图片资源、生成幂等性、原目录卡片及旧页面保留。线上部署与 IndexNow 回执另存工作区 `cushion-catalog-release/`，应以实际响应核对发布状态。
+- 定制预览继续是独立的 noindex 试销页面。产品链接可携带照片款式并清空尺寸，要求买家输入实际尺寸；不跳转到 PayPal Sandbox。正式收款、运费以及官网 `/cushions/` 动态路由仍需单独完成原定支付测试。
+- SEO/GEO 是可访问、清晰、可引用的内容和技术基础，不能把页面发布或 IndexNow 接收等同于 Google 收录、自然流量增长或 ChatGPT 引用；后续要用 Search Console 和 GA4 核对旧沙发着陆页及新增飘窗垫流量。

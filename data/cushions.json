@@ -1,0 +1,136 @@
+{
+  "updated": "2026-10-06",
+  "category": "window-seat-cushions",
+  "source": "Owner-supplied window seat cushion reference photos, 飘窗垫9-18.zip, curated 2026-10-05. Catalog references below are newly assigned website identifiers, not GTINs or factory model numbers.",
+  "commercial_status": "Quote required. Final size, fabric composition, foam, color, production time, shipping and payment terms require confirmation. No live price or stock claims.",
+  "products": [
+    {
+      "reference": "WY-WC01",
+      "slug": "teddy-fleece-window-seat-cushion",
+      "style": "teddy-channel-detail",
+      "photos": ["teddy-channel-detail", "teddy-window-scene"],
+      "en": {
+        "name": "Teddy Fleece Window Seat Cushion",
+        "short": "Teddy fleece",
+        "description": "A cream teddy-fleece reference design with rounded channel stitching and a front drop, for a made-to-fit indoor window seat or reading bench.",
+        "appearance": "Cream reference · rounded channels · front drop",
+        "alt": "Cream teddy-fleece window seat cushion with rounded stitched channels and a drop over the bench front",
+        "detail_title": "Rounded channels for a softer-looking window nook",
+        "detail": "The reference design combines a fleece-like surface with repeating, rounded channels. The channels run across the seating depth, while the front drop continues over the visible edge of the bench. This makes it a useful starting point for a window nook with a plain cabinet base. Share a straight-on photo of the seat so the drop can be discussed without covering drawers or cabinet handles.",
+        "color": "Cream in the reference photo; other colors subject to fabric confirmation",
+        "check": "Confirm channel spacing, front drop height and whether any matching pillows are included. Pillows in the photo are styling references, not an automatic part of the cushion order.",
+        "question": "Is the front drop the same as cushion thickness?",
+        "answer": "No. Finished cushion thickness is the depth of the seating pad. The front drop is the decorative section below the bench edge. Measure and quote them separately for this channel-style design."
+      },
+      "ru": {
+        "name": "Подушка на подоконник из ткани тедди",
+        "short": "Тедди",
+        "description": "Кремовый вариант подушки из ткани с фактурой тедди: округлые простроченные полосы и свисающий передний край. Для подоконника или скамьи по вашим размерам.",
+        "appearance": "Кремовый вариант · округлые полосы · свисающий край",
+        "alt": "Кремовая подушка на подоконник с фактурой тедди, округлыми простроченными полосами и свисающим передним краем",
+        "detail_title": "Округлая прострочка для уютного места у окна",
+        "detail": "Вариант на фото сочетает фактурную поверхность и повторяющиеся округлые полосы поперек сиденья. Передний край опускается на лицевую часть скамьи. Такой дизайн можно рассмотреть для ниши у окна с простым основанием. Пришлите фото сиденья спереди: это поможет согласовать свисающий край так, чтобы он не перекрывал ящики и ручки.",
+        "color": "Кремовый на фото; другие цвета после подтверждения ткани",
+        "check": "Согласуйте ширину простроченных полос, высоту свисающего края и комплектацию. Декоративные подушки на фото не входят в заказ автоматически.",
+        "question": "Свисающий край и толщина подушки — это одно и то же?",
+        "answer": "Нет. Толщина относится к самому сиденью, а свисающий край — к декоративной части ниже края скамьи. Эти два размера нужно измерять и согласовывать отдельно."
+      }
+    },
+    {
+      "reference": "WY-WC02",
+      "slug": "corduroy-window-seat-cushion",
+      "style": "corduroy-ivory",
+      "photos": ["corduroy-ivory", "corduroy-grey"],
+      "en": {
+        "name": "Corduroy Window Seat Cushion",
+        "short": "Corduroy",
+        "description": "A ribbed corduroy-style window seat cushion with ivory and grey reference options. Discuss a custom fit, finished thickness and front edge for your indoor bench.",
+        "appearance": "Ivory or grey references · ribbed texture",
+        "alt": "Ivory ribbed corduroy-style window seat cushion with a drop front on an indoor bench",
+        "detail_title": "A ribbed texture in two reference colorways",
+        "detail": "Corduroy creates a visible ribbed pattern that changes with the direction of the fabric and the light. Start with the ivory reference for a light palette, or compare the grey reference with darker cabinetry. For a long window bench, agree the rib direction and panel layout before production. These details help keep the appearance consistent across the full length of the seat.",
+        "color": "Ivory and grey references; final shade confirmed against the selected fabric",
+        "check": "Confirm rib direction, shade and front edge treatment. A photo color is a starting point; ask for the fabric reference before approving an order.",
+        "question": "Can I choose grey instead of the ivory reference?",
+        "answer": "Yes, grey is a second reference option in this family. Include your preferred photo and catalog reference WY-WC02 in the inquiry; fabric availability and the final shade are confirmed in the quotation."
+      },
+      "ru": {
+        "name": "Вельветовая подушка на подоконник",
+        "short": "Вельвет",
+        "description": "Подушка для подоконника с рубчатой фактурой: кремовый и серый варианты на фото. Размер, толщина и передний край согласовываются для вашей скамьи.",
+        "appearance": "Кремовый и серый варианты · рубчатая фактура",
+        "alt": "Кремовая подушка с рубчатой вельветовой фактурой и свисающим краем на скамье у окна",
+        "detail_title": "Рубчатая фактура в двух вариантах цвета",
+        "detail": "Вельветовый рисунок заметен по направлению рубчика и меняется при разном освещении. Кремовый вариант можно сравнить со светлым интерьером, а серый — с более темным основанием. Для длинной скамьи заранее согласуйте направление рубчика и расположение панелей. Это поможет получить согласованный внешний вид по всей длине сиденья.",
+        "color": "Кремовый и серый на фото; итоговый оттенок по выбранной ткани",
+        "check": "Подтвердите направление рубчика, оттенок и обработку переднего края. Фото служит ориентиром; перед заказом запросите образец или артикул ткани.",
+        "question": "Можно выбрать серый вариант вместо кремового?",
+        "answer": "Да, в этом семействе есть серый вариант на фото. Укажите предпочтительное фото и код каталога WY-WC02 в запросе. Наличие ткани и итоговый оттенок подтверждаются в предложении."
+      }
+    },
+    {
+      "reference": "WY-WC03",
+      "slug": "cotton-linen-window-seat-cushion",
+      "style": "cotton-linen-grey",
+      "photos": ["cotton-linen-grey"],
+      "en": {
+        "name": "Cotton-Linen Style Window Seat Cushion",
+        "short": "Cotton-linen style",
+        "description": "A grey cotton-linen-look cushion reference for an indoor bench or window seat. Request your dimensions, front drop and fabric confirmation before ordering.",
+        "appearance": "Grey reference · understated woven look",
+        "alt": "Grey cotton-linen-look cushion reference with a front drop on an indoor window bench",
+        "detail_title": "An understated woven look for an indoor bench",
+        "detail": "This reference uses a grey, linen-like woven appearance for a quieter finish than the rounded teddy channels or ribbed corduroy. It can be considered for a reading bench or a window seat beside simple cabinetry. The cotton-linen name describes the visual style in this catalog; it does not state a tested fiber percentage. Ask for the composition and fabric reference for the material selected for your order.",
+        "color": "Grey reference; additional shades require fabric confirmation",
+        "check": "Confirm actual fiber composition, chosen fabric, front drop and care instructions. Do not assume that this visual style means pure linen or a particular cotton percentage.",
+        "question": "Does cotton-linen style mean a confirmed cotton and linen blend?",
+        "answer": "No. It describes the reference appearance. The exact fiber composition and care instructions must be supplied for the chosen fabric before an order is approved."
+      },
+      "ru": {
+        "name": "Подушка для скамьи в стиле хлопка и льна",
+        "short": "Фактура хлопка и льна",
+        "description": "Серый вариант подушки с фактурой в стиле хлопка и льна для скамьи или подоконника. Размеры, свисающий край и состав ткани уточняются перед заказом.",
+        "appearance": "Серый вариант · сдержанная тканая фактура",
+        "alt": "Серая подушка для скамьи с фактурой в стиле хлопка и льна и свисающим передним краем",
+        "detail_title": "Сдержанная тканая фактура для скамьи",
+        "detail": "В этом варианте используется серый внешний вид с льняной фактурой — более сдержанный, чем округлая прострочка тедди или рубчик вельвета. Дизайн можно рассмотреть для скамьи для чтения или сиденья у окна рядом с простыми фасадами. Название «в стиле хлопка и льна» описывает внешний вид, а не подтвержденный процент волокон. Для заказа запросите состав и артикул выбранной ткани.",
+        "color": "Серый на фото; другие оттенки после согласования ткани",
+        "check": "Уточните состав, артикул ткани, высоту свисающего края и правила ухода. По одному внешнему виду нельзя утверждать, что ткань является чистым льном или содержит определенный процент хлопка.",
+        "question": "Название подтверждает состав из хлопка и льна?",
+        "answer": "Нет. Оно описывает внешний вид на фото. Точный состав и правила ухода должны быть подтверждены для выбранной ткани до согласования заказа."
+      }
+    },
+    {
+      "reference": "WY-WC04",
+      "slug": "textured-woven-bay-window-cushion",
+      "style": "woven-mustard",
+      "photos": ["woven-mustard"],
+      "en": {
+        "name": "Textured Woven Bay Window Cushion",
+        "short": "Textured woven",
+        "description": "A mustard-toned textured woven cushion reference for an indoor bay window seat. Discuss a custom footprint, finished thickness and decorative front drop.",
+        "appearance": "Mustard reference · visible woven texture",
+        "alt": "Mustard-toned textured woven cushion reference on an indoor window seat with a drop front",
+        "detail_title": "Visible weave for a warm-toned bay window seat",
+        "detail": "The mustard-toned reference emphasizes a visible woven texture. It offers a different visual direction from the cream teddy and grey bench designs, particularly when the cushion is intended as a color accent in a window nook. For a bay window with angled sides, send a top-view sketch with all edges labeled. A rectangular photo does not establish that the same dimensions or seam layout will fit an angled seat.",
+        "color": "Mustard-toned reference; final fabric and shade require confirmation",
+        "check": "Confirm every edge of an angled footprint, the fabric weave and the front drop. Textured appearance does not establish waterproofing, outdoor suitability or stain resistance.",
+        "question": "Can this design be discussed for an angled bay window?",
+        "answer": "Yes. Send a dimensioned sketch or template of the seating area, including the front and back widths and angled edges. The final shape, seams and price require a separate quotation."
+      },
+      "ru": {
+        "name": "Фактурная тканая подушка для эркера",
+        "short": "Фактурное плетение",
+        "description": "Горчичный вариант подушки с заметным плетением для сиденья в эркере. Форма по размерам, толщина и декоративный свисающий край согласовываются отдельно.",
+        "appearance": "Горчичный вариант · заметное плетение",
+        "alt": "Горчичная подушка с фактурным плетением и свисающим передним краем на сиденье у окна",
+        "detail_title": "Заметное плетение для теплого цветового акцента",
+        "detail": "На горчичном варианте хорошо видна тканая фактура. Это иной цветовой акцент по сравнению с кремовым тедди и серой подушкой для скамьи. Для эркера с наклонными боковыми гранями нужен эскиз сверху с размерами всех сторон. Прямоугольный вариант на фото не подтверждает, что те же размеры и расположение швов подойдут к сиденью со сложной формой.",
+        "color": "Горчичный на фото; итоговая ткань и оттенок согласовываются",
+        "check": "Уточните размеры всех граней, плетение ткани и высоту свисающего края. Фактура сама по себе не подтверждает водостойкость, пригодность для улицы или устойчивость к пятнам.",
+        "question": "Можно обсудить этот дизайн для эркера со скошенными сторонами?",
+        "answer": "Да. Пришлите эскиз с размерами или шаблон сиденья, включая переднюю и заднюю ширину и наклонные стороны. Форма, швы и цена подтверждаются отдельным расчетом."
+      }
+    }
+  ]
+}
