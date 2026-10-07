@@ -15,7 +15,22 @@
     window.dataLayer.push(arguments);
   };
 
+  function isCushionPath(pathname) {
+    return /^\/(?:ru\/)?window-seat-cushions\//.test(pathname) ||
+      /^\/(?:ru\/)?products\/(?:teddy-fleece-window-seat-cushion|corduroy-window-seat-cushion|cotton-linen-window-seat-cushion|textured-woven-bay-window-cushion)\//.test(pathname);
+  }
+
+  function safeReference(value) {
+    return /^(WY-WC0[1-4]|recommend)$/.test(value || "") ? value : "unspecified";
+  }
+
   function contentGroup(pathname) {
+    if (isCushionPath(pathname)) {
+      var prefix = /^\/ru\//.test(pathname) ? "RU " : "EN ";
+      if (/\/(measurement-guide|fabric-design-guide)\/$/.test(pathname)) return prefix + "Cushion Guides";
+      if (/\/products\//.test(pathname)) return prefix + "Cushion Products";
+      return prefix + "Cushion Collection";
+    }
     if (/^\/ru\/guides\//.test(pathname)) return "RU Guides";
     if (/^\/ru\/products\//.test(pathname)) return "RU Products";
     if (/^\/ru\//.test(pathname)) return "RU Landing Pages";
@@ -32,6 +47,7 @@
     window.gtag("event", eventName, Object.assign({
       page_language: document.documentElement.lang || "en",
       content_group: contentGroup(window.location.pathname),
+      source_page: window.location.pathname,
       transport_type: "beacon"
     }, parameters || {}));
   }
@@ -83,13 +99,36 @@
     } catch (error) {
       return;
     }
+    if (destination.origin === "https://weieryang-cushions.yhsj98251.chatgpt.site") {
+      track("customization_open", { destination_path: destination.pathname });
+      return;
+    }
     if (destination.origin !== window.location.origin) return;
+
+    if (/\.(pdf|docx?|xlsx?|csv|zip)$/i.test(destination.pathname)) {
+      track("resource_download_click", { resource_path: destination.pathname });
+      return;
+    }
+    if (destination.hash === "#quote" && isCushionPath(destination.pathname)) {
+      track("begin_lead", { link_text: linkText, destination_path: destination.pathname });
+    }
+    if (isCushionPath(destination.pathname) && !isCushionPath(window.location.pathname)) {
+      track("cushion_entry_click", { destination_path: destination.pathname });
+    }
 
     if (/^\/(?:ru\/)?contact\//.test(destination.pathname)) {
       track("begin_lead", {
         link_text: linkText,
         destination_path: destination.pathname
       });
+      return;
+    }
+    if (/^\/(?:ru\/)?window-seat-cushions\/(measurement-guide|fabric-design-guide)\/$/.test(destination.pathname)) {
+      track("select_content", { content_type: "cushion_guide", item_id: destination.pathname });
+      return;
+    }
+    if (/^\/(?:ru\/)?window-seat-cushions\/$/.test(destination.pathname)) {
+      track("select_content", { content_type: "cushion_collection", item_id: destination.pathname });
       return;
     }
     if (/^\/(?:ru\/)?products\//.test(destination.pathname)) {
@@ -116,7 +155,7 @@
       track("lead_form_start", { form_id: "ru_rfq" });
     });
     rfqForm.addEventListener("submit", function () {
-      track("generate_lead", {
+      track("inquiry_handoff", {
         contact_method: "whatsapp",
         form_id: "ru_rfq"
       });
@@ -125,11 +164,37 @@
     var emailButton = rfqForm.querySelector("[data-rfq-email]");
     if (emailButton) {
       emailButton.addEventListener("click", function () {
-        track("generate_lead", {
+        track("inquiry_handoff", {
           contact_method: "email",
           form_id: "ru_rfq"
         });
       });
     }
+  }
+
+  var cushionForm = document.querySelector("[data-cushion-inquiry]");
+  if (cushionForm) {
+    var cushionStarted = false;
+    cushionForm.addEventListener("focusin", function () {
+      if (cushionStarted) return;
+      cushionStarted = true;
+      track("lead_form_start", { form_id: "cushion_inquiry" });
+    });
+    cushionForm.addEventListener("wy:inquiry-prepared", function (event) {
+      track("cushion_inquiry_ready", {
+        form_id: "cushion_inquiry",
+        product_reference: safeReference(event.detail && event.detail.product_reference)
+      });
+    });
+    cushionForm.addEventListener("wy:inquiry-handoff", function (event) {
+      var method = event.detail && event.detail.contact_method;
+      if (method !== "email" && method !== "whatsapp") return;
+      track("contact_click", { contact_method: method, form_id: "cushion_inquiry" });
+      track("inquiry_handoff", {
+        contact_method: method,
+        form_id: "cushion_inquiry",
+        product_reference: safeReference(event.detail.product_reference)
+      });
+    });
   }
 })();

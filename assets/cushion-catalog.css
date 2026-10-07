@@ -52,13 +52,37 @@
 .wy-footer .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
 .wy-footer nav { display: flex; flex-wrap: wrap; gap: 24px; }
 .wy-cushion-page[lang="ru"] { font-family: "Segoe UI",Arial,sans-serif; }
+.wy-cushion-page [hidden] { display: none !important; }
+.wy-guide-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.wy-guide-card { padding: 26px; border: 1px solid var(--line); background: #fffdf8; }
+.wy-guide-card h3 { font-size: 1.5rem; }
+.wy-guide-card a,.wy-guide-contents a,.wy-guide-part a { text-decoration: underline; text-underline-offset: 4px; }
+.wy-guide-article { max-width: 960px; }
+.wy-guide-contents { padding: 24px; border: 1px solid var(--line); background: #f4f0e6; }
+.wy-guide-contents li { margin: 10px 0; }
+.wy-guide-part { padding-top: 40px; scroll-margin-top: 120px; }
+.wy-measure-diagram { margin: 28px 0; padding: 16px; background: #f4f0e6; border: 1px solid var(--line); }
+.wy-measure-diagram svg { display: block; width: 100%; height: auto; max-width: 640px; margin: auto; }
+.wy-measure-diagram figcaption { font-size: .9rem; line-height: 1.6; margin-top: 12px; }
+.wy-comparison caption { text-align: left; font-weight: 700; padding-bottom: 12px; }
+.wy-quote-steps { padding-left: 22px; line-height: 1.7; }
+.wy-quote-steps li { margin-bottom: 12px; }
+.wy-quote-panel form { margin-top: 24px; }
+.wy-quote-panel label { display: grid; gap: 8px; font-weight: 600; font-size: .92rem; margin: 20px 0 10px; }
+.wy-quote-panel input,.wy-quote-panel select,.wy-quote-panel textarea { box-sizing: border-box; display: block; min-width: 0; width: 100%; font: inherit; font-weight: 400; line-height: 1.5; padding: 12px; border: 1px solid #8a9387; border-radius: 0; background: #fff; color: #223d2a; }
+.wy-quote-panel textarea { resize: vertical; }
+.wy-quote-panel :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #ad4a35; outline-offset: 3px; }
+.wy-quote-panel .wy-field-help { font-size: .8rem; margin: 0 0 18px; color: #5d685f; }
+.wy-inquiry-result { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 24px; }
+.wy-inquiry-result pre { white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; font-size: .86rem; line-height: 1.7; font-family: inherit; padding: 16px; border: 1px solid var(--line); background: #f4f0e6; user-select: text; }
+.wy-inquiry-result [role="status"] { font-size: .9rem; }
 @media (max-width: 960px) {
   .wy-cushion-page .wy-cushion-hero .product-hero-grid { gap: 28px; }
   .wy-step-list { grid-template-columns: 1fr; }
   .wy-cushion-page .wy-related-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 680px) {
-  .wy-catalog-groups,.wy-cushion-grid,.wy-photo-grid,.wy-cushion-page .wy-related-grid { grid-template-columns: 1fr; }
+  .wy-catalog-groups,.wy-cushion-grid,.wy-photo-grid,.wy-guide-grid,.wy-cushion-page .wy-related-grid { grid-template-columns: 1fr; }
   .wy-cushion-page .wy-cushion-hero .product-hero-grid { grid-template-columns: 1fr; }
   .wy-cushion-section { padding: 44px 0; }
   .wy-specs { grid-template-columns: 1fr; }

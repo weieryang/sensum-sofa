@@ -1,42 +1,66 @@
-# Weieryang 网站统计配置
+# Weieryang 网站统计与自然流量复盘
 
-站点已经预埋统一的 GA4 加载器，但在填写真实 Measurement ID 之前不会连接 Google，也不会发送统计数据。
+更新：2026-10-07（Asia/Shanghai）。本文记录代码状态和需要核实的后台设置，不代表已验证实际收数或流量增长。
 
-## 1. 启用 Google Analytics 4
+## 已有配置
 
-1. 登录 Google Analytics，创建账号和 GA4 媒体资源。
-2. 在“管理”中打开“数据流”，新建 Web 数据流。
-3. 网站网址填写 `https://weieryang.com`，数据流名称建议填写 `Weieryang Website`。
-4. 复制以 `G-` 开头的 Measurement ID。
-5. 打开 `assets/site-analytics.js`，把 `GA4_MEASUREMENT_ID = ""` 改成真实 ID，例如 `GA4_MEASUREMENT_ID = "G-ABC123DE45"`。
-6. 不要再把 Google 提供的整段 `gtag.js` 代码粘贴到 HTML，否则可能产生重复统计。
-7. 提交并推送到 `main`，等待 GitHub Pages 部署完成。
-8. 用无痕窗口访问网站，在 GA4“实时”报告中确认访问和事件。
+- 官网使用一个 GA4 加载器 `assets/site-analytics.js`，Measurement ID 为 `G-RH7F2SQEQ1`。不要重复粘贴 gtag 或再安装另一份 GTM 标签。
+- 用户已确认 Google Search Console 验证完成；尚未读取其查询、着陆页、索引或历史数据。Bing Webmaster 尚未验证。
+- `sitemap.xml` 包含 111 个 URL，原 107 个地址全部保留。新增四篇英俄指南，位于 `/[ru/]window-seat-cushions/measurement-guide/` 与 `/[ru/]window-seat-cushions/fabric-design-guide/`。
+- 官网保留静态 HTML；飘窗垫正文、内链与表单说明在原始 HTML 中可读。无 JavaScript 时保留直接邮件/WhatsApp 询价入口。
+- 广告存储、广告个性化与 Google Signals 仍关闭；既有 analytics_storage 默认 granted 未改变。本轮未添加 Clarity、广告像素或新的第三方统计脚本。
 
-已经配置的事件：
+## 事件的准确含义
 
-- `contact_click`：点击 WhatsApp、Email 或电话。
-- `begin_lead`：进入询价页。
-- `lead_form_start`：开始填写俄语 RFQ。
-- `generate_lead`：通过俄语 RFQ 打开 WhatsApp 或 Email。
-- `select_content`：点击产品页或俄语指南。
+| 事件 | 触发条件 | 可以说明什么 |
+| --- | --- | --- |
+| `cushion_entry_click` | 从其他官网页面进入飘窗垫类目或产品 | 现有流量对新品入口的兴趣 |
+| `select_content` | 点击产品、类目或指南 | 内容点击，非成交 |
+| `begin_lead` | 点击联系页或飘窗垫报价锚点 | 询价意向 |
+| `lead_form_start` | 首次聚焦俄语 RFQ 或飘窗垫表单 | 开始填写 |
+| `cushion_inquiry_ready` | 五项表单校验后生成可检查的消息 | 需求已整理，尚未发送 |
+| `contact_click` | 电话/邮件/WhatsApp 点击或准备好的询价选择联系渠道 | 尝试联系 |
+| `inquiry_handoff` | 已准备的飘窗垫询价打开邮件/WhatsApp，或原俄语 RFQ 打开对应工具 | 转交沟通工具，不能证明已发送或收到 |
+| `customization_open` | 点击独立定制预览站 | 打开预览，非付款 |
+| `resource_download_click` | 点击本站 PDF、Office、CSV 或 ZIP 资源 | 下载入口点击，非下载完成 |
 
-脚本不会把表单姓名、公司、地址、数量或询价正文发送给 GA4。广告存储、广告个性化和 Google Signals 默认关闭。
+**口径变更：** 从本次脚本发布起，原俄语 RFQ 的邮件/WhatsApp 操作由 `generate_lead` 改为 `inquiry_handoff`。旧 `generate_lead` 历史记录也只是打开沟通工具，不能按有效询盘解读。部署交界期旧缓存脚本可能继续发送旧事件；在报表注明变更日期，不要据此判断询盘突然下降。
 
-## 2. 配置 Google Search Console
+当前没有后台自动确认收到询盘的接口，前端不发送 `generate_lead`、成交或收入事件。实际收到、有效、报价和成交数量应在销售线索台账中记录；未来有可靠提交接口或 CRM 回传时再增加对应事件。
 
-1. 登录 Google Search Console，添加“网域”资源 `weieryang.com`。
-2. 按 Google 提示，在域名 DNS 管理后台添加专属 TXT 记录。这种方式可以覆盖 HTTP、HTTPS 和所有子域名。
-3. 验证成功后，提交站点地图 `https://weieryang.com/sitemap.xml`。
-4. 用“网址检查”分别检查首页、俄语首页、指南中心和两篇俄语指南，并对尚未收录的页面请求编入索引。
-5. 不要删除 DNS 验证记录，Google 会定期重新验证所有权。
+自定义事件仅含语言、内容分组、来源路径、固定产品参考码和联系渠道等信息。尺寸、邮编、数量、备注、完整询价正文及带正文的联系 URL 不进入这些事件。表单不存储个人信息到 URL 或本地存储；准备好的发送地址保存在页面内存，发送控件使用按钮，避免自动外链点击采集正文 URL。换页后需要重新填写。
 
-如果无法修改 DNS，可以在 Search Console 添加“网址前缀”资源，下载 Google 提供的专属 HTML 验证文件，然后把文件原样放到仓库根目录。不要修改文件名或内容。
+## 在后台验证，不用代码状态代替结果
 
-## 3. 发布后的检查
+1. 用生产站打开 GA4 实时报告或 DebugView，分别检查英俄类目、指南、产品分组以及上表事件。localhost 不加载 GA4。
+2. 从飘窗垫入口进入产品页，填写测试需求并准备消息；确认只有意向/准备事件，没有“收到询盘”或成交事件。选择联系渠道只会打开沟通工具，仍需人工发送。
+3. 核对旧 `generate_lead` 是否被标为关键事件，报表不要继续把它当成有效询盘。若把 `inquiry_handoff` 标为意向关键事件，请明确标注其定义；有效询盘单独统计。
+4. 检查 GA4 增强型衡量的表单和下载开关。自动 `form_submit` 与自定义 `cushion_inquiry_ready`、自动 `file_download` 与 `resource_download_click` 属于不同口径，不能相加当成两条线索。
+5. 排除内部测试访问，核对访问来源与目标市场。现有 GA4 后台权限、实时收数、关键事件配置和过滤规则尚未在本轮验证。
 
-1. 确认 GA4 实时报告能看到自己的访问。
-2. 点击一次 WhatsApp、Email 和询价入口，确认对应事件出现。
-3. 在 GA4 管理后台把 `generate_lead` 标记为关键事件。
-4. 过滤公司内部访问流量，避免自己的测试污染数据。
-5. 若面向需要用户同意后才能统计的地区，应在正式启用 GA4 前补充隐私政策和同意管理界面。
+## GSC、Bing 与内容优化
+
+- 在已验证的 GSC 资源检查 `https://weieryang.com/sitemap.xml`，查看新指南的 URL 检查结果。只对重要新增或实质更新页面请求抓取；请求不等于收录。
+- 导出最近 28 天与前 28 天的查询、着陆页、国家和设备数据。把原沙发页面作为独立观察组，再比较飘窗垫的新访问和意向；不要因新品零基线干扰原站判断。
+- 有真实数据后，再筛选有展示、平均排名约 8–20 的页面，逐页判断搜索意图和内链。不要仅凭手册通用阈值批量改旧标题、URL 或首页主文案。
+- Bing 可在本人后台使用 GSC 导入验证；否则使用 Bing 提供的准确验证记录。仓库不放猜测的验证码。验证后提交同一 sitemap，检查处理与索引结果。
+- IndexNow 已有公开验证密钥，只提交真实新增或更新 URL。HTTP 202 表示已接收且密钥验证待处理；任何接收状态均不保证收录或 AI 引用。
+- 当前 robots.txt 通配允许抓取，未新增阻断。robots 允许不等于 CDN 一定放行，需结合真实爬虫访问/防火墙日志判断，不能根据自定义 User-Agent 的一次 HTTP 请求认定全网可抓取。
+
+## 固定复盘口径
+
+工作区 `traffic-handbook-optimization/` 提供可填写的 CSV：
+
+- `seo-baseline.csv`：原沙发与新增飘窗垫分组，记录日期范围、GSC 点击/展示/CTR/排名、GA4 自然访问、沟通工具打开数和实际有效询盘数。空值代表待测，不代表零。
+- `geo-monitoring.csv`：固定 20 个买家问题，分别在 ChatGPT、Perplexity、Gemini 记录答案。品牌提及和网址引用分列；记录日期、语言、搜索开关、模式、引用 URL 和证据。60 行为待测模板，不是已取得的引用结果。
+- `lead-log.csv`：人工登记收到询盘、来源页、产品、有效性、回复和报价/成交状态。该模板不包含客户数据；填写后应保存在私有位置，不上传公开仓库。
+- `campaign-links.csv`：外部邮件签名、WhatsApp、LinkedIn、目录等使用的 UTM 链接草稿。不要把这些 UTM 加到本站内部链接。没有代发邮件、社媒内容或投放广告。
+
+按同一日期范围和定义复盘自然访问、沟通工具打开、实际询盘、有效询盘与成交。手册中的增长百分比和时间预期未核实，不作为本项目承诺。没有创建定时任务。
+
+## 官方参考
+
+- Google 的 AI 搜索同样依赖基础 SEO、可索引正文和内链，无专用 AI 标记或新文本文件要求：https://developers.google.com/search/docs/appearance/ai-features
+- GA4 `generate_lead` 定义：https://developers.google.com/analytics/devguides/collection/ga4/reference/events#generate_lead
+- OpenAI 的 OAI-SearchBot 用于搜索，GPTBot 用于可能的训练，两个控制独立：https://developers.openai.com/api/docs/bots
+- IndexNow 响应定义：https://www.indexnow.org/documentation

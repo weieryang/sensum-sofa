@@ -1,6 +1,6 @@
 # Weieryang 网站 SEO 交接
 
-更新日期：2026-09-20（Asia/Shanghai）
+更新日期：2026-10-07（Asia/Shanghai）；历史交接内容按各节日期阅读
 
 ## 项目与仓库
 
@@ -65,3 +65,14 @@
 - 本地发布校验覆盖 613 个内部引用、JSON-LD、互返语言链接、图片资源、生成幂等性、原目录卡片及旧页面保留。线上部署与 IndexNow 回执另存工作区 `cushion-catalog-release/`，应以实际响应核对发布状态。
 - 定制预览继续是独立的 noindex 试销页面。产品链接可携带照片款式并清空尺寸，要求买家输入实际尺寸；不跳转到 PayPal Sandbox。正式收款、运费以及官网 `/cushions/` 动态路由仍需单独完成原定支付测试。
 - SEO/GEO 是可访问、清晰、可引用的内容和技术基础，不能把页面发布或 IndexNow 接收等同于 Google 收录、自然流量增长或 ChatGPT 引用；后续要用 Search Console 和 GA4 核对旧沙发着陆页及新增飘窗垫流量。
+
+## 2026-10-07 手册驱动的内容与询价优化
+
+- 根据用户手册选择内容集群、询价便利性和准确统计三项落实；未照搬未核实的增长比例，未虚构认证、评价、价格或生产数据。
+- 新增英俄双语尺寸指南与面料/选款指南，共四页：`/[ru/]window-seat-cushions/measurement-guide/`、`/[ru/]window-seat-cushions/fabric-design-guide/`。包含原生 SVG 尺寸示意图、单位换算、四款设计对比、洗护/面料确认清单。数据源为 `data/cushion-guides.json`，由现有脚本生成静态正文；类目、产品、指南相互链接。
+- 十五个相关页面提供五项询价准备表单：款式、尺寸及单位、数量、目的地、偏好。客户检查后在 email 或 WhatsApp 中自行发送；消息带产品参考码与来源页，可复制文本，JavaScript 不可用时保留直接联系入口。没有新增发送后台或付款承诺。
+- `assets/cushion-inquiry.js` 用 textContent 展示输入；编辑字段撤销旧准备结果。待发送 URL 留在页面内存，不写入 href，避免增强型外链点击采集正文 URL；自定义 GA4 不记录尺寸、邮编、备注或正文。
+- GA4 ID 不变，新增飘窗垫内容分组、入口/指南/准备询价/联系渠道/定制预览/资料点击事件。原俄语 RFQ 的 `generate_lead` 改为 `inquiry_handoff`；历史事件只是打开沟通工具，不能当成收到询盘。详见 `ANALYTICS_SETUP.md`，该口径变更要在业务报表标注。
+- 用户确认 GSC 已验证、Bing 尚未验证；尚未读取实际搜索/统计数据。SEO 基线、60 行 GEO 待测模板、线索台账与外部 UTM 链接草稿位于工作区 `traffic-handbook-optimization/`；不含真实客户数据或假造结果。
+- 发布前保护校验覆盖原首页 EN/RU、英文总目录、全部原沙发 HTML、robots、CNAME 和旧布局/导航脚本逐字节不变；本轮只调整共享统计脚本和飘窗垫专用资源。sitemap 保留原 107 个 URL，加四篇指南至 111 个，不修改未更新旧页面的 lastmod。
+- 正式付款、运费、商品生产/售后条款、GA4 实际收数、GSC 查询及 Bing 验证仍待完成。发布和 IndexNow 接收不等于流量增长、收录或 AI 引用。回执与检查结果保存在工作区 `traffic-handbook-optimization/`。

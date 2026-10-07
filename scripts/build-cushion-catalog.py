@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Build static, bilingual cushion pages. No framework or checkout migration.
 
 Run from any directory with Python 3. Rebuilding is idempotent. The owner-supplied
@@ -14,6 +15,8 @@ from urllib.parse import urlencode
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'data/cushions.json').read_text())
 PRODUCTS = DATA['products']
+GUIDE_DATA = json.loads((ROOT / 'data/cushion-guides.json').read_text())
+GUIDES = GUIDE_DATA['guides']
 ORIGIN = 'https://weieryang.com'
 PREVIEW = 'https://weieryang-cushions.yhsj98251.chatgpt.site'
 
@@ -42,6 +45,10 @@ def category_path(lang):
 
 def product_path(product, lang):
     return ('/ru' if lang == 'ru' else '') + '/products/' + product['slug'] + '/'
+
+
+def guide_path(guide, lang):
+    return category_path(lang) + guide['slug'] + '/'
 
 
 def photo(asset, alt, hero=False):
@@ -80,9 +87,10 @@ def head(lang, path, title, description, image, structured, en, ru, product=Fals
 <link rel="stylesheet" href="/assets/factory-site.css?v=20260613d">
 <link rel="stylesheet" href="/assets/product-system.css?v=20260613d">
 <link rel="stylesheet" href="/assets/en-editorial.css?v=20260917a">
-<link rel="stylesheet" href="/assets/cushion-catalog.css?v=20261006a">
+<link rel="stylesheet" href="/assets/cushion-catalog.css?v=20261007a">
 <script defer src="/assets/factory-site.js?v=20261004a"></script>
-<script defer src="/assets/site-analytics.js?v=20260916d"></script>
+<script defer src="/assets/site-analytics.js?v=20261007a"></script>
+<script defer src="/assets/cushion-inquiry.js?v=20261007a"></script>
 </head><body lang="{lang}" class="factory-v2 product-page editorial-en wy-cushion-page">
 <a class="skip-link" href="#main-content">{tr(lang, 'Skip to content', 'К содержанию')}</a>'''
 
@@ -128,7 +136,19 @@ def quote_section(lang, product=None):
     email = 'mailto:tangkelian@weieryang.com?' + urlencode({'subject': f'{name} {ref} — quote request', 'body': body}).replace('+', '%20')
     whatsapp = 'https://wa.me/8613317178019?' + urlencode({'text': body})
     preview = f'<p><a href="{esc(preview_url(product, lang))}">{tr(lang, "Open customization preview with this design", "Открыть настройку с выбранным дизайном")} →</a></p>' if product else ''
-    return f'''<section class="wy-cushion-section wy-tinted" id="quote"><div class="shell wy-cushion-grid"><div><p class="eyebrow">{tr(lang, 'Your measurements, your quote', 'Ваши размеры — ваш расчет')}</p><h2>{tr(lang, 'Tell us about your window seat.', 'Расскажите о вашем сиденье у окна.')}</h2><p>{tr(lang, 'Send the design reference, length, seat depth, finished thickness, quantity and delivery country / postal code. For an angled seat, add a dimensioned sketch. Your quote will confirm the cushion specification, item price, shipping charge and production time before payment.', 'Укажите дизайн, длину, глубину сиденья, толщину, количество, страну и почтовый индекс. Для сложной формы приложите эскиз с размерами. Перед оплатой в предложении подтверждаются спецификация, цена товара, стоимость доставки и срок изготовления.')}</p></div><div class="wy-quote-panel"><h3>{esc(name)} {ref}</h3><p>{tr(lang, 'Custom sizes are quoted individually. For a standard-size request, send the size you need so availability can be checked. Shipping to the United States or Russia and the available payment method are confirmed for the destination.', 'Нестандартный размер рассчитывается индивидуально. Для стандартного размера укажите нужные параметры, чтобы проверить наличие. Возможность доставки в США или Россию и способ оплаты подтверждаются для конкретного адреса.')}</p><div class="product-actions"><a class="button button-dark" href="{esc(email)}">{tr(lang, 'Prepare email inquiry', 'Подготовить запрос по email')}</a><a class="button button-light" href="{esc(whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>{preview}<p class="wy-photo-caption">{tr(lang, 'Quotation first. Photo-based designs have no confirmed online price yet.', 'Сначала расчет. Онлайн-цена вариантов по фото пока не подтверждена.')}</p></div></div></section>'''
+    options = f'<option value="recommend">{tr(lang, "Help me choose a design", "Помогите выбрать дизайн")}</option>' + ''.join(f'<option value="{p["reference"]}"{" selected" if p == product else ""}>{p["reference"]} · {esc(p[lang]["short"])}</option>' for p in PRODUCTS)
+    form = f'''<form data-cushion-inquiry hidden>
+<label for="cushion-design">{tr(lang, '1. Design reference', '1. Дизайн')}<select id="cushion-design" name="design">{options}</select></label>
+<label for="cushion-dimensions">{tr(lang, '2. Dimensions & unit', '2. Размеры и единицы')}<input id="cushion-dimensions" name="dimensions" required maxlength="250" placeholder="{tr(lang, 'Length × depth × thickness; inches or cm', 'Длина × глубина × толщина; см или дюймы')}" aria-describedby="dimension-help"></label>
+<p class="wy-field-help" id="dimension-help">{tr(lang, 'For an angled seat, list all edges and attach a sketch in your email or chat.', 'Для сложной формы укажите все стороны и приложите эскиз к письму или сообщению.')}</p>
+<label for="cushion-quantity">{tr(lang, '3. Quantity', '3. Количество')}<input id="cushion-quantity" name="quantity" type="number" min="1" max="9999" step="1" value="1" required inputmode="numeric"></label>
+<label for="cushion-destination">{tr(lang, '4. Delivery country & postal code', '4. Страна и почтовый индекс')}<input id="cushion-destination" name="destination" required maxlength="160" placeholder="{tr(lang, 'e.g. United States, 10001', 'Например, Россия, 101000')}" autocomplete="off"></label>
+<label for="cushion-preferences">{tr(lang, '5. Color, front drop & other preferences (optional)', '5. Цвет, свисающий край и другие пожелания (необязательно)')}<textarea id="cushion-preferences" name="preferences" rows="3" maxlength="600"></textarea></label>
+<button class="button button-dark" type="submit">{tr(lang, 'Prepare my inquiry', 'Подготовить запрос')}</button>
+<p class="wy-photo-caption">{tr(lang, 'Your entries stay in this page until you choose email or WhatsApp. No message is sent by this form.', 'Введенные данные остаются на странице до выбора email или WhatsApp. Форма сама не отправляет сообщение.')}</p>
+<div class="wy-inquiry-result" data-inquiry-result hidden><h4 tabindex="-1" data-inquiry-heading>{tr(lang, 'Review, then send your message', 'Проверьте и отправьте сообщение')}</h4><pre data-inquiry-message></pre><div class="product-actions"><button class="button button-dark" type="button" data-inquiry-email>{tr(lang, 'Open email to send', 'Открыть email для отправки')}</button><button class="button button-light" type="button" data-inquiry-whatsapp>WhatsApp</button><button class="button button-light" data-inquiry-copy type="button">{tr(lang, 'Copy message', 'Скопировать текст')}</button></div><p class="wy-photo-caption">{tr(lang, 'The inquiry is complete only after you send it in your email app or WhatsApp. Add photos or your sketch there.', 'Запрос будет отправлен только после отправки в вашей почте или WhatsApp. Там же добавьте фото или эскиз.')}</p><p role="status" data-inquiry-status></p></div>
+</form>'''
+    return f'''<section class="wy-cushion-section wy-tinted" id="quote"><div class="shell wy-cushion-grid"><div><p class="eyebrow">{tr(lang, 'Your measurements, your quote', 'Ваши размеры — ваш расчет')}</p><h2>{tr(lang, 'Tell us about your window seat.', 'Расскажите о вашем сиденье у окна.')}</h2><p>{tr(lang, 'Send the design reference, length, seat depth, finished thickness, quantity and delivery country / postal code. For an angled seat, add a dimensioned sketch. Your quote will confirm the cushion specification, item price, shipping charge and production time before payment.', 'Укажите дизайн, длину, глубину сиденья, толщину, количество, страну и почтовый индекс. Для сложной формы приложите эскиз с размерами. Перед оплатой в предложении подтверждаются спецификация, цена товара, стоимость доставки и срок изготовления.')}</p><ol class="wy-quote-steps"><li>{tr(lang, 'Prepare your requirements below.', 'Подготовьте требования в форме.')}</li><li>{tr(lang, 'Send the message, adding any photos or sketch.', 'Отправьте сообщение и добавьте фото или эскиз.')}</li><li>{tr(lang, 'Review the specification and complete quotation before ordering.', 'Проверьте спецификацию и полный расчет до заказа.')}</li></ol><p><a href="{tr(lang, '/contact/', '/ru/contact/')}">{tr(lang, 'Company & contact details', 'Компания и контакты')} →</a></p></div><div class="wy-quote-panel"><h3>{esc(name)} {ref}</h3><p>{tr(lang, 'Custom sizes are quoted individually. For a standard-size request, send the size you need so availability can be checked. Shipping to the United States or Russia and the available payment method are confirmed for the destination.', 'Нестандартный размер рассчитывается индивидуально. Для стандартного размера укажите нужные параметры, чтобы проверить наличие. Возможность доставки в США или Россию и способ оплаты подтверждаются для конкретного адреса.')}</p>{form}<div data-inquiry-fallback><p>{tr(lang, 'Send your dimensions directly:', 'Отправьте размеры напрямую:')}</p><div class="product-actions"><a class="button button-dark" href="{esc(email)}">{tr(lang, 'Prepare email inquiry', 'Подготовить запрос по email')}</a><a class="button button-light" href="{esc(whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></div>{preview}<p class="wy-photo-caption">{tr(lang, 'Quotation first. Photo-based designs have no confirmed online price yet.', 'Сначала расчет. Онлайн-цена вариантов по фото пока не подтверждена.')}</p></div></div></section>'''
 
 
 def card(product, lang, legacy=False):
@@ -143,7 +163,37 @@ def measurement(lang):
         (tr(lang, 'Separate thickness and drop', 'Разделите толщину и свисающий край'), tr(lang, 'Choose the finished cushion thickness separately from any decorative front drop. Check the height against windows, handles, drawers and the intended sitting position.', 'Толщину подушки и высоту декоративного свисающего края указывайте отдельно. Проверьте высоту относительно окна, ручек, ящиков и удобного положения сидя.')),
         (tr(lang, 'Confirm the complete quote', 'Подтвердите полный расчет'), tr(lang, 'Send your preferred photo, color, quantity and postal code. Confirm fabric, foam, price, shipping and production time before approving the order.', 'Пришлите выбранное фото, цвет, количество и почтовый индекс. До заказа подтвердите ткань, наполнитель, цену, доставку и срок изготовления.')),
     ]
-    return f'<section class="wy-cushion-section" id="measure"><div class="shell"><p class="eyebrow">{tr(lang, "Sizing guide", "Как снять размеры")}</p><h2>{tr(lang, "How to measure a custom window seat cushion", "Как измерить подушку для подоконника")}</h2><ol class="wy-step-list">' + ''.join(f'<li><h3>{a}</h3><p>{b}</p></li>' for a, b in steps) + '</ol></div></section>'
+    return f'<section class="wy-cushion-section" id="measure"><div class="shell"><p class="eyebrow">{tr(lang, "Sizing guide", "Как снять размеры")}</p><h2>{tr(lang, "How to measure a custom window seat cushion", "Как измерить подушку для подоконника")}</h2><ol class="wy-step-list">' + ''.join(f'<li><h3>{a}</h3><p>{b}</p></li>' for a, b in steps) + f'</ol><p><a href="{guide_path(GUIDES[0], lang)}">{tr(lang, "Read the full measurement guide with an angled-seat diagram", "Полная инструкция с эскизом для эркера")} →</a></p></div></section>'
+
+
+def guide_links(lang, exclude=None):
+    links = ''.join(f'<article class="wy-guide-card"><h3><a href="{guide_path(g, lang)}">{esc(g[lang]["name"])}</a></h3><p>{esc(g[lang]["description"])}</p></article>' for g in GUIDES if g != exclude)
+    return f'<section class="wy-cushion-section wy-tinted"><div class="shell"><p class="eyebrow">{tr(lang, "Before you order", "Перед заказом")}</p><h2>{tr(lang, "Practical cushion buying guides", "Практические инструкции по выбору")}</h2><div class="wy-guide-grid">{links}</div></div></section>'
+
+
+def measurement_diagram(lang):
+    label = tr(lang, 'Angled seat: A front, B back, C depth, D left side, E right side. Diagram is not to scale.', 'Сиденье эркера: A спереди, B сзади, C глубина, D слева, E справа. Схема без масштаба.')
+    return f'''<figure class="wy-measure-diagram"><svg viewBox="0 0 640 310" role="img" aria-labelledby="measure-title measure-desc"><title id="measure-title">{tr(lang, 'Top view of an angled bay window seat', 'Вид сверху на сиденье эркера')}</title><desc id="measure-desc">{label}</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#223d2a"/></marker></defs><path d="M200 70 H440 L550 220 H90 Z" fill="#e5decd" stroke="#223d2a" stroke-width="3"/><g stroke="#223d2a" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"><path d="M95 263 H545"/><path d="M202 32 H438"/><path d="M320 78 V212"/><path d="M173 75 L73 214"/><path d="M467 75 L567 214"/></g><g fill="#223d2a" font-size="22" font-family="Arial,sans-serif" text-anchor="middle"><text x="320" y="296">A</text><text x="320" y="23">B</text><text x="344" y="153">C</text><text x="102" y="137">D</text><text x="540" y="137">E</text></g></svg><figcaption>{label}</figcaption></figure>'''
+
+
+def build_guide(guide, lang):
+    g = guide[lang]
+    path = guide_path(guide, lang)
+    items = [(tr(lang, '/', '/ru/'), tr(lang, 'Home', 'Главная')), (category_path(lang), tr(lang, 'Window seat cushions', 'Подушки на подоконник')), (path, g['name'])]
+    article = {'@type': 'Article', '@id': ORIGIN + path + '#article', 'headline': g['name'], 'description': g['description'], 'inLanguage': lang, 'datePublished': guide['published'], 'dateModified': GUIDE_DATA['updated'], 'mainEntityOfPage': ORIGIN + path, 'image': ORIGIN + '/assets/cushions/' + guide['image'] + '-1200.webp', 'author': {'@type': 'Organization', 'name': 'Weieryang', 'url': ORIGIN + '/contact/'}, 'publisher': {'@type': 'Organization', 'name': 'Weieryang', 'url': ORIGIN}}
+    content = head(lang, path, g['title'], g['description'], guide['image'], {'@context': 'https://schema.org', '@graph': [breadcrumb_schema(items), article]}, guide_path(guide, 'en'), guide_path(guide, 'ru')) + header(lang, guide_path(guide, tr(lang, 'ru', 'en')), path)
+    content += f'<main id="main-content"><section class="wy-cushion-hero"><div class="shell">{breadcrumb(items, lang)}<div class="product-hero-grid"><div><p class="eyebrow">{tr(lang, "Cushion buying guide", "Инструкция по выбору подушки")}</p><h1>{esc(g["name"])}</h1><p class="product-intro">{esc(g["intro"])}</p><p class="wy-photo-caption">Weieryang · <time datetime="{GUIDE_DATA["updated"]}">{GUIDE_DATA["updated"]}</time></p><div class="product-actions"><a class="button button-dark" href="#quote">{tr(lang, "Prepare a cushion inquiry", "Подготовить запрос")}</a><a class="button button-light" href="{category_path(lang)}">{tr(lang, "Compare the four designs", "Сравнить четыре дизайна")}</a></div></div><figure class="wy-product-image">{photo(guide["image"], tr(lang, "Window seat cushion design reference", "Вариант дизайна подушки для подоконника"), True)}<figcaption class="wy-photo-caption">{tr(lang, "Owner-supplied design reference", "Фото дизайна, предоставленное продавцом")}</figcaption></figure></div></div></section>'
+    content += '<section class="wy-cushion-section"><div class="shell wy-guide-article"><nav class="wy-guide-contents" aria-label="' + tr(lang, 'In this guide', 'Содержание') + '"><strong>' + tr(lang, 'In this guide', 'Содержание') + '</strong><ul>' + ''.join(f'<li><a href="#{s["id"]}">{esc(s["question"])}</a></li>' for s in g['sections']) + '</ul></nav>'
+    for section in g['sections']:
+        content += f'<section class="wy-guide-part" id="{section["id"]}"><h2>{esc(section["question"])}</h2>' + ''.join(f'<p>{esc(p)}</p>' for p in section['paragraphs'])
+        if section['id'] == 'shape':
+            content += measurement_diagram(lang)
+        if section['id'] == 'looks':
+            rows = ''.join(f'<tr><th scope="row"><a href="{product_path(p, lang)}">{p["reference"]} · {esc(p[lang]["short"])}</a></th><td>{esc(p[lang]["appearance"])}</td><td>{esc(p[lang]["check"])}</td></tr>' for p in PRODUCTS)
+            content += f'<div class="wy-comparison"><table><caption>{tr(lang, "Photo designs and the details to confirm", "Дизайны по фото и параметры для согласования")}</caption><thead><tr><th scope="col">{tr(lang, "Design", "Дизайн")}</th><th scope="col">{tr(lang, "Photo appearance", "Внешний вид")}</th><th scope="col">{tr(lang, "Check before ordering", "Что уточнить")}</th></tr></thead><tbody>{rows}</tbody></table></div>'
+        content += '</section>'
+    content += '</div></section>' + guide_links(lang, guide) + quote_section(lang) + footer(lang)
+    write(path.strip('/') + '/index.html', content)
 
 
 def questions(lang, product=None):
@@ -185,7 +235,7 @@ def build_product(product, lang):
             alt = tr(lang, 'Grey ribbed corduroy-style window seat cushion' if asset == 'corduroy-grey' else 'AI-enhanced cream teddy cushion window nook' if enhanced else p['alt'], 'Серый вариант подушки с вельветовой фактурой' if asset == 'corduroy-grey' else 'Кремовая подушка тедди у окна, сцена с обработкой ИИ' if enhanced else p['alt'])
             figures.append(f'<figure>{photo(asset, alt)}<figcaption class="wy-photo-caption">{caption}</figcaption></figure>')
         content += f'<section class="wy-cushion-section wy-tinted"><div class="shell"><h2>{tr(lang, "Compare the photo references", "Сравните варианты на фото")}</h2><div class="wy-photo-grid">' + ''.join(figures) + '</div></div></section>'
-    content += measurement(lang) + questions(lang, product) + quote_section(lang, product)
+    content += measurement(lang) + questions(lang, product) + guide_links(lang) + quote_section(lang, product)
     content += f'<section class="wy-cushion-section"><div class="shell"><h2>{tr(lang, "Explore other cushion designs", "Другие варианты подушек")}</h2><div class="wy-related-grid">' + ''.join(card(other, lang) for other in PRODUCTS if other != product) + '</div></div></section>'
     write(path.strip('/') + '/index.html', content + footer(lang))
 
@@ -203,7 +253,7 @@ def build_category(lang):
 <section class="wy-cushion-section" id="designs"><div class="shell"><p class="eyebrow">{tr(lang, 'Choose the look', 'Выберите внешний вид')}</p><h2>{tr(lang, 'Four designs for your indoor window seat', 'Четыре дизайна для сиденья у окна')}</h2><p>{tr(lang, 'Start with a fabric appearance and color reference. Each product page explains the design and the details to confirm for your own cushion. Photos do not establish standard dimensions, foam density or fabric composition.', 'Начните с фактуры и цветового ориентира. В каждой карточке описаны дизайн и параметры для согласования. Фото не подтверждают стандартный размер, плотность наполнителя или состав ткани.')}</p><div class="catalog-grid">{''.join(card(p, lang) for p in PRODUCTS)}</div></div></section>'''
     rows = ''.join(f'<tr><th scope="row"><a href="{product_path(p, lang)}">{esc(p[lang]["short"])}</a></th><td>{esc(p[lang]["appearance"])}</td><td>{esc(p[lang]["check"])}</td></tr>' for p in PRODUCTS)
     content += f'<section class="wy-cushion-section wy-tinted"><div class="shell"><h2>{tr(lang, "Compare the window seat cushion designs", "Сравните дизайны подушек")}</h2><div class="wy-comparison"><table><thead><tr><th scope="col">{tr(lang, "Design", "Дизайн")}</th><th scope="col">{tr(lang, "Reference appearance", "Внешний вид")}</th><th scope="col">{tr(lang, "Confirm for your order", "Что уточнить")}</th></tr></thead><tbody>{rows}</tbody></table></div></div></section>'
-    content += measurement(lang) + questions(lang) + quote_section(lang)
+    content += measurement(lang) + questions(lang) + guide_links(lang) + quote_section(lang)
     write(path.strip('/') + '/index.html', content + footer(lang))
 
 
@@ -266,12 +316,15 @@ def integrate_catalog():
 
 
 def integrate_home_and_discovery():
+    changed = []
     for path, old, new in [('index.html', PREVIEW + '/?entry=header-home-en', '/window-seat-cushions/?entry=header-home-en'), ('ru/index.html', PREVIEW + '/ru/?entry=header-home-ru', '/ru/window-seat-cushions/?entry=header-home-ru')]:
         content = read(path)
         assert old in content or new in content
-        write(path, content.replace(old, new))
-    urls = [ORIGIN + category_path(lang) for lang in ['en', 'ru']] + [ORIGIN + '/ru/products/'] + [ORIGIN + product_path(p, lang) for p in PRODUCTS for lang in ['en', 'ru']]
-    changed = [ORIGIN + '/', ORIGIN + '/ru/', ORIGIN + '/products/']
+        updated_content = content.replace(old, new)
+        if updated_content != content:
+            changed.append(ORIGIN + '/' + path.removesuffix('index.html'))
+        write(path, updated_content)
+    urls = [ORIGIN + category_path(lang) for lang in ['en', 'ru']] + [ORIGIN + '/ru/products/'] + [ORIGIN + product_path(p, lang) for p in PRODUCTS for lang in ['en', 'ru']] + [ORIGIN + guide_path(g, lang) for g in GUIDES for lang in ['en', 'ru']]
     sitemap = read('sitemap.xml')
     for url in urls:
         if '<loc>' + url + '</loc>' not in sitemap:
@@ -291,6 +344,9 @@ def integrate_home_and_discovery():
     for p in PRODUCTS:
         llms += f'- {p["reference"]} {p["en"]["name"]}: {ORIGIN}{product_path(p, "en")}\n'
         llms += f'- {p["reference"]} {p["ru"]["name"]}: {ORIGIN}{product_path(p, "ru")}\n'
+    for g in GUIDES:
+        for lang in ['en', 'ru']:
+            llms += f'- {g[lang]["name"]}: {ORIGIN}{guide_path(g, lang)}\n'
     llms += 'For a cushion quotation, provide the catalog reference, preferred photo, all seating-area dimensions, finished thickness, front drop if requested, quantity, destination country and postal code. Cotton-linen style describes appearance, not a certified fiber composition. AI-enhanced scenes are labeled and excluded from the Product schema image list.\n'
     write('llms.txt', llms)
 
@@ -300,7 +356,9 @@ if __name__ == '__main__':
         build_category(language)
         for product in PRODUCTS:
             build_product(product, language)
+        for guide in GUIDES:
+            build_guide(guide, language)
     build_ru_products()
     integrate_catalog()
     integrate_home_and_discovery()
-    print('Built 4 cushion designs × 2 languages, 2 collection pages and 1 Russian catalog; preserved original sofa details.')
+    print('Built 4 cushion designs × 2 languages, 2 collections, 4 buying guides and 1 Russian catalog; preserved original sofa details.')

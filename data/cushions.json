@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "category": "window-seat-cushions",
   "source": "Owner-supplied window seat cushion reference photos, 飘窗垫9-18.zip, curated 2026-10-05. Catalog references below are newly assigned website identifiers, not GTINs or factory model numbers.",
   "commercial_status": "Quote required. Final size, fabric composition, foam, color, production time, shipping and payment terms require confirmation. No live price or stock claims.",
@@ -8,7 +8,10 @@
       "reference": "WY-WC01",
       "slug": "teddy-fleece-window-seat-cushion",
       "style": "teddy-channel-detail",
-      "photos": ["teddy-channel-detail", "teddy-window-scene"],
+      "photos": [
+        "teddy-channel-detail",
+        "teddy-window-scene"
+      ],
       "en": {
         "name": "Teddy Fleece Window Seat Cushion",
         "short": "Teddy fleece",
@@ -40,7 +43,10 @@
       "reference": "WY-WC02",
       "slug": "corduroy-window-seat-cushion",
       "style": "corduroy-ivory",
-      "photos": ["corduroy-ivory", "corduroy-grey"],
+      "photos": [
+        "corduroy-ivory",
+        "corduroy-grey"
+      ],
       "en": {
         "name": "Corduroy Window Seat Cushion",
         "short": "Corduroy",
@@ -72,7 +78,9 @@
       "reference": "WY-WC03",
       "slug": "cotton-linen-window-seat-cushion",
       "style": "cotton-linen-grey",
-      "photos": ["cotton-linen-grey"],
+      "photos": [
+        "cotton-linen-grey"
+      ],
       "en": {
         "name": "Cotton-Linen Style Window Seat Cushion",
         "short": "Cotton-linen style",
@@ -104,7 +112,9 @@
       "reference": "WY-WC04",
       "slug": "textured-woven-bay-window-cushion",
       "style": "woven-mustard",
-      "photos": ["woven-mustard"],
+      "photos": [
+        "woven-mustard"
+      ],
       "en": {
         "name": "Textured Woven Bay Window Cushion",
         "short": "Textured woven",
