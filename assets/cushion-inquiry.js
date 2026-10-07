@@ -8,6 +8,10 @@
   var email = form.querySelector("[data-inquiry-email]");
   var whatsapp = form.querySelector("[data-inquiry-whatsapp]");
   var status = form.querySelector("[data-inquiry-status]");
+  var designHeading = document.querySelector("[data-inquiry-design-heading]");
+  var selection = form.querySelector("[data-inquiry-selection]");
+  var designImage = form.querySelector("[data-inquiry-design-image]");
+  var preview = form.querySelector("[data-inquiry-preview]");
   var fields = form.elements;
   var references = ["WY-WC01", "WY-WC02", "WY-WC03", "WY-WC04"];
   var source = "https://weieryang.com" + window.location.pathname;
@@ -23,13 +27,35 @@
     }));
   }
 
+  function syncDesign() {
+    var option = fields.design.selectedOptions[0];
+    var reference = fields.design.value;
+    var known = references.indexOf(reference) >= 0 && option;
+    if (designHeading) designHeading.textContent = known ? option.dataset.name + " " + reference : text("Window seat cushion", "Подушка на подоконник");
+    if (!selection || !designImage || !preview) return;
+    selection.hidden = !known;
+    if (!known) {
+      designImage.removeAttribute("src");
+      designImage.alt = "";
+      preview.removeAttribute("href");
+      return;
+    }
+    designImage.src = option.dataset.image;
+    designImage.alt = option.dataset.imageAlt;
+    preview.href = option.dataset.previewUrl;
+  }
+
   form.addEventListener("input", function () {
     fields.dimensions.setCustomValidity("");
     fields.destination.setCustomValidity("");
     result.hidden = true;
     status.textContent = "";
   });
-  form.addEventListener("change", function () { result.hidden = true; });
+  form.addEventListener("change", function () {
+    result.hidden = true;
+    status.textContent = "";
+    syncDesign();
+  });
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -75,6 +101,12 @@
     window.open(preparedWhatsapp, "_blank", "noopener,noreferrer");
   });
 
+  form.querySelector("[data-inquiry-edit]").addEventListener("click", function () {
+    result.hidden = true;
+    status.textContent = "";
+    fields.dimensions.focus();
+  });
+
   form.querySelector("[data-inquiry-copy]").addEventListener("click", async function () {
     try {
       if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error("Clipboard unavailable");
@@ -85,7 +117,10 @@
     }
   });
 
+  syncDesign();
   form.hidden = false;
   var fallback = document.querySelector("[data-inquiry-fallback]");
   if (fallback) fallback.hidden = true;
+  var previewFallback = document.querySelector("[data-inquiry-preview-fallback]");
+  if (previewFallback) previewFallback.hidden = true;
 })();
