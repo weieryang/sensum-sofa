@@ -19,6 +19,7 @@ GUIDE_DATA = json.loads((ROOT / 'data/cushion-guides.json').read_text())
 GUIDES = GUIDE_DATA['guides']
 ORIGIN = 'https://weieryang.com'
 PREVIEW = 'https://weieryang-cushions.yhsj98251.chatgpt.site'
+CHANGED_HTML = set()
 
 
 def esc(value):
@@ -32,7 +33,12 @@ def read(path):
 def write(path, content):
     dest = ROOT / path
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(content.encode('utf-8'))
+    encoded = content.encode('utf-8')
+    if dest.exists() and dest.read_bytes() == encoded:
+        return
+    dest.write_bytes(encoded)
+    if dest.suffix == '.html':
+        CHANGED_HTML.add(path)
 
 
 def tr(lang, en, ru):
@@ -176,7 +182,7 @@ def measurement(lang):
 
 
 def guide_links(lang, exclude=None):
-    links = ''.join(f'<article class="wy-guide-card"><h3><a href="{guide_path(g, lang)}">{esc(g[lang]["name"])}</a></h3><p>{esc(g[lang]["description"])}</p></article>' for g in GUIDES if g != exclude)
+    links = ''.join(f'<article class="wy-guide-card"><h3><a href="{guide_path(g, lang)}">{esc(g[lang].get("link_label", g[lang]["name"]))}</a></h3><p>{esc(g[lang]["description"])}</p></article>' for g in GUIDES if g != exclude)
     return f'<section class="wy-cushion-section wy-tinted"><div class="shell"><p class="eyebrow">{tr(lang, "Before you order", "Перед заказом")}</p><h2>{tr(lang, "Practical cushion buying guides", "Практические инструкции по выбору")}</h2><div class="wy-guide-grid">{links}</div></div></section>'
 
 
@@ -339,7 +345,9 @@ def integrate_home_and_discovery():
         if '<loc>' + url + '</loc>' not in sitemap:
             entry = f'  <url><loc>{url}</loc><lastmod>{DATA["updated"]}</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>\n'
             sitemap = sitemap.replace('</urlset>', entry + '</urlset>')
-    for url in changed + urls:
+    # Existing lastmod describes actual HTML changes, not a catalog rebuild.
+    changed_urls = [ORIGIN + '/' + path.removesuffix('index.html') for path in CHANGED_HTML]
+    for url in set(changed + changed_urls):
         pattern = r'(<loc>' + re.escape(url) + r'</loc><lastmod>)[^<]+(</lastmod>)'
         sitemap = re.sub(pattern, lambda m: m.group(1) + DATA['updated'] + m.group(2), sitemap)
     write('sitemap.xml', sitemap)

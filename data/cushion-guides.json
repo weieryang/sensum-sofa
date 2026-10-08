@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "guides": [
     {
       "slug": "measurement-guide",
@@ -7,6 +7,7 @@
       "en": {
         "title": "How to Measure a Window Seat or Bay Window Cushion | Weieryang",
         "name": "How to measure your window seat cushion",
+        "link_label": "Measure a window seat or angled bay window cushion",
         "description": "Measure length, seat depth and finished thickness; record angled bay-window edges with a sketch. Includes an inch-to-centimeter example and a quote checklist.",
         "intro": "Measure the usable seating surface, then record the cushion's finished thickness separately. A rectangle needs length and depth; an angled bay window also needs the front and back widths, side measurements and a labeled sketch. Send those dimensions with your preferred design so the finished size can be agreed before production.",
         "sections": [
@@ -55,6 +56,7 @@
       "ru": {
         "title": "Как снять размеры подушки для подоконника и эркера | Weieryang",
         "name": "Как снять размеры подушки для подоконника",
+        "link_label": "Как измерить подушку для подоконника или эркера",
         "description": "Длина, глубина сиденья и толщина подушки; схема для эркера с наклонными сторонами. Пример перевода дюймов в сантиметры и список для расчета.",
         "intro": "Измерьте полезную поверхность сиденья и отдельно укажите итоговую толщину подушки. Для прямоугольника нужны длина и глубина; для эркера — также передняя и задняя ширина, размеры сторон и подписанный эскиз. Пришлите размеры вместе с выбранным дизайном, чтобы согласовать итоговую форму до изготовления.",
         "sections": [
@@ -108,12 +110,13 @@
       "en": {
         "title": "Teddy, Corduroy or Woven Window Seat Cushions? | Weieryang",
         "name": "Choose a cushion design, then confirm the fabric",
+        "link_label": "Compare teddy, corduroy and woven window seat cushion designs",
         "description": "Compare four window-seat cushion photo designs and the details to confirm: fabric composition, color, rib direction, cover construction and care instructions.",
         "intro": "Start with the appearance you want, then confirm the material and construction for your order. Teddy channels, corduroy ribs and woven textures create different looks, but photos cannot establish fiber composition, washability or abrasion performance. Use the four references below to choose a direction and ask for the selected fabric details before ordering.",
         "sections": [
           {
             "id": "looks",
-            "question": "How do the four cushion designs differ?",
+            "question": "How do teddy, corduroy and woven window seat cushion designs differ?",
             "paragraphs": [
               "WY-WC01 shows a cream teddy-style surface with rounded stitched channels and a front drop. WY-WC02 shows ribbed corduroy-style references in ivory and grey. WY-WC03 has a grey, understated linen-like woven appearance. WY-WC04 uses a mustard reference with a more visible woven texture.",
               "These are observations of the supplied reference photos. Choose the texture and color direction that suits your room, then open the corresponding product page for the details to confirm. Availability of the exact fabric and final color is checked in the quotation."
@@ -156,12 +159,13 @@
       "ru": {
         "title": "Тедди, вельвет или плетение: выбор подушки на подоконник | Weieryang",
         "name": "Выберите дизайн и уточните ткань подушки",
+        "link_label": "Сравните дизайны подушек для подоконника: тедди, вельвет и тканые варианты",
         "description": "Сравните четыре дизайна подушек по фото. Что уточнить до заказа: состав ткани, цвет, направление рубчика, конструкцию чехла и уход.",
         "intro": "Начните с желаемого внешнего вида, затем согласуйте материал и конструкцию заказа. Каналы тедди, рубчик вельвета и тканое плетение выглядят по-разному, но фото не подтверждает состав, возможность стирки или износостойкость. Выберите направление по четырем примерам и запросите сведения о конкретной ткани до заказа.",
         "sections": [
           {
             "id": "looks",
-            "question": "Чем отличаются четыре дизайна подушек?",
+            "question": "Чем отличаются подушки для подоконника: тедди, вельвет и тканые варианты?",
             "paragraphs": [
               "WY-WC01 — кремовая поверхность в стиле тедди с округлыми прошитыми каналами и свисающим краем. WY-WC02 — рубчатая вельветовая фактура в кремовом и сером вариантах. WY-WC03 — сдержанная серая фактура, напоминающая льняное плетение. WY-WC04 — горчичный вариант с более заметным тканым рисунком.",
               "Это описание предоставленных фото. Выберите направление фактуры и цвета для вашего интерьера и откройте карточку товара, чтобы проверить параметры для согласования. Наличие конкретной ткани и окончательный цвет уточняются при расчете."

@@ -1,11 +1,11 @@
 # Weieryang 网站统计与自然流量复盘
 
-更新：2026-10-07（Asia/Shanghai）。本文记录代码状态和需要核实的后台设置，不代表已验证实际收数或流量增长。
+更新：2026-10-08（Asia/Shanghai）。本文记录代码口径和后台核实范围；后台数据保存在私有工作目录，不能据页面发布推断流量增长。
 
 ## 已有配置
 
 - 官网使用一个 GA4 加载器 `assets/site-analytics.js`，Measurement ID 为 `G-RH7F2SQEQ1`。不要重复粘贴 gtag 或再安装另一份 GTM 标签。
-- 用户已确认 Google Search Console 验证完成；尚未读取其查询、着陆页、索引或历史数据。Bing Webmaster 尚未验证。
+- 2026-10-08 已读取正确 GSC 域名资产的查询、着陆页、国家、设备、索引与历史对比，以及生成式 AI 搜索报告；后台显示该功能为“包含”。Bing Webmaster 尚未验证。
 - `sitemap.xml` 包含 111 个 URL，原 107 个地址全部保留。新增四篇英俄指南，位于 `/[ru/]window-seat-cushions/measurement-guide/` 与 `/[ru/]window-seat-cushions/fabric-design-guide/`。
 - 官网保留静态 HTML；飘窗垫正文、内链与表单说明在原始 HTML 中可读。无 JavaScript 时保留直接邮件/WhatsApp 询价入口。
 - 广告存储、广告个性化与 Google Signals 仍关闭；既有 analytics_storage 默认 granted 未改变。本轮未添加 Clarity、广告像素或新的第三方统计脚本。
@@ -62,7 +62,17 @@
 
 ## 官方参考
 
-- Google 的 AI 搜索同样依赖基础 SEO、可索引正文和内链，无专用 AI 标记或新文本文件要求：https://developers.google.com/search/docs/appearance/ai-features
+- Google 的 AI 搜索同样依赖基础 SEO、可索引正文和内链，无专用 AI 标记或新文本文件要求：https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
 - GA4 `generate_lead` 定义：https://developers.google.com/analytics/devguides/collection/ga4/reference/events#generate_lead
 - OpenAI 的 OAI-SearchBot 用于搜索，GPTBot 用于可能的训练，两个控制独立：https://developers.openai.com/api/docs/bots
 - IndexNow 响应定义：https://www.indexnow.org/documentation
+
+## 2026-10-08 后台核实与关键词决策
+
+已只读检查 GSC；最近周期的非品牌查询样本未达到手册高展示机会词阈值，因此保留原标题、描述和 URL，通过既有正文的明确答案与内链增强主题关系，不批量堆砌长尾词或创建近似页面。关键词映射、日期范围、页面与国家/设备对比留在仓库外私有 `gsc-seo-optimization-20261008/`。
+
+已进入正确 `weieryang sofa` GA4 资源，核实网站流为 `https://weieryang.com` 并接收流量。GA4 首页包含 `chatgpt.com / ai-assistant` 来源记录；它与 GSC 的 Google 生成式 AI 搜索曝光属于不同平台与指标，不能相加或当作已成交/有效询盘。当前未改后台设置、过滤规则、关键事件、账户关联或统计脚本；事件归因与内部访问排除仍需专门核验。
+
+GSC 生成式 AI 报告目前提供曝光，不能用其代替 AI 来源访问或询盘。索引报告中的正确 alternate canonical 和跳转通常不需要全部变成已索引；sitemap 与 llms.txt 不是目标业务 HTML。不批量点“验证修正情况”，不删除暂未收录的原产品页。性能和索引报告的截止日期早于新品发布时，不能据此判断新品效果。
+
+官方参考：[GSC 生成式 AI 搜索报告](https://support.google.com/webmasters/answer/16984139)、[生成式 AI 搜索控制](https://support.google.com/webmasters/answer/16908024?hl=en)。Google 已在 2026 年停止 FAQ 富结果展示，见 [Search 更新记录](https://developers.google.com/search/updates)；可见问答仍以解决买家问题为目的，Article 标记只描述文章，不保证展示或引用。
